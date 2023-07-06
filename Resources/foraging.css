@@ -1,0 +1,39 @@
+/*---- FILTERS ----*/
+
+
+div.inverted div.ui.checkbox > label
+{
+	color: inherit;
+}
+
+/*---- HERBS ----*/
+
+
+div.ui.container
+{
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+table.selectable tr
+{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+table.selectable tbody
+{
+	float: left;
+	width: 101%;
+	overflow-y: scroll;
+	max-height: 74vh;
+}
+
+/*---- FINDING ----*/
+
+
+div.toggle
+{
+	margin-right: 1.2em;
+}

@@ -1,0 +1,498 @@
+/* ---- FIXES TO REVIEW ---- */
+div.heroChips, div.enemyChips {
+	max-height: 96%;
+}
+
+/* ---- NOTIFICATIONS ---- */
+div.willow-loading {
+	text-align: center;
+	display:block;
+}
+
+div.willow-top-page-notification {
+	position: absolute;
+	top: 0px;
+	display:block;
+
+	padding: .1em 0.5em;
+	font-size: 1.1em;
+}
+
+/* ---- ACTION DECLARATIONS ---- */
+
+div.individualActionDeclarations > div > p {
+	margin: 0px;
+}
+
+div.individualActionDeclarations > div > p > input:first-child {
+	width: 124px;
+	margin-right: 5px;
+}
+
+div.individualActionDeclarations > div > p > input:last-child {
+	width: 40px;
+	text-align: right;
+}
+
+div.actionDeclarationsHeaders, div.individualActionDeclarations {
+	width: 743px;
+}
+
+div.actionDeclarationsHeaders {
+	height: 30px;
+}
+
+div.actionDeclarationsHeaders h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+div.actionDeclarationsHeaders h3.snapAction{
+	margin-left: 60px;
+}
+
+.snapPhase, .normalPhase, .deliberatePhase {
+	float: left;
+	width: 198px;
+}
+
+h3.snapPhase {
+	margin-left: 60px;
+}
+
+div.snapPhase {
+	margin-left: 10px;
+}
+
+div.individualActionDeclarations {
+	height: 60px;
+	margin-bottom: 15px;
+	clear: both;
+}
+
+div.individualActionDeclarations img {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-top: 5px;
+}
+
+div.individualActionDeclarations > input {
+	float: left;
+	width: 52px;
+	margin-left: 5px;
+}
+
+/* ---- ATTACK ---- */
+
+span.attackResult > div {
+	display: inline;
+}
+
+span.attackResult {
+	float: right;
+	text-align: right;
+	display: inline-block;
+}
+
+span.attackResult input {
+	margin: 0px 10px;
+}
+
+/* ---- APPLICATION WIDE FIXES ---- */
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+	border-color: orange;
+}
+
+textarea
+{
+   resize: none;
+}
+
+div.ui-effects-wrapper {
+	display:inline-block;
+}
+
+span.ui-button-icon-primary {
+	display: inline-block;
+}
+
+input[type=number] {
+	width: 48px;
+	text-align: right;
+}
+
+/* ---- MANEUVERS ---- */
+
+div.individualManeuver button.ui-button {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	margin-left: 5px;
+	padding: 0px;
+}
+
+div.individualManeuver textarea {
+	margin-left: 5px;
+	width: 285px;
+	margin-top: 0px;
+}
+
+div.partyManeuverDifficulty {
+	width: 785px;
+	margin-bottom: 5px;
+}
+
+div.partyManeuverDifficulty div.radio > label{
+	display: inline-block;
+}
+
+div.individualManeuver > div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.individualManeuver div.roll input {
+	width: 55px;
+	margin-left: 5px;
+}
+
+div.individualManeuver img {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+div.individualManeuver select {
+	width: 300px;
+}
+
+div.individualManeuver:first-child select {
+	height: 50px;
+	margin-top: -9px;
+}
+
+div.individualManeuver {
+	width: 810px;
+	height: 51px;
+	margin-bottom: 20px;
+}
+
+/* ---- CHARACTER STATUS ---- */
+
+div.characterStatus {
+	width: 540px;
+}
+
+fieldSet.sharedRowContainer div select{
+	width: 172px;
+}
+
+div.inline label {
+	padding-left: 6px;
+}
+
+fieldset.fieldsAndLabelsWithBorder span.ui-icon {
+	padding: 0px;
+}
+
+fieldSet.fieldsAndLabelsWithBorder label input {
+	margin-left: 8px;
+}
+
+fieldSet.fieldsAndLabelsWithBorder label:nth-of-type(n+2) {
+	margin-left: 12px;
+}
+
+fieldSet.rollToSave select { 
+	width: 100%;
+}
+
+fieldSet.rollToSave input {
+	vertical-align: middle;
+}
+
+fieldSet.rollToSave {
+	padding: 0px;
+	border: none;
+}
+
+fieldSet.rollToSave > form > button {
+	width: 24px;
+	height: 24px;
+	left: 1px;
+	vertical-align: middle;
+}
+
+fieldSet.spellPreparationStatus {
+	vertical-align: middle;
+	padding: 11px 0px 23px 0px;
+}
+
+div.characterAvatarListButtons button {
+	margin-left: 8px;
+	height: 20px;
+	width: 20px;
+	display:inline-block;
+}
+
+div.characterProfileButtons button {
+	height: 20px;
+	width: 20px;
+	display:block;
+	padding: 0px;
+}
+
+img.profileAvatar {
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+
+/* ---- SPELL FAILURE ---- */
+
+div.spellFailureResult {
+	width: 500px;
+}
+
+div.spellFailureResult textArea {
+	width: 90%;
+	height: 184px;
+        margin-bottom: 3px;
+}
+
+div.spellFailureTypes {
+	float:right;
+	width: 165px;
+}
+
+div.spellFailureInformation {
+  	width: 635px;
+}
+
+fieldset.noLeftPadding {
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+/* ---- CRITICALS ---- */
+
+div.criticalDamage p {
+	margin: 0px;
+}
+
+div.criticalDamage p span:last-child input {
+	margin-right: 0px;
+}
+
+div.criticalDamage label ~ input {
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+div.severities {
+	float: right;
+	width: 70px;
+}
+
+span.criticalInformation {
+	width: 390px;
+	display: inline-block;
+}
+
+div.criticalInformation {
+	width: 390px;
+}
+
+div.criticalInformation select, div.criticalInformation input:first-child {
+	width: 390px;
+    padding: 0;
+    border-width: 1px;
+    margin-bottom: 3px;
+}
+
+div.criticalResult{
+	width: 100%;
+}
+
+div.criticalResult *{
+	width: 100%;
+	height: 100px;
+}
+
+/* ---- RESTING ---- */
+
+div.recoveryPeriod {
+	height: 40px;
+	width: 320px;
+	padding-bottom: 0.75em;
+	padding-right: 0.87em;
+}
+
+div.recoveryPeriodTypes {
+	display: table;
+	width: 280px;
+}
+
+div.recoveryPeriodImage {
+	float: right;
+}
+
+div.recoveryPeriodImage img {
+	width: 40px;
+	height: 40px;
+}
+
+div.recoveryPeriodTypes div.radio > label { 
+	display: table-cell;
+	width:33%;
+	text-align: center;
+}
+
+/* ---- COMMON ELEMENTS ---- */
+
+div.inline {
+	display: table-cell;
+}
+
+fieldSet.willow {
+	display: block;
+	margin: 0px;
+	border: none;
+}
+
+form fieldset.willow input, form fieldset.willow select {
+	float: right;
+	margin-top: -3px;
+	margin-left: 10px;
+}
+
+form fieldset.willow  input[type="number"] {
+	text-align: right;
+	width: 60px;
+}
+
+form fieldset.willow  input[type="text"] {
+	width: 200px;
+}
+
+form fieldset.willow  select {
+	width: 204px;
+}
+
+form fieldset.willow {
+	border: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+fieldSet.fieldsAndLabels {
+	display: block;
+	margin: 0px;
+	border: none;
+}
+
+fieldSet.dialogBottom textArea{
+	display: inline;
+	width: 99%;
+	height: 80px;
+}
+
+div.floatRight{
+	float: right;
+}
+
+fieldSet.listContainer {
+	display: inherit;
+}
+
+fieldSet.listContainer select {
+	display: table-column;
+	width: 400px;
+	height: 75px;
+}
+
+fieldSet.listContainer div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+fieldSet.willow div select {
+	width: 100%
+}
+
+fieldSet.willow div.roll input {
+	width: 80%
+}
+
+fieldSet.willow div.roll span {
+	padding: 0px;
+}
+
+div.roll {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.roll > div {
+	display: inline-block;
+}
+
+input.roll {
+	vertical-align: middle;
+	width: 150px;
+}
+
+/* ---- CASTING RESISTED SPELLS ---- */
+
+div.forceSpellInformation {
+	width: 430px;
+	display: inline-block;
+}
+
+div.forceSpellInformation p {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+div.forceSpellInformation label ~ select {
+	margin-left: 10px;
+}
+
+div.forceSpellResistance {
+	float:right;
+	width: 260px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+fieldSet.distance { 
+	max-width: 350px;
+}
+
+fieldSet.distance div.radio > label { 
+	display: inline-block;
+	width: 49%;
+}
+
+div.forceSpellRealm { 
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+div.forceSpellRealm div.radio > label { 
+	display: table-cell;
+	width:42%;
+}
+
+div.forceSpellRealm div.radio > label:last-of-type { 
+	min-width: 97px;
+}

@@ -1,0 +1,1505 @@
+/* ---- HOW TO USE ---- */
+
+div.howToUse {
+	position: absolute;
+	width: 450px;
+	right: 10px;
+	top: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	border: 5px solid darkgoldenrod;
+	font-size: 12pt;
+	font-weight: normal;
+	z-index: 3;
+}
+
+div.howToUse:not(.minimized) > button {
+	display: none;
+}
+
+div.howToUse.minimized {
+	background: none;
+	border: 0px;
+	padding: 0px;
+	width: initial;
+}
+
+div.howToUse.minimized > button {
+	border: 5px solid darkgoldenrod;
+}
+
+div.howToUse.minimized p, div.howToUse.minimized > div {
+	display: none;
+}
+
+div.howToUse > div {
+	float: right;
+}
+
+/* ---- STEP BUTTONS ---- */
+
+div.stepButtons {
+	clear: both;
+	height: 2.5em;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+
+a.previousButton, a.nextButton {
+	width: 145px;
+}
+
+a.previousButton {
+	left: 5%;
+}
+
+a.nextButton {
+	position: absolute;
+	right: 5%;
+}
+
+/* ---- SECTION CONTAINER ---- */
+
+div.sectionsContainer {display: inline;}
+
+/* ---- STAT GENERATION ---- */
+
+fieldSet.statPoints p {
+	font-size: 1.2em;
+	color: orange;
+	text-align: center;
+}
+
+fieldSet.statPoints {
+	right: 50px;
+	width: 150px;
+	position: absolute;
+}
+
+fieldSet.statPoints td:last-child{
+	text-align: right;
+	width: 90px;
+}
+
+fieldSet.statPoints > div > span:only-child
+{
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 3px;
+}
+
+table.simpleStatGeneration {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.simpleStatGeneration td:first-child {
+	text-align: left;
+	font-weight: bold;
+	min-width: 150px;
+}
+
+table.simpleStatGeneration td {
+	text-align: center;
+	min-width: 90px;
+}
+
+table.simpleStatGeneration input {
+	width: 65px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+table.simpleStatGeneration button.ui-widget {
+	font-size: 0.9em;
+    padding: 7px 9px;
+}
+
+/* ---- INTERFACE ---- */
+
+div.eraInterface {
+	width: 100%;
+	height: 100%;
+} 
+
+html, body {
+	height: 98%;
+}
+
+/* ---- TO BE ORGANIZED ---- */
+
+td.rankAssignmentButton span {
+	padding: 0px;
+}
+
+td.rankAssignmentButton button {
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+    padding: 8px;
+}
+
+td.rankAssignmentButton {
+	width: 40px;
+	height: 24px;
+}
+
+td.rankAssignmentButton.ui-button {
+	width: 36px;
+    border: none;
+    padding: 2px 0px;
+    background: none;
+}
+
+td.rankAssignmentButton.ui-button span.ui-icon {
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 6px;
+}
+
+td.rankAssignmentButton.ui-button span.ui-icon:hover {
+	border: 1px solid #654b24;
+}
+
+td.rankAssignmentButton.ui-button:hover span.ui-icon {
+	color: #000;
+	background-image: url("Images/brownIcons.png");
+}
+
+div.characterName input {
+	margin-left: 5px;
+}
+
+div.characterName button {
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+div.characterName {
+	width: 20em;
+	height: 11%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+table.afterCharacterCreation {
+	width: 330px;
+}
+
+table.afterCharacterCreation td:first-child {
+	width: 50%;
+}
+
+table.afterCharacterCreation a.ui-button {
+	width: 140px;
+	padding: 5px;
+}
+
+div.languageSummaries p {
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+div.languageRankTable td, div.languageRankTable th {
+	font-size: 0.7em;
+	border: 1px solid #5C5C5C;
+}
+
+div.languageRankTable td:first-of-type {
+	text-align: center;
+	font-weight: bold;
+}
+
+div.languageRankTable th {
+	min-width: 20px;
+}
+
+div.languageRankTable table{
+	border-collapse:collapse;
+	height: 100%;
+	width: 100%;
+}
+
+div.languageRankTable {
+	float: right;
+    height: calc(100vh - 12em);
+	width: 68%;
+	overflow-y: auto;
+}
+
+td.languageButton span.button-small {
+	height: 16px;
+	width: 16px;
+	border: 1px solid #cbc7bd;
+    background-color: #f8f7f6;
+}
+
+td.nativeTongue span.button-small  {
+	background-image: url("Images/staryu.png");
+}
+
+span.ui-icon-close.button-small {
+	background-image: url("Images/cancel.png");
+}
+
+td.language {
+	font-size: 0.9em;
+}
+
+td.startingLanguage {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.languageCreation fieldSet {
+	display: inline-block;
+}
+
+div.languageCreation input {
+	margin-left: 5px;
+}
+
+div.languageCreation button {
+    height: 25px;
+    width: 51px;
+    cursor: pointer;
+    vertical-align: inherit;
+    padding: inherit;
+}
+
+div.languageCreation {
+	margin: 2px;
+}
+
+div.selectedLanguages span.button-small {
+	height: 16px;
+	width: 16px;
+}
+
+span.languageRanks {
+	width: 24px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+div.selectedLanguages table {
+	width: 100%;
+}
+
+div.selectedLanguages th:nth-child(1), div.selectedLanguages td:nth-child(1) {
+	width: 5%;
+}
+
+div.selectedLanguages th:nth-child(2), div.selectedLanguages td:nth-child(2) {
+	width: 50%;
+}
+
+div.selectedLanguages th:nth-child(3), div.selectedLanguages td:nth-child(3), div.selectedLanguages th:nth-child(4), div.selectedLanguages td:nth-child(4)  {
+	width: 20%;
+	text-align: center;
+}
+
+div.selectedLanguages th:nth-child(5), div.selectedLanguages td:nth-child(5) {
+	width: 5%;
+}
+
+div.selectedLanguages {
+	height: 90%;
+	margin: 2px;
+}
+
+div.languages {
+    height: calc(100vh - 12em);
+	width: 32%;
+	float: left;
+}
+
+fieldSet.smallPanel {
+	text-align: center;
+}
+
+.incompleteAssignment {
+	color: red;
+    font-style: inherit;
+}
+
+fieldSet.characterCreationPanel > div {
+	height: 100%;
+	overflow-y: auto;
+}
+
+fieldSet.characterCreationPanel table th {
+	text-align: left;
+}
+
+fieldSet.characterCreationPanel table {
+	width: 100%;
+}
+
+fieldSet.bigPanel, fieldSet.bigPanelWithButtons {
+	vertical-align: top;
+    height: calc(100vh - 12em);
+}
+
+fieldSet.bigPanel {
+	width: 24%;
+}
+
+fieldSet.bigPanelWithButtons {
+	width: 32%;
+}
+
+div.developmentChoice fieldSet.bigPanel, div.developmentChoice fieldSet.bigPanelWithButtons {
+    height: calc(100vh - 23em);
+}
+
+fieldSet.characterCreationPanel {
+	display: inline-block;
+}
+
+div.panelContainer {
+	display: inline;
+}
+
+div.combatStyleCost input{
+	text-align: right;
+}
+
+td.combatStyleName {
+	width: 200px;
+}
+
+div.createdCombatStyles button {
+	height: 14px;
+	width: 14px;
+    padding: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+div.createdCombatStyles {
+	height: 45%;
+	width: 22%;
+	float: right;
+}
+
+div.fieldAfterField {
+	display: inline;
+}
+
+div.fieldAfterField label {
+	margin-left: 25px;
+}
+
+div.combatStyle fieldSet {
+	padding-bottom: 10px;
+	width: 45%;
+	display: inline-block;
+}
+
+div.combatStyle textArea {
+	width: 98%;
+	height: 89px;
+}
+
+div.combatStyle input, div.combatStyle select {
+	margin-left: 15px;
+    max-width: 320px;
+}
+
+div.combatStyle input[type=number] {
+	width: 45px;
+	text-align: right;
+}
+
+div.combatStyle > form > div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div.combatStyle > form > div > button {
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+div.combatStyle {
+	float: left;
+	width: 75%;
+	padding: 0px 10px;
+}
+
+fieldSet.baselineCosts {
+	text-align: center;
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+fieldSet.baselineCosts legend{
+	text-align: left;
+}
+
+fieldSet.baselineCosts table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+fieldSet.baselineCosts th, fieldSet.baselineCosts td{
+	width: 80px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+fieldSet.baselineCosts div.baselineCost {
+	border: 2px solid black;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: move;
+}
+
+span.baselineConcept {
+	display: none;
+}
+
+h4.unavailableInnateStatAbilitiesByGroup {
+	font-weight: normal!important;
+	color: grey!important;
+}
+
+h1.unavailableInnateStatAbilitiesByStat {
+	font-weight: normal;
+	color: grey;
+}
+
+div.selectedInnateStatAbility {
+	font-weight: bold;
+}
+
+div.innateStatAbility {
+	width: 100%;
+	text-align: justify;
+}
+
+div.unavailableInnateStatAbility > span {
+	font-style: italic;
+	color: grey;
+}
+
+div.availableInnateStatAbility > span {
+	padding-left: 5px;
+}
+
+div.availableInnateStatAbility button {
+	height: 20px;
+	width: 20px;
+    padding: 10px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+div.innateStatAbilities {
+	margin-left: 5%;
+	width: 90%;
+}
+
+div.innateStatAbilitiesByStat {
+	width: 99%;
+}
+
+div.innateStatAbilitiesByStat > div{
+	height: 100%!important;
+}
+
+div.developmentChoices {
+	height: calc(100vh - 14em);
+	width: 15%;
+	float: left;
+}
+
+div.developmentChoices select {
+	width: 100%;
+	overflow: auto;
+}
+
+div.developmentChoices select:first-child {
+	height: 100%;
+}
+
+div.developmentChoices > fieldset.filteredOptions {
+  padding-top: 0px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 6px;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+
+div.developmentChoices > select:only-child {
+	height: calc(100vh - 12.5em);
+}
+
+div.developmentChoices:not(.singleFilter) > fieldset.filteredOptions {
+	height: 5em;
+}
+
+div.developmentChoices.singleFilter > div.filteredOptions:nth-child(2) {
+	height: calc(100vh - 15.5em);
+}
+
+div.developmentChoices > div.filteredOptions:nth-child(2) {
+	height: calc(100vh - 17.5em);
+}
+
+div.developmentChoices > div.filteredOptions:nth-child(3) {
+	height: calc(100vh - 19.5em);
+}
+
+div.developmentChoices > fieldset.filteredOptions > input.filteredOptions {
+	width: 98%;
+	margin-top: 2px;
+}
+
+span.optionCategory {
+    font-size: smaller;
+    font-weight: normal;
+	float: right;
+	margin-right: 16px;
+    margin-top: 4px;
+    opacity: 0.6;
+}
+
+table.statAssignments td.innateStatAbilities {
+	text-align: center;
+}
+
+table.statAssignments td.statBonus {
+	text-align: right;
+}
+
+table.statAssignments div.nonEmptyValue span {
+	vertical-align: top;
+}
+
+table.statAssignments div.nonEmptyValue div.statIncreaseButtons {
+	width: 50px;
+	display: inline-block;
+}
+
+table.statAssignments div.nonEmptyValue div.statIncreaseButtons span {
+	padding: 0px;
+}
+
+table.statAssignments div.nonEmptyValue div.statIncreaseButtons button {
+	height: 20px;
+	width: 20px;
+	padding: 10px;
+    vertical-align: top;
+	cursor: pointer;
+}
+
+span.assignmentIndex {
+	display: none;
+}
+
+table.statAssignments {
+	margin-left: 6%;
+	list-style-type: none;
+}
+
+table.statAssignments div.invalidStatAssignment  {
+	color: red;
+}
+
+table.statAssignments div.emptyValue  {
+	border: 2px solid #F1F1F1;
+}
+
+table.statAssignments div.nonEmptyValue  {
+	text-align: right;
+	border: 2px solid grey;
+	cursor: move;
+}
+
+table.statAssignments div.assignmentValue  {
+	width: 210px;
+	height: 22px;
+	padding: 3px;
+}
+
+table.statAssignments td.statAssignmentName  {
+	width: 130px;
+	padding-left: 20px;
+}
+
+table.statAssignments td.totalBonus {
+	width: 84px;
+}
+
+table.statAssignments td.racialBonus {
+	width: 40px;
+}
+
+table.statAssignments span.tempAndPotBonus {
+	width: 88px;
+	display: inline-block;
+}
+
+table.statAssignments td {
+	padding: 2px;
+}
+
+div.statGenerationSummary {
+	float: right;
+	width: 31%;
+}
+
+div.statGenerationSummary span{
+	font-weight: bold;
+}
+
+div.statGenerationSummary fieldSet {
+	height: 83px;
+}
+
+fieldSet.potentials {
+	width: 65%;
+	float: left;
+    margin-bottom: 50px;
+}
+
+div.selectedTemporaries {
+	margin-left: 292px;
+}
+
+fieldSet.statSequences {
+	min-height: 64px;
+	padding: 0px;
+	margin: 5px;
+	border: none;
+}
+
+fieldSet.statSequences th.statSequence {
+	min-width: 384px;
+}
+
+fieldSet.statSequences th.statSequenceSum {
+	width:91px;
+}
+
+fieldSet.statSequences td.statSequenceSum {
+	text-align: right;
+	font-weight: bold;
+}
+
+fieldSet.statSequences button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    vertical-align: top;
+}
+
+div.statRoll form {
+	display: inline;
+}
+
+div.statRoll>div>span {
+	display: inline-block;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+div.statRoll>div {
+	margin-top: 11px;
+	margin-left: 10px;
+	display: inline;
+}
+
+div.statRoll label {
+	margin-left: 10px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+div.statRoll input{
+	text-align: right;
+	font-weight: bold;
+}
+
+div.statRoll button:first-of-type {
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	margin-top: -4px;
+}
+
+div.statRoll button.ui-button:nth-of-type(2) {
+	height: 30px;
+	margin-top: -5px;
+	padding: 1px 10px;
+}
+
+div.currentTemporaries {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-radius: 20px;
+}
+
+div.currentTemporaries>span {
+	height: 24px;
+	width: 331px;
+}
+
+.primeStat {
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.characterSummary {
+	border: 2px grey solid; 
+	min-height: 2em;
+}
+
+div.characterSummary h3 {
+    margin-top: 0.3em;
+}
+
+/* ---- BACKGROUND ---- */
+
+table.backgroundOptionsSummary {
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-left: 89px;
+	font-style: italic;
+}
+
+table.backgroundOptionsSummary td {
+	padding-right: 5px;
+}
+
+table.backgroundOptionsSummary span {
+	display: list-item;
+	list-style: disc inside;
+}
+
+fieldSet.customBackgroundOption div.customBackgroundCost {
+	display: inline;
+	text-align: right;
+	padding-left: 4px;
+	padding-left: 2px;
+}
+
+fieldSet.customBackgroundOption button {
+	height: 24px;
+	width: 24px;
+	margin-left: 5px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+div.backgroundExpenditure span {
+	margin-right: 2px;
+}
+
+div.backgroundExpenditure {
+	text-align: right;
+}
+
+div.backgroundExpenditure input {
+	text-align: right;
+	font-weight: bold;
+}
+
+div.backgroundExpenditure label {
+	font-weight: bold;
+}
+
+div.purchasedBackgroundOptions div.backgroundExpenditure {
+	height: auto;
+	margin-bottom: 5px;
+	margin-left: 2px;
+}
+
+td.purchasedBackgroundName {
+	width: 207px;
+}
+
+tr.purchasedBackgroundOption button {
+	height: 14px;
+	width: 14px;
+    padding: 10px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+div.purchasedBackgroundOptions {
+	float: right;
+	margin-right: 1%;
+	width: 31%;
+	height: 50%;
+}
+
+form.backgroundOptionPurchase {
+	float: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+form.backgroundOptionPurchase div {
+	display: inline;
+}
+
+form.backgroundOptionPurchase label {
+	margin-left: 10px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+form.backgroundOptionPurchase input {
+	text-align: right;
+	font-weight: bold;
+}
+
+form.backgroundOptionPurchase button {
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	cursor: pointer;
+    vertical-align: top;
+}
+
+div.developmentChoice div.backgroundOption fieldset {
+	text-align: justify;
+    height: 12em;
+    overflow: auto;
+}
+
+/* ---- RACE ---- */
+
+td.resistanceBonus {
+	width: 35px;
+}
+
+fieldSet.raceProgressions {
+    width: 17em;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+fieldSet.raceResistances {
+    width: 9em;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+fieldSet.raceResistances > span:first-of-type{
+	display: block;
+    text-align: center;
+}
+
+fieldSet.raceDescription {
+    height: calc(100vh - 31.5em);
+}
+
+fieldSet.professionDescription {
+    height: 5em;
+}
+
+fieldSet.upbringingDescription {
+    width: 95%;
+    text-align: justify;
+}
+
+fieldSet.upbringingDescription div {
+    overflow: auto;
+    height: 100%;
+}
+
+fieldSet.upbringingDescription p {
+	margin-top: 6px;;
+    width: 99%;
+}
+
+td.statName {
+	width: 7em;
+}
+
+td.statBonus {
+    text-align: right;
+    width: 2em;
+}
+
+fieldSet.statBonuses {
+	width: 9em;
+    display: inline-block;
+    float: left;
+}
+
+fieldSet.baseSpellLists {
+    float: left;
+    width: 11em;
+    height: calc(100vh - 23em);
+    overflow: auto;
+}
+
+div.sampleImage {
+	float: right;
+	margin-right: 1%;
+	width: 33%;
+}
+
+div.sampleImage img {
+	width: 100%;
+	height: auto;
+}
+
+div.developmentChoice div.allButSampleImage {
+	float: left;
+	width: 66%;
+	max-height: 100%;
+}
+
+div.developmentChoices + div.developmentChoice {
+	margin-left: 16%;
+}
+
+div.developmentChoice {
+	height: calc(100vh - 12em);
+	overflow: hidden;
+}
+
+div.developmentChoice.backgroundOption {
+    height: 17em;
+    overflow: hidden;
+}
+
+div.developmentChoice h2, h3 {
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+textarea
+{
+   resize: none;
+}
+
+/*---- DIALOGS ----*/
+
+
+div.ui-dialog.ui-front
+{
+	border-color: #a99880;
+}
+
+/*---- RMU STATS ----*/
+
+
+fieldset.rollWithIgnored
+{
+	margin-bottom: 2em;
+}
+
+fieldset.rollWithIgnored > span
+{
+	margin-right: 2em;
+}
+
+fieldset.rollWithIgnored > span:last-of-type
+{
+	margin-left: 1em;
+}
+
+fieldset.rollWithIgnored > form
+{
+	display: inline;
+}
+
+fieldset.rollWithIgnored button
+{
+	margin-top: -2px;
+}
+
+fieldset.rollWithIgnored button:first-of-type
+{
+	height: 28px;
+	width: 28px;
+	margin-left: 1px;
+}
+
+table.singleColumnStatAssignments td:nth-child(2)
+{
+	height: 40px;
+	max-width: 170px;
+}
+
+table.singleColumnStatAssignments div.assignmentValue
+{
+	cursor: move;
+	width: 170px;
+}
+
+/*---- BACKGROUND OPTION TABLES ----*/
+
+
+div.backgroundOptionTables
+{
+	text-align: center;
+	font-size: 0.85em;
+}
+
+table.backgroundOptionTable.ui-widget
+{
+	width: 20%;
+	display: inline-table;
+	font-size: 0.85em;
+}
+
+/*---- PROFESSION SPELLS ----*/
+
+
+a.professionSpellList
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*---- SPELL LIST DIALOG ----*/
+
+
+div.professionSpellList
+{
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+div.selectedSpellDescription
+{
+	width: 435px;
+	text-align: justify;
+	padding: 3px;
+}
+
+div.selectedSpellDescription > span.selectedSpellDescription
+{
+	margin-bottom: 0.2em;
+	margin-right: 0.5em;
+	display: block;
+	font-size: medium;
+}
+
+span.spellListName
+{
+	display: inline-block;
+	text-align: center;
+	font-size: larger;
+	width: 100%;
+	margin-bottom: 0.2em;
+}
+
+/*---- SPELL DETAILS ----*/
+
+
+table.spellDetails
+{
+	width: 444px;
+}
+
+table.spellDetails th
+{
+	font-size: smaller;
+}
+
+table.spellDetails th.spellLevel ,
+table.spellDetails td.spellLevel
+{
+	width: 21px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+table.spellDetails th.spellName ,
+table.spellDetails td.spellName
+{
+	width: 200px;
+	text-align: left;
+}
+
+table.spellDetails span.spellData
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails th.spellParameters ,
+table.spellDetails td.spellParameters
+{
+	width: 199px;
+	text-align: center;
+}
+
+table.spellDetails td.spellParameters
+{
+	font-size: smaller;
+}
+
+/*---- CUSTOM PROFESSION ----*/
+
+
+form.customProfession
+{
+	width: 600px;
+	display: inline-block;
+}
+
+fieldset.customProfession
+{
+	width: 220px;
+	display: inline-block;
+}
+
+fieldset.customProfession:first-of-type
+{
+	width: 300px;
+	float: right;
+}
+
+fieldset.customProfession > select.customProfession
+{
+	width: 100%;
+}
+
+button.customProfession.ui-button
+{
+	font-size: 11pt;
+	margin-left: 20px;
+	margin-top: -4px;
+	padding: 4px 10px;
+}
+
+form.customProfession table
+{
+	margin: auto;
+	font-size: 1.1em;
+}
+
+form.customProfession td:nth-child(1)
+{
+	width: 80%;
+}
+
+form.customProfession td:nth-child(2)
+{
+	height: 40px;
+	max-width: 60px;
+	text-align: center;
+}
+
+form.customProfession div.assignmentValue
+{
+	cursor: move;
+	width: 60px;
+}
+
+/*---- RMU/NAVIGATOR PROFESSIONS ----*/
+
+
+fieldset.professionalSkillPanel
+{
+	width: 33%;
+	height: calc(100vh - 23em);
+}
+
+fieldset.professionalSkillPanel td.rankAssignmentButton
+{
+	width: 24px;
+}
+
+td.professionalRankBonus > span
+{
+	width: 70px;
+	display: inline-block;
+}
+
+td.professionalKnackBonus > input
+{
+	width: 45px;
+	text-align: right;
+}
+
+td.professionalCost
+{
+	text-align: center;
+}
+
+fieldset.professionalCost
+{
+	width: 25.5%;
+}
+
+fieldset.professionalCostWithBonus
+{
+	width: 60%;
+	float: left;
+}
+
+fieldset.professionalCost ,
+fieldset.professionalCostWithBonus
+{
+	margin-right: 12px;
+	margin-bottom: 8px;
+	overflow: auto;
+}
+
+fieldset.professionalCost table.ui-widget ,
+fieldset.professionalCostWithBonus table.ui-widget
+{
+	padding: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	border-collapse: separate;
+	margin-bottom: 3px;
+	font-size: 0.85em;
+}
+
+fieldset.professionalCost table.ui-widget th ,
+fieldset.professionalCostWithBonus table.ui-widget th
+{
+	text-align: center;
+}
+
+fieldset.professionalSkillPanel + fieldset.upbringingDescription
+{
+	width: 61%;
+	height: 11.5vh;
+}
+
+/*---- SPELL USING STYLES ----*/
+
+
+span.spellCastingConcept
+{
+	display: none;
+}
+
+fieldset.spellCastingCosts
+{
+	text-align: center;
+}
+
+fieldset.spellCastingCosts legend
+{
+	text-align: left;
+}
+
+fieldset.spellCastingCosts table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+fieldset.spellCastingCosts th ,
+fieldset.spellCastingCosts td
+{
+	width: 130px;
+}
+
+fieldset.spellCastingCosts div.spellCastingCost
+{
+	border: 2px solid black;
+	width: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: move;
+}
+
+/*---- CULTURE ----*/
+
+
+fieldset.cultureRanksSection
+{
+	height: calc(100vh - 26em);
+	width: 44%;
+	margin-right: 12px;
+	margin-bottom: 8px;
+	overflow: auto;
+}
+
+fieldset.cultureRanksSection table
+{
+	width: 95%;
+}
+
+fieldset.cultureRanksSection table td:last-child
+{
+	text-align: right;
+}
+
+fieldset.cultureRankAssignmentSection
+{
+	height: calc(100vh - 15.5em);
+	overflow: auto;
+	margin-right: 16px;
+	margin-left: 0;
+	width: 49%;
+	float: left;
+}
+
+fieldset.cultureRankAssignmentSection table td:nth-child(2)
+{
+	min-width: 70px;
+}
+
+fieldset.hobbyRankAssignmentSection
+{
+	height: calc(100vh - 15.5em);
+	overflow: auto;
+	margin-right: 16px;
+	margin-left: 16px;
+}
+
+fieldset.cultureDescription
+{
+	width: 44%;
+	text-align: justify;
+	height: 9em;
+}
+
+fieldset.cultureDescription div.cultureDescription
+{
+	overflow: auto;
+	height: 100%;
+}
+
+fieldset.cultureDescription div.cultureDescription p
+{
+	margin-top: 6px;
+	margin-right: 12px;
+}
+
+fieldset.cultureRankAssignmentSection table.ui-widget ,
+fieldset.hobbyRankAssignmentSection table.ui-widget
+{
+	padding: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	border-collapse: separate;
+	margin-bottom: 3px;
+	width: 100%;
+	font-size: 0.85em;
+}
+
+fieldset.outfittingSection.ui-widget
+{
+	overflow: auto;
+	height: calc(100vh - 26.5em);
+	width: 44%;
+	margin-bottom: 16px;
+}
+
+fieldset.outfittingSection.ui-widget div.radio
+{
+	border-radius: 10px;
+	margin-bottom: 6px;
+	padding: 3px;
+	font-size: 0.9em;
+}
+
+fieldset.outfittingSection div.radio > label
+{
+	display: block;
+	margin-bottom: 2px;
+}
+
+tr.characterSkillCategory
+{
+	border: 1px solid #654b24;
+	border-radius: 5px;
+}
+
+tr.characterSkill
+{
+	background-color: white;
+}
+
+tr.characterSkillCategory td:first-child
+{
+	font-size: initial;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+tr.characterSkill td:first-child
+{
+	padding-left: 12px;
+}
+
+tr.characterSkillCategory td:not(:first-child) ,
+tr.characterSkill td:not(:first-child)
+{
+	text-align: center;
+}
+
+tr.characterSkillCategory button.ui-button
+{
+	margin-left: 16px;
+	padding: 0px 8px;
+	font-size: 0.8em;
+	vertical-align: top;
+}
+
+tr.characterSkillCategory span.cultureRanksAssigned ,
+tr.characterSkill span.cultureRanksAssigned
+{
+	width: 24px;
+	display: inline-block;
+}
+
+span.roomForButton
+{
+	display: inline-block;
+	visibility: hidden;
+}
+
+tr.characterSkillCategory span.button-small ,
+tr.characterSkill span.button-small ,
+span.roomForButton
+{
+	height: 16px;
+	width: 16px;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+span.ui-icon-plusthick.button-small
+{
+	background-image: url("Images/plus.png");
+}
+
+span.ui-icon-minusthick.button-small
+{
+	background-image: url("Images/minus.png");
+}

@@ -1,0 +1,398 @@
+table.armorTypeTable
+{
+	width: 170px;
+	margin-left: 25px;
+}
+
+table.armorTypeTable tr:first-child
+{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+body
+{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+img.characterAvatar
+{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+	margin-right: 20px;
+}
+
+table.defensesTable
+{
+	width: 210px;
+	margin-left: 45px;
+}
+
+body ,
+table
+{
+	font-variant-caps: petite-caps;
+	font-family: sans-serif;
+	font-size: 11pt;
+}
+
+span.groupingElement
+{
+	font-weight: bold;
+	display: inline-block;
+}
+
+td.languageColumn
+{
+	width: 60px;
+}
+
+div.leftColumn
+{
+	float: left;
+	width: 275px;
+	margin-top: 8px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+div.mainColumn
+{
+	display: inline-block;
+	width: 475px;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-bottom: 0px;
+}
+
+span.narrowSectionHeader ~ div.coinAmount
+{
+	margin-top: 15px;
+}
+
+div.coinAmount span.coinDigit
+{
+	display: inline-block;
+	width: 20px;
+	margin-left: 15px;
+	border-top-width: 1px;
+	border-top-color: black;
+	border-top-style: solid;
+}
+
+span.narrowSectionHeader ~ div.coinType
+{
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+div.coinType span.coinDigit
+{
+	display: inline-block;
+	margin-left: 17px;
+	width: 18px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+}
+
+div.nameHeader
+{
+	height: 100px;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.characterName
+{
+	font-size: 28pt;
+	font-kerning: none;
+	font-weight: bold;
+	font-family: serif;
+    max-height: 74px;
+}
+
+div.playerName
+{
+	margin-left: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+div.narrowDualSection
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.printableSheetSection
+{
+	padding: 5px 10px;
+	margin-bottom: 11px;
+	border-top-width: 6px;
+	border-top-style: ridge;
+	border-top-color: rgb(212,212,212);
+	border-top-left-radius: 20px;
+}
+
+span.narrowSectionHeader
+{
+	top: -20px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	height: 4px;
+}
+
+span.narrowSectionHeaderText
+{
+	font-family: serif;
+	font-size: 14pt;
+	background: white;
+	font-weight: bold;
+	padding: 0px 10px;
+}
+
+span.narrowSectionHeader ~ *
+{
+	margin-top: -16px;
+}
+
+span.nonGroupingElement
+{
+	margin-left: 20px;
+}
+
+@media all and (min-width: 1080px)
+{
+	div.pageContent:not(:empty)
+	{
+		box-shadow: 15px 15px 16px 2px rgba(0,0,0,0.2);
+		border-width: 1px;
+		border-style: solid;
+		border-color: lightgrey;
+		padding: 15px;
+		width: 1030px;
+		min-height: 1030px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media print
+{
+	div.pageContent
+	{
+		break-after: always;
+		page-break-after: always;
+		border: 0px;
+		padding: 0px;
+		margin: 5px 0px 0px 0px;
+		width: initial;
+	}
+}
+
+td.resistanceColumn
+{
+	width: 65px;
+}
+
+div.rightColumn
+{
+	float: right;
+	width: 275px;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-bottom: 0px;
+}
+
+span.runningTotalLabel
+{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+span.runningTotalField
+{
+	width: 60px;
+}
+
+td.skillColumn
+{
+	width: 60px;
+}
+
+td.statColumn
+{
+	width: 50px;
+}
+
+table
+{
+	width: 100%;
+}
+
+td:nth-child(n+2)
+{
+	text-align: center;
+}
+
+table.informationTable td:nth-child(n+2)
+{
+	text-align: right;
+}
+
+div.wideDualSection:not(:only-of-type)
+{
+	display: inline-block;
+	width: 510px;
+	vertical-align: top;
+}
+
+div.wideDualSection:not(:only-child) table.wideSection
+{
+	width: 510px;
+}
+
+div.wideDualSection:not(:first-child)
+{
+	margin-left: 8px;
+}
+
+table.wideSection th
+{
+	padding: 0px;
+	border-top-width: 6px;
+	border-top-color: rgb(212,212,212);
+	border-top-style: ridge;
+}
+
+table.wideSection th:first-of-type
+{
+	border-top-left-radius: 20px;
+}
+
+span.wideSectionHeader
+{
+	position: relative;
+	font-family: serif;
+	font-size: 14pt;
+	background: white;
+	font-weight: bold;
+	padding: 0px 10px;
+	top: -14px;
+}
+
+table.wideSection
+{
+	clear: both;
+	border-collapse: separate;
+	border-spacing: 0px;
+	width: 1030px;
+	margin-left: 2px;
+	margin-top: 0px;
+}
+
+table.wideSection td:not(:only-child)
+{
+	padding-top: 4px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: groove;
+}
+
+table.wideSection td:not(:first-child)
+{
+	border-left: 1px dotted rgb(212,212,212);
+}
+
+table.wideSection th::before ,
+table.wideSection th::after
+{
+	content: "";
+	position: relative;
+	bottom: 19px;
+	width: 2px;
+	height: 6px;
+	margin-top: -6px;
+	background: white;
+	display: block;
+}
+
+div.checkedPlayerKeptRecord > span
+{
+	font-size: 2em;
+    margin-right: 4px;
+}
+
+div.checkedPlayerKeptRecord > span:after
+{
+	content: "\25C7";
+}
+
+
+div.checkedPlayerKeptRecord > span.checked:after
+{
+	content: "\25C8";
+}
+
+div.milestonePlayerKeptRecord > span:not(.milestone)
+{
+	font-size: 0.94em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.milestonePlayerKeptRecord > span:after
+{
+	content: "\25A1";
+}
+
+div.milestonePlayerKeptRecord > span.checked:after
+{
+	content: "\25A0";
+}
+
+div.milestonePlayerKeptRecord > span.milestone
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.milestonePlayerKeptRecord > span.milestone:after
+{
+	content: "\2B1C";
+	font-size: 1em;
+}
+
+div.milestonePlayerKeptRecord > span.milestone > div
+{ 
+	position: absolute;
+    text-align: center;
+    width: 2em;
+    padding-top: 0.5em;
+    font-size: 0.7em;
+}
+
+
+div.milestonePlayerKeptRecord > span.milestone.checked
+{
+	color: white;
+}
+
+div.milestonePlayerKeptRecord > span.milestone.checked:after
+{
+	content: "\2B1B";
+	font-size: 1em;
+}

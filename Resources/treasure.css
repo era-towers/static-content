@@ -1,0 +1,43 @@
+/*---- SEMANTIC UI ROLL ----*/
+
+
+.ui.input input.roll ,
+.ui.input input.roll:focus
+{
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0.6))), url("Images/rollDice.png") no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background-size: contain;
+	background-position: left;
+	text-align: right;
+	max-width: 80px;
+}
+
+i.icon.roll-random
+{
+	background-image: url("Images/butterfly.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+/*---- TREASURE ENTRY ----*/
+
+
+div.list div.list i.icon.treasure-entry
+{
+	background-image: url("Images/treasure-entry.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*---- STARTING TABLE ----*/
+
+
+body > div.ui.segment > div.fields
+{
+	margin-bottom: 0px;
+}

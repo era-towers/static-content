@@ -1,0 +1,79 @@
+/*---- STRATEGIC MOVEMENT ----*/
+
+
+fieldset.strategicMovement
+{
+	float: right;
+	width: 310px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+fieldset.strategicMovement label
+{
+	display: inline-block;
+	width: 50%;
+	margin-top: 0.2em;
+	margin-bottom: 0.7em;
+	font-size: 0.9em;
+}
+
+fieldset.strategicMovement input ,
+fieldset.strategicMovement select
+{
+	float: right;
+}
+
+fieldset.strategicMovement select
+{
+	width: 149px;
+}
+
+fieldset.strategicMovement input
+{
+	width: 70px;
+	text-align: right;
+	padding: 0px 10px;
+}
+
+/*---- MAP SELECTION ----*/
+
+
+form.mapSelection
+{
+	display: inline;
+	height: 100%;
+}
+
+form.mapSelection > div
+{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: underline;
+}
+
+form.mapSelection input
+{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/*---- MAP ----*/
+
+
+fieldset.journeyMap
+{
+}
+
+fieldset.journeyMap img
+{
+	width: 100%;
+}

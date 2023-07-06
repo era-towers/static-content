@@ -1,0 +1,1590 @@
+/* ---- INFORMATION ---- */
+
+fieldset.characterTrainingPackages {
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-left: 5px;
+	min-height: 160px;
+}
+
+fieldset.characterDescription {
+	margin-right: 0px;
+	margin-left: 5px;
+	height: 160px;
+}
+
+fieldset.characterDescription label {
+	display: inline-block;
+	width: 50%;
+	margin-top: 0.2em;
+	margin-bottom: 0.7em;
+}
+
+fieldset.characterDescription input {
+	float: right;
+}
+
+fieldset.characterDescription input[type="number"] {
+	text-align: center;
+}
+
+fieldset.characterNotes {
+	margin-right: 1vw;
+	margin-left: 0vw;
+	width: 51vw;
+	float: left;
+}
+
+fieldset.characterNotes textArea {
+	height: 75vh;
+	width: 98%;
+	resize: none;
+}
+
+fieldset.characterNotes + div {
+	display: inline-block;
+    width: 42vw;
+}
+
+/* ---- DEFENSES ---- */
+
+table.armorComposition tr td input {
+	width: 70%;
+	text-align: right;
+}
+
+table.armorComposition tr:last-child {
+	font-weight: bold;
+	height: 50px;
+}
+
+table.armorComposition tr:last-child td {
+	border: none;
+}
+
+table.armorComposition {
+	font-size: 0.85em;
+	border-collapse: collapse;
+}
+
+table.armorComposition tr th[rowspan="2"]:not(:first-child) , table.armorComposition tr td:not(:first-child) {
+	text-align: center;
+	width: 58px;
+}
+
+ table.armorComposition tr th[rowspan="2"]:first-child, table.armorComposition tr td:first-child {
+	width: 90px;
+}
+
+table.armorComposition th.firstArmorBonus,
+table.armorComposition tr:not(:last-child) td.firstArmorBonus {
+	border-left: 2px solid black;
+}
+
+form fieldset.willow input, form fieldset.willow select {
+	float: right;
+	margin-top: -3px;
+	margin-left: 10px;
+}
+
+form fieldset.willow  input[type="number"] {
+	text-align: right;
+	width: 60px;
+}
+
+form fieldset.willow  input[type="text"] {
+	width: 200px;
+}
+
+form fieldset.willow  select {
+	width: 204px;
+}
+
+form fieldset.willow {
+	border: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+form.defensiveModifications select {
+	width: 95%;
+}
+
+form.defensiveModifications > span {
+	font-size: 0.8em;
+}
+
+form.defensiveModifications button.ui-button {
+	width: 96px;
+}
+
+fieldset.defenses input[type="number"] {
+	width: 40px;
+	text-align: right;
+}
+
+span.defensiveModificationsButton, span.armorCompositionButton {
+	display: inline-block;
+	background-repeat: no-repeat, repeat;
+	background-size: contain;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: text-top;
+	margin-top: -2px;
+	margin-right: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+fieldset.defenses span.armorCompositionButton {
+	background-image: url("Images/visored-helm.png");
+}
+
+fieldset.defenses span.defensiveModificationsButton  {
+	background-image: url("Images/shield-echoes.png");
+}
+
+span.defensiveModificationsButton:hover, span.armorCompositionButton:hover {
+	border: 1px solid black;
+}
+
+fieldset.defenses div.defenseLine  {
+	margin-bottom: 10px;
+}
+
+fieldset.defenses div.defenseLine div {
+	display: inline-block;
+	float: right;
+}
+
+fieldset.defenses table {
+	margin-top: 10px;
+	font-size: 0.9em;
+}
+
+fieldset.defenses table thead {
+	font-size: 0.9em;
+}
+
+fieldset.defenses table td:not(:first-child) {
+	text-align: center;
+}
+
+fieldset.defenses table td:last-child {
+	font-weight: bold;
+}
+
+/* ---- CHARACTERISTICS PANELS ---- */
+
+div.characteristicsLeftPanel {
+	float: left;
+}
+
+/* ---- ABILITIES ---- */
+
+fieldset.abilities span {
+	float: left;
+	margin-top: -13px;
+	font-size: 0.8em;
+}
+
+fieldset.abilities {
+	margin-top: 8px;
+	width: 274px;
+	margin-right: 5px;
+	margin-left: 0px;
+	margin-bottom: 2em;
+}
+
+fieldset.abilities label {
+	display: inline-block;
+	width: 13em;
+	height: 28px;
+	font-size: 0.9em;
+}
+
+fieldset.abilities input, fieldset.abilities select {
+	float: right;
+	margin-left: 10px;
+	display: inline-block;
+	width: 50%;
+}
+
+fieldset.abilities input[type="checkbox"] {
+	margin-top: 2px;
+    width: 18px;
+    margin-right: 16px;
+}
+
+fieldset.abilities select {
+	margin-top: -3px;
+	width: 49px;
+}
+
+fieldset.abilities input[type="number"] {
+	width: 2.5em;
+	margin-top: -3px;
+	text-align: right;
+}
+
+/* ---- AVATAR AND ENERGY ---- */
+
+form.magicalEnergy  > div {
+	border-top: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 2px;
+	padding-top: 1px;
+}
+
+form.magicalEnergy input {
+	text-align: right;
+    width: 50px;
+    margin-right: 10px;
+}
+
+form.magicalEnergy span:first-child, form.magicalEnergy label {
+	margin-right: 10px;
+}
+
+div.avatarAndEnergy span.powerPointModificationsButton:hover {
+	border: 1px solid black;
+}
+
+div.avatarAndEnergy span.powerPointModificationsButton {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: text-top;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+	background-image: url("Images/fairy-wand.png");
+}
+
+div.avatarAndEnergy img {
+	float: left;
+	border-radius: 5px;
+	margin-left: 2px;
+	width: 100px;
+	height: 100px;
+}
+
+div.avatarAndEnergy div {
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+div.avatarAndEnergy > span {
+	margin-left: 6px;
+	margin-top: 3px;
+}
+
+div.avatarAndEnergy > div {
+	display: inline-block;
+}
+
+div.avatarAndEnergy {
+	width: 300px;
+	min-height: 170px;
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+form.characterAvatarSelection {
+	display: inline;
+	height: 100%;
+	float: left;
+}
+
+form.characterAvatarSelection > div  {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+form.characterAvatarSelection input {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/* ---- STATS ---- */
+
+fieldset.characterStats {
+	width: 39vw;
+	float: left;
+	margin-right: 7px;
+}
+
+fieldset.characterStats > table {
+	width: 96%;
+}
+
+fieldset.characterStats > table tr.primeStat {
+	font-size: 1.0em;
+}
+
+fieldset.characterStats > table tr:not(.primeStat) {
+	font-size: 0.9em;
+}
+
+fieldset.characterStats > table tr td:nth-child(4), fieldset.characterStats > table tr td:nth-child(5), fieldset.characterStats > table tr td:last-child {
+	width: 45px;
+}
+
+fieldset.characterStats td:nth-child(n+2) {
+	width: 55px;
+	text-align: center;
+}
+
+fieldset.characterStats > table tr td input {
+	width: 90%;
+	text-align: center;
+}
+
+fieldSet.characterStats td:last-child span.pickA {
+	color: navy;
+	font-weight: bold;
+}
+
+fieldSet.characterStats td:last-child span.pickB {
+	color: blue;
+	font-weight: bold;
+}
+
+fieldSet.characterStats td:last-child span.pickC {
+	color: royalBlue;
+	font-weight: bold;
+}
+
+fieldSet.characterStats td:last-child span.pickD {
+	color: cyan;
+	font-weight: bold;
+}
+
+/* ---- DETAILS ---- */
+
+div.characterDetail {
+	max-width: 99%;
+	margin-top: 2.6em;
+	margin-bottom: 2.8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---- LEVEL UP ---- */
+
+div.characterDetailSkills td.newRanksCell input{
+	width: 35px;
+}
+
+
+table.statGains tr {
+	font-size: 0.9em;
+}
+
+table.statGains span.primeStatGain {
+	font-size: 1.05em;
+}
+
+table.statGains tr td:nth-child(n+2) {
+	width: 60px;
+	text-align: center;
+}
+
+table.statGains tr td:nth-child(5) {
+	width: 84px;
+}
+
+table.statGains input {
+	width: 50px;
+	text-align: center;
+}
+
+span.statGains  {
+	display: inline-block;
+	width: 515px;
+    text-align: justify;
+}
+
+span.statGains p {
+	margin-top: 3px; 
+	margin-bottom: 3px;
+}
+
+div.levelUpButtons {
+	float: right;
+	margin-left: 10px;
+}
+
+div.levelUpButtons button.ui-button {
+	padding: 0px 7px;
+    height: 21px;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+fieldset.skillFiltersAndLevelUp div.ui-widget {
+	display: inline-block;
+	font-size: 0.9em;
+	margin-top: 2px;
+	float: right;
+}
+
+/* ---- SKILL DIALOG ---- */
+
+div.ui-dialog-content fieldset.willow:only-child {
+	border: none;
+}
+
+div.ui-dialog-content fieldset.willow:only-child input {
+	float: none;
+}
+
+/* ---- SKILL UPDATE ---- */
+
+form.skillUpdateFields label {
+	display: inline-block;
+	margin-top: 0.1em;
+	margin-bottom: 0.8em;
+}
+
+form.skillUpdateFields input, form.skillUpdateFields select {
+	float: right;
+	display: inline-block;
+}
+
+form.skillUpdateFields select {
+	width: 155px;
+}
+
+form.skillUpdateFields input {
+	width: 150px;
+}
+
+form.skillUpdateFields .numericField {
+	width: 70px;
+	text-align: right;
+}
+
+form.skillUpdateFields select[multiple] {
+	margin-bottom: 0.8em;
+}
+
+/* ---- SKILL FILTERS ---- */
+
+fieldset.skillFiltersAndLevelUp {
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+
+	padding: 0px 4px;
+	border-radius: 5px;
+	height: 27px;
+	width: 99%;
+}
+
+fieldset.skillFiltersAndLevelUp > button.ui-widget {
+	width: 91px;
+    margin-right: 0px;
+    font-weight: normal;
+    padding: 0px 7px;
+    height: 21px;
+    font-size: 0.9em;
+}
+
+fieldset.skillFiltersAndLevelUp > button:not(:last-of-type)  {
+	border-radius: 0px;
+	border-right: none;
+}
+
+fieldset.skillFiltersAndLevelUp > button:last-of-type  {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+fieldset.skillFiltersAndLevelUp > button:first-child {
+	margin-left: 2px;
+	margin-right: 4px;
+}
+
+fieldset.skillFiltersAndLevelUp > button.ui-widget:first-child {
+	font-weight: bold;
+}
+
+fieldset.skillFiltersAndLevelUp > span.ui-corner-left {
+    padding: 0px 7px;
+	font-size: 0.9em;
+	vertical-align: middle;
+	border-right: none;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+/* ---- SKILLS TABLE ---- */
+
+.characterSkillRows {
+	max-height: 83vh ;
+	}
+
+@media (max-height: 850px) { 
+	.characterSkillRows {
+	max-height: 79vh ;
+	}
+} 
+
+@media (max-height: 700px) { 
+	.characterSkillRows {
+	max-height: 75vh ;
+	}
+} 
+
+@media (max-height: 550px) { 
+	.characterSkillRows {
+	max-height: 60vh ;
+	}
+} 
+
+.characterSkillRows {
+	overflow-y: scroll;
+}
+
+div.characterDetailSkills table {
+	padding: 0;
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	border-collapse: separate;
+	margin-bottom: 3px;
+	width: 100%;
+	font-size: 0.85em;
+}
+
+div.characterDetailSkills thead th:last-child {
+	width: 16px;
+}
+
+div.characterDetailSkills td:first-child, div.characterDetailSkills th:first-child {
+	padding-left: 5px;
+	width: 38.6%;
+}
+
+div.characterDetailSkills td:nth-child(2), div.characterDetailSkills th:nth-child(2) {
+	text-align: center;
+	width: 8.3%;
+}
+
+div.characterDetailSkills td:nth-child(n+3), div.characterDetailSkills th:nth-child(n+3) {
+	text-align: center;
+	width: 5.8%;
+}
+
+div.characterDetailSkills .characterSkill {
+	background-color: white;
+}
+
+tr.characterSkill td.skillWithLotsOfRanks {
+	color: blue;
+}
+
+tr.characterSkill td span.skillAtMaximumBonus {
+	color: #32CD32;
+}
+
+tr.characterSkill td span.skillWithNegativeBonus {
+	color: red;
+}
+
+tr.characterSkillCategory td:first-child, tr.characterSkill td:last-of-type {
+	font-weight: bold;
+}
+
+tr.characterSkillCategory td:first-child {
+	font-size: initial;
+	font-variant: small-caps;
+}
+
+tr.characterSkillCategory {
+	border: 1px solid #654b24;
+	border-radius: 5px;
+}
+
+tr.characterSkillCategory td:first-child {
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+tr.characterSkillCategory td:last-child {
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+div.characterDetailSkills td input {
+	width: 90%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: #CD853F;
+	border-radius: 3px;
+}
+
+div.characterDetailSkills tr span.editRowButton {
+	display: inline-block;
+	opacity: 0;
+	margin-right: 21px;
+}
+
+div.characterDetailSkills:not(.rowBeingEdited) tr:hover span.editRowButton {
+	opacity: 1;
+	text-align: center;
+	width: 14px;
+	height: 14px;
+	border: 1px solid black;
+	border-radius: 4px;
+	vertical-align: text-top;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+div.characterDetailSkills:not(.rowBeingEdited) tr:hover span.editRowButton:after {
+	content: "...";
+    position: relative;
+    margin-top: -2px;
+    font-weight: bold;
+    font-family: initial;
+    display: block;
+}
+
+div.characterDetailSkills td:first-child span:not(.editRowButton) {
+	display: inline-block;
+	background-repeat: no-repeat, repeat;
+	background-size: contain;
+	text-align: center;
+	width: 14px;
+	height: 14px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: text-top;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+div.characterDetailSkills tr span.cancelRowButton {
+	background-image: url("Images/cancel.png");
+}
+
+div.characterDetailSkills td:first-child div {
+	float: right;
+}
+
+div.characterDetailSkills tr span.removeRowButton {
+	background-image: url("Images/trash-bin.png");
+}
+
+div.characterDetailSkills tr span.addSkillRowButton {
+	background-image: url("Images/plus.png");
+}
+
+div.characterDetailSkills tr span.applyChangesRowButton {
+	background-image: url("Images/check-mark.png");
+}
+
+div.characterDetailSkills tr span.skillUpdateOptionsRowButton {
+	background-image: url("Images/gears.png");
+}
+
+div.characterDetailSkills tr span.addSkillSpecializationButton {
+	background-image: url("Images/thrown-spear.png");
+}
+
+div.characterDetailSkills tr span.addDerivedAttackButton {
+	background-image: url("Images/crossed-swords.png");
+}
+
+div.characterDetailSkills tr span.skillGlossaryEntryButton {
+	background-image: url("Images/info.png");
+}
+
+div.characterDetailSkills tr span.favoriteSkillRowButton, div.characterDetailSkills tr span.nonFavoriteSkillRowButton {
+	background-image: url("Images/staryu.png");
+	margin-left: 10px;
+}
+
+div.characterDetailSkills tr span.nonFavoriteSkillRowButton {
+	opacity: 0.3;
+}
+
+div.characterDetailSkills tr span.nonFavoriteSkillRowButton:hover {
+	opacity: 0.5;
+}
+
+span.spellListSkillRowButton {
+	background-image: url("Images/book-cover.png");
+	margin-left: 10px;
+}
+
+div.characterDetailSkills abbr
+{
+	cursor: help;
+}
+
+span.favoriteSkillRowButton + span.spellListSkillRowButton {
+	margin-left: 0px;
+}
+
+/* ---- SECTION SELECTION ---- */
+
+div.characterDevelopmentSectionSelection
+{
+	height: 2em;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+/* ---- CHARACTER CONTROLS ---- */
+
+div.characterControls {
+	height: 2em;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+div.characterControls > span:first-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0.3em;
+	margin-left: 0.3em;
+}
+
+/* ---- CHARACTER UPLOADING ---- */
+
+form.characterSelection {
+	display: inline;
+	height: 100%;
+}
+
+form.characterSelection > div  {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+form.characterSelection input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+}
+
+/* ---- CHARACTER FILE BUTTONS ---- */
+
+.characterFileButton {
+	display: inline;
+	float: right;
+	margin-left: 12px;
+	margin-right: 7px;
+}
+
+div.characterFileButton > span:first-child {
+	vertical-align: middle;
+    display: inline-block;
+    padding: 4px 7px;
+    margin-top: 2px;
+}
+
+div.characterFileButton .ui-button {
+	vertical-align: middle;
+    display: inline-block;
+    padding: 4px 7px;
+    margin-top: 2px;
+    margin-left: -1px;
+	font-weight: normal;
+}
+
+div.characterFileButton > button:not(:first-child):not(:last-child) {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-right: none;
+}
+
+div.characterFileButton > form > div:last-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-weight: normal;
+}
+
+div.characterFileButton > a:last-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-weight: normal;
+}
+
+.characterLoadButton:hover {
+	border: 1px solid #654b24;
+	background: #654b24 url("Images/darkBrownGrain.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.characterControls > a.ui-button {
+	vertical-align: middle;
+    display: inline-block;
+    padding: 4px 7px;
+    margin-top: 2px;
+}
+
+/*---- HISTORY ----*/
+
+
+div.characterHistoricalEventTitle
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+fieldset.characterHistoricalEventPanel
+{
+	float: left;
+	width: 30%;
+}
+
+fieldset.characterHistoricalEventPanel > table
+{
+	width: 100%;
+}
+
+fieldset.characterHistoricalEventPanel td:not(:first-child)
+{
+	text-align: center;
+}
+
+td.characterHistoricalEventLargeContent
+{
+	font-size: smaller;
+}
+
+div.characterHistoricalEventSeparator
+{
+	clear: both;
+	margin-bottom: 20px;
+}
+
+/*---- INVENTORY - BUTTONS ----*/
+
+
+fieldset.characterInventoryButtons
+{
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px 4px;
+	border-radius: 5px;
+	height: 27px;
+	width: 99%;
+}
+
+span.characterInventoryButtons:last-of-type
+{
+	float: right;
+}
+
+span.characterInventoryButtons:last-of-type > button:not(:last-of-type)
+{
+	border-radius: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-left: none;
+	border-right: none;
+}
+
+span.characterInventoryButtons:last-of-type > button:last-of-type
+{
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	margin-left: 0px;
+}
+
+span.characterInventoryButtons:not(:last-of-type)
+{
+	margin-left: 10px;
+	margin-right: 30px;
+}
+
+span.characterInventoryButtons > .ui-button
+{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+span.characterInventoryButtons > span.ui-button
+{
+	width: 60px;
+	margin-right: 0px;
+	padding: 0px 10px;
+	cursor: default;
+}
+
+span.characterInventoryButtons > button.ui-button
+{
+	width: 150px;
+	margin-right: 10px;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding: 1px 0px;
+}
+
+/*---- INVENTORY - PARAMETERS ----*/
+
+
+form.parameters
+{
+	display: table;
+}
+
+form.parameters p
+{
+	display: table-row;
+	margin-bottom: 3px;
+}
+
+form.parameters p label ,
+input ,
+textarea
+{
+	vertical-align: middle;
+}
+
+form.parameters p input ,
+textarea
+{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+form.parameters textarea
+{
+	height: 80px;
+}
+
+textarea
+{
+	resize: none;
+}
+
+/*---- INVENTORY - ITEMS ----*/
+
+
+ul.inventoryItems
+{
+	list-style: none;
+	padding-left: 10px;
+}
+
+ul.inventoryItems li
+{
+	width: 560px;
+	padding-left: 10px;
+}
+
+ul.inventoryItems li > span
+{
+	width: 245px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul.inventoryItems
+{
+	max-height: 83vh;
+}
+
+@media all and (max-height: 850px)
+{
+	ul.inventoryItems
+	{
+		max-height: 79vh;
+	}
+}
+
+@media all and (max-height: 700px)
+{
+	ul.inventoryItems
+	{
+		max-height: 75vh;
+	}
+}
+
+@media all and (max-height: 550px)
+{
+	ul.inventoryItems
+	{
+		max-height: 60vh;
+	}
+}
+
+ul.inventoryItems
+{
+	overflow: auto;
+}
+
+/*---- INVENTORY - CARRIED ITEMS ----*/
+
+
+ul.itemPossessions
+{
+	width: 550px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+ul.itemPossessions > span
+{
+	width: 240px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*---- INVENTORY - POSSESSION BUTTONS ----*/
+
+
+div.possessionButtons
+{
+	display: inline-block;
+}
+
+div.possessionButtons > span.button-small
+{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+}
+
+span.addItemPossession
+{
+	background-image: url("Images/plus.png");
+}
+
+span.removeInventoryItem
+{
+	background-image: none;
+}
+
+span.editInventoryItem
+{
+	background-image: none;
+}
+
+span.editItemPossession ,
+ul.inventoryItems > li:hover > div.possessionButtons > span.editInventoryItem
+{
+	background-image: url("Images/fountain-pen.png");
+}
+
+span.removeItemPossession ,
+ul.inventoryItems > li:hover > div.possessionButtons > span.removeInventoryItem
+{
+	background-image: url("Images/trash-bin.png");
+}
+
+/*---- INVENTORY - WEIGHT ----*/
+
+
+div.weightAndCastingPenalty
+{
+    position: absolute;
+    top: 6em;
+    right: 5em;
+    padding: 16px;
+    font-weight: normal;
+}
+
+/*---- SPELL LIST DIALOG ----*/
+
+
+div.professionSpellList
+{
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+div.selectedSpellDescription
+{
+	width: 435px;
+	text-align: justify;
+	padding: 3px;
+}
+
+div.selectedSpellDescription > span.selectedSpellDescription
+{
+	margin-bottom: 0.2em;
+	margin-right: 0.5em;
+	display: block;
+	font-size: medium;
+}
+
+span.spellListName
+{
+	display: inline-block;
+	text-align: center;
+	font-size: larger;
+	width: 100%;
+	margin-bottom: 0.2em;
+}
+
+/*---- SPELL DETAILS ----*/
+
+
+table.spellDetails
+{
+	width: 444px;
+}
+
+table.spellDetails th
+{
+	font-size: smaller;
+}
+
+table.spellDetails th.spellLevel ,
+table.spellDetails td.spellLevel
+{
+	width: 21px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+table.spellDetails th.spellName ,
+table.spellDetails td.spellName
+{
+	width: 200px;
+	text-align: left;
+}
+
+table.spellDetails span.spellData
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails th.spellParameters ,
+table.spellDetails td.spellParameters
+{
+	width: 199px;
+	text-align: center;
+}
+
+table.spellDetails td.spellParameters
+{
+	font-size: smaller;
+}
+
+/*---- SPELL KNOWLEDGE ----*/
+
+
+tr.unknownSpell ,
+span.unknownSpell
+{
+	color: grey;
+}
+
+/*---- POST LEVEL UP ----*/
+
+
+fieldset.postLevelUp:not(:last-of-type)
+{
+	margin-bottom: 16px;
+}
+
+span.postLevelUp:not(:last-of-type)
+{
+	margin-right: 16px;
+}
+
+span.postLevelUp:not(:first-of-type) > input.postLevelUp
+{
+	width: 50px;
+}
+
+span.postLevelUp:first-of-type > input.postLevelUp
+{
+	width: 110px;
+}
+
+select.postLevelUp ,
+input.postLevelUp
+{
+	margin-left: 8px;
+}
+
+select.postLevelUp
+{
+	width: 160px;
+}
+
+input.postLevelUp
+{
+	text-align: right;
+}
+
+label.postLevelUp
+{
+	width: 210px;
+	display: inline-block;
+}
+
+/*---- TRAINING PACKAGES ----*/
+
+
+div.developmentChoices
+{
+	height: calc(100vh - 14em);
+	width: 200px;
+	float: left;
+}
+
+div.developmentChoices select
+{
+	width: 100%;
+	overflow: auto;
+	background: white;
+}
+
+div.developmentChoices select:first-child
+{
+	height: 100%;
+}
+
+div.developmentChoices > fieldset.filteredOptions
+{
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 6px;
+	margin: 0px;
+	margin-bottom: 2px;
+}
+
+div.developmentChoices > select:only-child
+{
+	height: calc(100vh - 12.5em);
+}
+
+div.developmentChoices:not(.singleFilter) > fieldset.filteredOptions
+{
+	height: 5em;
+}
+
+div.developmentChoices.singleFilter > div.filteredOptions:nth-child(2)
+{
+	height: calc(100vh - 15.5em);
+}
+
+div.developmentChoices > div.filteredOptions:nth-child(2)
+{
+	height: calc(100vh - 17.5em);
+}
+
+div.developmentChoices > div.filteredOptions:nth-child(3)
+{
+	height: calc(100vh - 19.5em);
+}
+
+div.developmentChoices > fieldset.filteredOptions > input.filteredOptions
+{
+	width: 98%;
+	margin-top: 2px;
+}
+
+div.developmentChoices + div.developmentChoice
+{
+	margin-left: 220px;
+	width: 65vw;
+}
+
+div.developmentChoice
+{
+	height: calc(100vh - 12em);
+	overflow: hidden;
+}
+
+span.optionCategory
+{
+	font-size: smaller;
+	font-weight: normal;
+	float: right;
+	margin-right: 16px;
+	margin-top: 4px;
+	opacity: 0.6;
+}
+
+fieldset.trainingPackageSection
+{
+	width: 24.5%;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 8px;
+	overflow: auto;
+}
+
+fieldset.trainingPackageSection.trainingPackageSpecialsSection
+{
+	height: calc(100vh - 27.7em);
+	font-size: 0.9em;
+}
+
+fieldset.trainingPackageSpecialsSection > table.ui-widget-content
+{
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+fieldset.trainingPackageSpecialsSection > table.ui-widget-content tr:not(:first-child) > td:first-child
+{
+	padding-top: 5px;
+}
+
+fieldset.trainingPackageSpecialsSection > table.ui-widget-content tr:not(:last-child) > td:first-child
+{
+	padding-bottom: 5px;
+}
+
+fieldset.trainingPackageSpecialsSection > table.ui-widget-content tr:not(:last-child)
+{
+	border-bottom: 1px solid black;
+}
+
+fieldset.trainingPackageSpecialsSection > table.ui-widget-content td:last-child
+{
+	width: 62px;
+}
+
+fieldset.trainingPackageSpecialsSection input.roll
+{
+	width: 30px;
+}
+
+div.specialRoll
+{
+	text-align: right;
+	width: 40px;
+}
+
+div.specialNotRolled ,
+div.specialNotGained ,
+div.specialGained
+{
+	width: 6.5vw;
+}
+
+div.specialNotRolled
+{
+	color: inherit;
+}
+
+div.specialNotGained
+{
+	text-decoration: line-through;
+}
+
+div.specialGained
+{
+	color: green;
+	font-weight: bold;
+}
+
+fieldset.trainingPackageSection.trainingPackageDescription
+{
+	width: 65.7%;
+	text-align: justify;
+	height: 5.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+fieldset.trainingPackageDescription div.trainingPackageDescription
+{
+	overflow: auto;
+	height: 100%;
+}
+
+fieldset.trainingPackageDescription div.trainingPackageDescription p
+{
+	margin-top: 1px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+}
+
+fieldset.trainingPackageSection.trainingPackageStatGainsAndCostSection
+{
+	height: 5.5em;
+}
+
+fieldset.trainingPackageSection.trainingPackageStatGainsAndCostSection div:first-child
+{
+	height: 3em;
+}
+
+fieldset.trainingPackageSection.trainingPackageStatGainsAndCostSection label
+{
+	vertical-align: middle;
+}
+
+fieldset.trainingPackageSection.trainingPackageStatGainsAndCostSection input
+{
+	float: right;
+	width: 60px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+fieldset.trainingPackageSection.trainingPackageRankAssignmentsSection
+{
+	width: 65.3%;
+	height: calc(100vh - 25em);
+}
+
+fieldset.trainingPackageSection.trainingPackageRankAssignmentsSection div:first-child
+{
+	float: left;
+	width: 40%;
+}
+
+fieldset.trainingPackageRankAssignmentsSection div.trainingPackageRankAssignmentsSection
+{
+	overflow: auto;
+	height: 100%;
+	width: 57%;
+	padding-left: 3%;
+}
+
+fieldset.trainingPackageRankAssignmentsSection table.ui-widget
+{
+	padding: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	border-collapse: separate;
+	margin-bottom: 3px;
+	width: 100%;
+	font-size: 0.85em;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory td:not(:first-child) ,
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:not(:first-child)
+{
+	text-align: center;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory
+{
+	border: 1px solid #654b24;
+	border-radius: 5px;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory td:first-child
+{
+	font-size: initial;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkill
+{
+	background-color: white;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:first-child
+{
+	padding-left: 12px;
+	width: 75%;
+}
+
+tr.characterSkillCategory span.trainingPackageRanksAssigned ,
+tr.characterSkill span.trainingPackageRanksAssigned
+{
+	width: 24px;
+	display: inline-block;
+}
+
+span.roomForButton
+{
+	display: inline-block;
+	visibility: hidden;
+}
+
+tr.characterSkillCategory span.button-small ,
+tr.characterSkill span.button-small ,
+span.roomForButton
+{
+	height: 16px;
+	width: 16px;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+span.ui-icon-plusthick.button-small
+{
+	background-image: url("Images/plus.png");
+}
+
+span.ui-icon-minusthick.button-small
+{
+	background-image: url("Images/minus.png");
+}
+
+.incompleteAssignment
+{
+	color: red;
+	font-style: inherit;
+}
+
+.totalRanksLimitReached
+{
+	color: orange;
+	font-style: inherit;
+}
+
+/*---- PLAYER KEPT RECORDS ----*/
+
+
+fieldset.playerKeptRecords
+{
+    margin-top: 12px;
+    margin-bottom: 7px;
+    height: inherit;
+}

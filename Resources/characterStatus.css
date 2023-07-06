@@ -1,0 +1,392 @@
+/* ---- MOVEMENT ---- */
+
+div.movementDetails {
+	display: inline-block;
+	width: 145px;
+}
+
+label.movementDetails {
+	margin-left: 4px;
+}
+
+input.movementDetails {
+	width: 60px;
+	text-align: right;
+}
+
+/* ---- DESCRIPTION ---- */
+
+div.characterStatusDescription  {
+	border-radius: 6px;
+}
+
+div.characterStatusDescription textArea {
+	width: 95%;
+	min-height: 40vh;
+	margin: auto;
+	resize: none;
+}
+
+div.characterStatusDescription p {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* ---- TACTICS ---- */
+
+fieldSet.availableDefenses {
+	margin-top: 10px;
+}
+
+fieldSet.availableDefenses table {
+	margin: auto;
+}
+
+
+/* ---- INVENTORY ITEMS ---- */
+
+div.characterItem p {
+	max-width: 350px;
+}
+
+table.characterItems tr {
+	cursor: pointer;
+}
+
+table.characterItems td:nth-child(1), table.characterItems td:nth-child(3) {
+	text-align: right;
+	padding-right: 7px;
+}
+
+input.characterItems {
+	width: 70%;
+}
+
+/* ---- TITLE PENDING ---- */
+
+
+div.characterStatusButtonBar {
+	display: inline-block;
+}
+
+div.characterStatusButtonBar img {
+	height: 48px;
+	width: 48px;
+	border: 1px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+div.characterStatusPicker div{
+	margin: 0px 20px;
+}	
+
+div.spellPreparartionInformation {
+	background-image: url("Images/prayer.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	padding-left: 20px;
+	text-align: center;
+}
+
+div.spellPreparartionInformation button {
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
+
+div.spellPreparartionInformation div:last-child {
+	background-image: url("Images/rollDice.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 5% 0%;
+	padding-left: 25px;
+}
+
+div.spellPreparartionInformation div {
+	display: inline;
+	vertical-align: middle;
+}
+
+div.spellPreparartionInformation span {
+	margin-left: 15px;
+}
+
+p.spellParameters {
+	margin: 5px;
+}
+
+p.spellListLevelAndRanks {
+	margin: 5px;
+	font-size: 0.8em;
+}
+
+p.spellDescription {
+	text-align: justify;
+	margin: 5px;
+	max-width: 350px;
+}
+
+div.ui-dialog {
+	border: 2px solid black;
+	border-radius: 7px;
+}
+
+div.ui-dialog > div.ui-dialog-content {
+	overflow: visible;
+}
+
+@media (orientation: portrait) { 
+	div.spellsWithFilter td.spellParameters {
+		display: none;
+	}
+}
+
+div.spellsWithFilter table {
+	width: 100%;
+}
+
+div.spellsWithFilter input {
+	width: 70%;
+}
+
+div.spellsWithFilter tr {
+	cursor: pointer;
+}
+
+div.spellsWithFilter td.spellLevel {
+	text-align: right;
+}
+
+a.spellbook {
+    width: 24px;
+    height: 24px;
+    float: right;
+	background-image: url(Images/book-cover.png);
+	background-size: contain;
+	display: inline-block;
+}
+
+table.statTable {
+	margin: auto;
+}
+
+table.statTable th {
+	margin: auto;
+}
+
+td.statNameCell {
+	font-style: italic;
+}
+
+td.statValueCell {
+	text-align: center;
+	width: 90px;
+}
+
+td.statBonusCell {
+	text-align: center;
+	width: 50px;
+}
+
+@media (orientation: portrait) { 
+	.landscape {
+		display:none;
+	}	
+}
+
+@media (orientation: landscape) { 
+	.portrait {
+		display:none;
+	}	
+}
+
+body {
+	background-image: url("Images/paperBackground.jpg");
+}
+
+div.eraInterface {
+	width: 100%;
+	height: 100%;
+}
+
+div.characterStatusContent {
+	clear:both;
+}
+
+div.characterCondition{
+	float: left;
+	margin-left: 5%;
+	width: 60%;
+}
+
+span.condition {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 50%;
+	display: inline-block;
+	margin-top: 4px;
+	margin-right: 15px;
+	padding-left: 28px;
+	height: 22px;
+	text-align: center;
+}
+
+span.condition:last-child {
+	margin-right: 0px;
+}
+
+span.spellPreparation {
+	background-image: url("Images/prayer.png");
+	background-position: 10% 0%;
+}
+
+span.bleeding {
+	background-image: url("Images/drop.png");
+	background-position: 20% 0%;
+}
+
+span.MustParry, span.MustParryStaggered {
+	background-image: url("Images/mustParry.png");
+}
+
+span.Stun, span.Stun-25, span.Stun-50, span.Stun-75 {
+	background-image: url("Images/stun.png");
+}
+
+span.StunNoParry {
+	background-image: url("Images/stunNoParry.png");
+}
+
+span.modifications {
+	background-image: url("Images/back-pain.png");
+	background-position: 10% 0%;
+}
+
+span.activeSpells {
+	background-image: url("Images/pointy-hat.png");
+}
+
+span.notifications {
+	background-image: url("Images/conversation.png");
+}
+
+ul.conditionDescriptions strong{
+	color: #DC143C;
+	font-size: 1.1em;
+}
+
+div.statusBar {
+	border-width: 1px;
+	border-color: rgb(119,120,123);
+	height: 18px;
+	margin-top: 2px;
+}
+
+div.statusBar > span {
+	color: #FFF;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+div.statusBar > div.ui-progressbar-value {
+	border: none;
+	margin: 0px;
+}
+
+div.healthBar {
+	background: url("Images/hp-background.png") 50% 0% repeat-x;
+    background-size: contain;
+}
+
+div.healthBar > div.ui-progressbar-value {
+	background: url("Images/hp-foreground.png") 50% 0% repeat-x;
+    background-size: contain;
+}
+
+div.magicBar {
+	background: url("Images/pp-background.png") 50% 0% repeat-x;
+    background-size: contain;
+}
+
+div.magicBar > div.ui-progressbar-value {
+	background: url("Images/pp-foreground.png") 50% 0% repeat-x;
+    background-size: contain;
+}
+
+div.characterPortraitFrame {
+	float: left;
+}
+
+div.characterPortraitFrame > img {
+	border-radius: 32px;
+	border: 2px solid transparent;
+	width: 100px;
+	height: 100px;
+}
+
+div.characterPortraitFrame > div.characterPortraitCaption {
+	background-image: url("Images/characterPortraitCaption.png");
+	background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 22px;
+    color: #FFFFFF;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+
+textarea
+{
+   resize: none;
+}
+
+/*---- MEETING ----*/
+
+
+a.meeting
+{
+    width: 24px;
+    height: 24px;
+    float: right;
+	margin-right: 1em;
+	margin-top: 0.2em;
+    background-image: url(Images/discussion.png);
+    background-size: contain;
+    display: inline-block;
+}
+
+
+/*---- SKILLS ----*/
+
+div.skillsWithFilter table td.skillName {
+	width: 70%;
+}
+
+div.skillsWithFilter table td.rank {
+	text-align: center;
+}
+
+div.skillsWithFilter table td.bonus {
+	text-align: right;
+}
+
+div.skillsWithFilter table {
+	width: 100%;
+}
+
+div.skillsWithFilter input {
+	width: 70%;
+}
+
+div.skillsWithFilter tr {
+	cursor: pointer;
+}

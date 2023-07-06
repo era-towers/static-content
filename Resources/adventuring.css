@@ -1,0 +1,1449 @@
+/* ---- MOVEMENT ---- */
+
+form.movementDetails {
+	width: 360px;
+}
+
+div.movementDetails {
+	width: 180px;
+	display: inline-block;
+}
+
+form.movementDetails input.movementDetails {
+	width: 80px;
+}
+
+label.movementDetails {
+	margin-left: 4px;
+}
+
+
+/* ---- FIELDSETS ---- */
+
+fieldSet.compressedFields:not(.fieldsAndLabels) {
+	margin-bottom: 5px;
+}
+
+fieldSet.compressedFields label input:first-child {
+	margin-left: 6px;
+}
+
+fieldSet.compressedFields label + * {
+	margin-left: 8px;
+}
+
+fieldSet.compressedFields > div {
+	display: inline;
+}
+
+fieldSet.compressedFields {
+	margin: 0;
+}
+
+fieldSet.compressedFields.fieldsAndLabels {
+	padding: 5px 0px;
+}
+
+/* ---- TARGETING ---- */
+
+img.target {
+	margin-top: 2px;
+	opacity: 0.99;
+	border: 2px grey solid; 
+	cursor: pointer;
+}
+
+ul.smallParty img.target {
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+}
+
+ul.largeParty img.target {
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+}
+
+/* ----  AVATAR OVERLAYS ---- */
+
+img.avatarConstantOverlay, img.avatarHoverOverlay {
+	position: absolute;
+	border: 2px transparent solid; 
+}
+
+ul.smallParty img.avatarConstantOverlay, ul.smallParty img.avatarHoverOverlay {
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+}
+
+ul.largeParty img.avatarConstantOverlay, ul.largeParty img.avatarHoverOverlay {
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+}
+
+img.target:hover {
+	border: 2px red solid; 
+	opacity: 0.6;
+}
+
+img.avatarHoverOverlay {
+	display: none;
+}
+
+div.avatarWithOverlay {
+	position:relative;
+	display:block;
+}
+
+div.avatarWithOverlay:hover img.avatarHoverOverlay{
+	display: inherit;
+	z-index: -8;
+}
+
+/* ----  SELECTION DIALOGS ---- */
+
+div.ui-dialog-content form > select:only-child {
+	width: 99%;
+}
+
+div.ui-dialog-content form > fieldset:only-child {
+	padding: 0;
+}
+
+div.ui-dialog-content form > fieldset:only-child select{
+	width: 99%;
+}
+
+/* ---- ADVENTURE OPTIONS DIALOG ---- */
+
+div.adventureOptionsButtons, div.adventureLog {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 410px;
+}
+
+div.adventureLog {
+	margin-bottom: 15px;
+}
+
+div.adventureLog select.ui-widget {
+	width: 410px;
+	height: 210px;
+	font-size: 0.8em;
+}
+
+/* ---- COMBAT ACTIONS ---- */
+
+div.changeCurrentActionDeclarationButtons > span {
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.changeCurrentActionDeclarationButtons > span:first-child {
+	margin-left: 41px;
+}
+
+div.changeCurrentActionDeclarationButtons > span:last-child {
+	margin-right: 41px;
+}
+
+div.changeCurrentActionDeclarationButtons {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+}
+
+div.changeCurrentActionDeclarationButtons > button.ui-button {
+	padding: 0px;
+}
+
+span.combatActionLocked {
+	position: absolute;
+	z-index: -1;
+	background-size: contain;
+	width: 48px;
+	height: 48px;
+	margin-left: -50px;
+	margin-top: 1px;
+	border-radius: 5px;
+	background-image: url("Images/padlock.png");
+}
+
+img.combatAction.combatActionCompleted {
+	opacity: 0.4;
+}
+
+span.combatActionIcon {
+	position: absolute;
+	border-radius: 10px;
+	z-index: 1;
+	background-position: 50%;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	margin-left: -21px;
+	margin-top: 32px;
+	background-color: white;
+}
+
+div.actionType > label.ui-button, div.actionType label.ui-button:hover {
+	background-position: 50%;
+	background-size: contain;
+}
+
+div.actionType > label.ui-button {
+	width: 24px;
+	height: 24px;
+	left: 0%;
+	top: 0%;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+div.actionType > label.ui-button > span.ui-icon-background {
+	display: none;
+}
+
+div.actionType > label.ui-state-active, div.actionType > label.ui-state-active:hover {
+	border-color: red;
+	border-radius: 5px;
+}
+
+span.combatActionIcon.meleeAttackActionIcon, div.actionType > label.ui-button.meleeAttackActionIcon {
+	background-image: url("Images/spinning-sword.png");
+}
+
+span.combatActionIcon.castSpellActionIcon, div.actionType > label.ui-button.castSpellActionIcon {
+	background-image: url("Images/smoking-finger.png");
+}
+
+span.combatActionIcon.castInstantaneousSpellActionIcon, div.actionType > label.ui-button.castInstantaneousSpellActionIcon {
+	background-image: url("Images/smoking-finger-stars.png");
+}
+
+span.combatActionIcon.moveActionIcon, div.actionType > label.ui-button.moveActionIcon {	
+	background-image: url("Images/run.png");
+}
+
+span.combatActionIcon.otherActionIcon, div.actionType > label.ui-button.otherActionIcon {
+	background-image: url("Images/palm.png");
+}
+
+span.combatActionIcon.missileAttackActionIcon, div.actionType > label.ui-button.missileAttackActionIcon {
+	background-image: url("Images/pocket-bow.png");
+}
+
+span.combatActionIcon.prepareSpellActionIcon, div.actionType > label.ui-button.prepareSpellActionIcon {
+	background-image: url("Images/prayer.png");
+}
+
+span.combatActionIcon.concentrationActionIcon, div.actionType > label.ui-button.concentrationActionIcon {
+	background-image: url("Images/coma.png");
+}
+
+span.combatActionIcon.maneuverActionIcon, div.actionType > label.ui-button.maneuverActionIcon {
+	background-image: url("Images/maneuver.png");
+}
+
+span.combatActionIcon.drawAmmoActionIcon, div.actionType > label.ui-button.drawAmmoActionIcon {
+	background-image: url("Images/quiver.png");
+}
+
+span.combatActionIcon.gunAttackActionIcon, div.actionType > label.ui-button.gunAttackActionIcon {
+	background-image: url("Images/ray-gun.png");
+}
+
+span.combatActionIcon.usePsychicPowerActionIcon, div.actionType > label.ui-button.usePsychicPowerActionIcon {
+	background-image: url("Images/psychic-waves.png");
+}
+
+span.combatActionIcon.swapEnergyCellActionIcon, div.actionType > label.ui-button.swapEnergyCellActionIcon {
+	background-image: url("Images/charging.png");
+}
+
+span.combatActionIcon.spendActionPointsIcon {
+	display: none;
+}
+
+div.actionType {
+	margin-left: 2px;
+}
+
+img.combatAction {
+	height: 48px;
+	width: 48px;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: white;
+	margin: 0px 1px;
+}
+
+img.combatAction:hover {
+	border: 2px solid orange;
+	width: 46px;
+	height: 46px;
+}
+
+div.combatActions {
+	display: none;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+img.combatAction.actionPointsSpent:not(:hover) {
+	border: 2px solid red;
+	width: 46px;
+	height: 46px;	
+}
+
+/* ---- COMBAT IN PROGRESS ---- */
+
+div.combatInProgress {
+	background-image: url("Images/flames_horizontal.png"), url("Images/flames_vertical_left.png"), url("Images/flames_vertical_right.png");
+	background-repeat: repeat-x, repeat-y, repeat-y;
+	background-position: top center, top left, top right;
+}
+
+div.combatInProgress div.adventureControls{
+	margin-right: 304px;
+}
+
+div.combatInProgress div.partyActionsBorder, div.combatInProgress div.partyActions {
+	display: none;
+}
+
+div.combatInProgress div.enemyChips{
+	display: inline-block;
+}
+
+div.combatInProgress img.toggleCombatButton {
+	content: url("Images/sword-in-stone.png")
+}
+
+div.combatInProgress div.combatActions {
+	display: block;
+}
+
+/* ---- PARTY ACTIONS ---- */
+
+div.partyActionsBorder {
+	position: relative;
+	top: -68px;
+	left: 215px;
+	width: 97px;
+	height: 110px;
+	border: 1px solid black;
+	border-width: 0 1px 1px 0;
+	border-bottom-right-radius: 100px;
+	z-index: -1;
+}
+
+div.partyActions {
+	position: relative;
+	width: 100px;
+	height: 125px;
+	top: -179px;
+	left: 265px;
+}
+
+div.partyActions img {
+	cursor: pointer;
+}
+
+div.partyActions img:nth-child(1) {
+	margin-left: 43px;
+	margin-top: 38px;
+}
+
+div.partyActions img:nth-child(2) {
+	margin-left: -12px;
+	margin-top: 21px;
+}
+
+div.partyActions img.hoverMenuButton:hover {
+	background: white;
+}
+
+
+/* ---- ADVENTURE CONTROL ---- */
+
+div.adventureControls {
+	margin-left: 304px;
+	margin-right: 10px;
+}
+
+.adventureName, img.startNewRoundButton, img.toggleCombatButton, img.cancelAttackButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.adventureName {
+	margin-top: 45px;
+	width: 350px;
+	padding: 6px;
+    height: 21px;
+}
+
+.adventureName > span:first-child {
+	margin-left: 24px;
+}
+
+img.startNewRoundButton, img.toggleCombatButton, img.cancelAttackButton {
+	margin-top: 10px;
+	padding: 5px 40px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+img.startNewRoundButton:hover, img.toggleCombatButton:hover, img.cancelAttackButton:hover {
+	border: 1px solid #654b24;
+	background: #654b24 url("Images/darkBrownGrain.png") 50% 50% repeat;
+}
+
+button.adventureOptions {
+	background-image: url("Images/gears.png");
+	background-size: contain;
+	float: right;
+	width: 24px;
+	height: 24px;
+}
+
+button.adventureOptions:hover {
+}
+
+/* ---- PARTY ---- */
+
+div.enemyChips {
+	float: right;
+	margin-right: 40px;
+}
+
+div.enemyChips{
+	display: none;
+}
+
+div.heroChips {
+	float: left;
+	margin-left: 40px;
+	display: inline-block;
+}
+
+div.heroChips, div.enemyChips {
+	margin-top: 20px;
+}
+
+img.addCharacterChip {
+	margin-left: 90px;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	border: 3px solid grey; 
+	cursor:pointer;
+	opacity: .6;
+}
+
+img.addCharacterChip:hover {
+	opacity: .8;
+}
+
+img.addCharacterChip:active {
+	opacity: 1;
+}
+
+ul.characterChips>li {
+	margin-left: 10px;
+}
+
+ul.smallParty.characterChips>li:nth-of-type(5n+1) {
+  margin-left: 48px;
+}
+
+ul.largeParty.characterChips>li:nth-of-type(7n+1) {
+  margin-left: 33px;
+}
+
+ul.characterChips li div.ui-radmenu-parent { 
+	z-index: 90;
+}
+
+ul.characterChips {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.smallParty.characterChips {
+	width: 264px;
+}
+
+ul.largeParty.characterChips {
+	width: 272px;
+}
+
+ul.characterChips li{
+	display: inline-block;
+	margin: 2px;
+}
+
+img.partyMember {
+	opacity: .6;
+	border: 2px transparent solid; 
+	cursor:pointer;
+}
+
+ul.smallParty img.partyMember {
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+}
+
+ul.largeParty img.partyMember {
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+}
+
+img.partyMember:hover {
+	opacity: .8;
+}
+
+/* ---- HOVER MENU ---- */
+
+img.hoverMenuButton:hover {
+	background: white;
+}
+
+img.hoverMenuButton {
+	height: 35px;
+	width: 35px;
+	border-radius: 15px;
+	border: 1px solid #654b24;
+	background-color: white;
+}
+
+ul.hoverMenuItems {
+	list-style:none;
+	padding: 1px;
+	margin: 0px;
+}
+
+/* ---- RADIAL BAR ---- */
+
+canvas.radialBar {
+	position: absolute;
+}
+
+/* ---- STEPS INITIATIVE ---- */
+
+div.stepActionDeclarations input.roll {
+	display: block;
+	margin-top: -90px;
+	margin-left: 110px;
+	margin-bottom: 10px;
+	width: 100px;
+}
+
+div.stepActionDeclarations span.button-small {
+    float: right;
+    margin-top: -37px;
+    margin-right: 7px;
+}
+
+div.stepActionDeclarations > span:not(.button-small){
+	display: block;
+	left: 100px;
+	margin-left: 110px;
+	height: 20px;
+	width: 140px;
+}
+
+div.stepActionDeclarations > span:not(.button-small):first-of-type{
+	margin-top: -45px;
+	margin-bottom: 5px;
+}
+
+div.stepActionDeclarations > span:not(.button-small):last-of-type{
+	margin-bottom: 20px;
+}
+
+div.stepActionDeclarations > span:not(.button-small) a {
+	border: 1px solid black;
+	border-radius: 6px;
+	padding: 0px 3px;
+	cursor: pointer;
+}
+
+div.stepActionDeclarations div.actionType + p {
+	width: 250px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+div.stepActionDeclarations div.actionType + p > input:first-child {
+	width: 170px;
+	margin-right: 5px;
+}
+
+div.stepActionDeclarations div.actionType + p > input:last-child {
+	width: 50px;
+}
+
+div.stepActionDeclarations div.actionType + p > input:only-child {
+	width: 90%;
+}
+
+div.stepActionDeclarations img {
+	width: 100px;
+	height: 100px;
+}
+
+div.stepActionDeclarations {
+	width: 250px;
+}
+
+
+div.stepActionDeclarations button.ui-button {
+	padding: 0px;
+}
+
+/*---- FUMBLES ----*/
+
+
+div.attackFumbleTypes
+{
+	float: right;
+	width: 250px;
+}
+
+div.attackFumbleResult
+{
+	width: 550px;
+	height: 210px;
+}
+
+div.attackFumbleResult textarea
+{
+	width: 280px;
+	height: 150px;
+	margin-top: 10px;
+}
+
+div.attackFumbleResult + div.criticalDamage
+{
+	clear: both;
+}
+
+/*---- ATTACK ----*/
+
+
+div.combatSkill
+{
+	background-repeat: no-repeat;
+	background-size: 36px;
+	background-position: 0% 100%;
+	margin-top: 5px;
+}
+
+div.offensiveCombatSkill
+{
+	background-image: url("Images/spinning-sword.png");
+}
+
+div.defensiveCombatSkill
+{
+	background-image: url("Images/sword-clash.png");
+}
+
+div.combatSkillPercentage
+{
+	width: 94px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 13px;
+}
+
+select.combatSkill
+{
+	width: 238px;
+}
+
+div.combatSkillModifications
+{
+	margin-top: 5px;
+}
+
+input.combatSkillAdjustment
+{
+	width: 48px;
+	text-align: center;
+}
+
+div.combatSkillAdjustment
+{
+	margin-left: 266px;
+	margin-top: -5px;
+}
+
+input.defenderArmorType
+{
+	margin-left: 6px;
+}
+
+div.combatProtections
+{
+	background-image: url("Images/visored-helm.png");
+	background-repeat: no-repeat;
+	background-size: 36px;
+	background-position: 0% 100%;
+	height: 208px;
+}
+
+div.combatDefenseSummary > span:first-child
+{
+	margin-left: 50px;
+}
+
+div.combatDefenseSummary > span:last-child
+{
+	position: absolute;
+	right: 35px;
+}
+
+div.attackInformation div.attackLeft
+{
+	float: left;
+	width: 372px;
+}
+
+div.attackInformation fieldset:last-of-type
+{
+	margin-top: 5px;
+}
+
+div.attackInformation div.attackRight
+{
+	width: 372px;
+	margin-left: 372px;
+}
+
+ul.combatDefensiveModifications
+{
+	height: 120px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+ul.combatDefensiveModifications:first-child
+{
+	height: 141px;
+}
+
+div.situationalModifications
+{
+	background-image: url("Images/compass.png");
+	background-repeat: no-repeat;
+	background-size: 36px;
+	background-position: 0% 100%;
+	height: 208px;
+}
+
+span.situationalModification
+{
+	margin-top: 11px;
+	width: 140px;
+	display: inline-block;
+}
+
+span.situationalModification:nth-child(2n)
+{
+	margin-left: 12px;
+}
+
+span.situationalModification:nth-child(2n+1)
+{
+	margin-left: 45px;
+}
+
+span.situationalModificationLabel
+{
+	width: 64px;
+	display: inline-block;
+}
+
+div.sizeAdjustment:first-of-type
+{
+	margin-top: 6px;
+}
+
+div.sizeAdjustment
+{
+	margin-top: 10px;
+	max-height: 27px;
+}
+
+div.sizeAdjustment > span.sizeAdjustment
+{
+	width: 196px;
+	display: inline-block;
+}
+
+div.sizeAdjustment > input.sizeAdjustment
+{
+	width: 70px;
+	margin-left: 63px;
+}
+
+div.sizeAdjustment > select.sizeAdjustment
+{
+	width: 137px;
+}
+
+div.sizeAdjustment > label.sizeAdjustment
+{
+	width: 80px;
+}
+
+div.sizeAdjustment > label > span.sizeAdjustment
+{
+	width: 176px;
+	display: inline-block;
+}
+
+div.attackDown
+{
+	clear: both;
+	margin-left: 2px;
+	padding-top: 6px;
+}
+
+div.attackDown span.modificationsDetail
+{
+	float: right;
+    margin-left: -8px;
+}
+
+/*---- INJURY RECOVERY ----*/
+
+
+span.injuryRecovery
+{
+	background-image: url("Images/eternal-love.png");
+    margin-top: -7px;
+}
+
+textarea.injuryRecoveryResult
+{
+	margin-top: 10px;
+	width: 100%;
+	height: 24px;
+}
+
+div.injuryType
+{
+	float: right;
+	margin-bottom: 10px;
+}
+
+div.recoveryMultipliers
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.characterMultiplier ,
+div.healingModifier
+{
+	clear: both;
+}
+
+div.injurySeverity
+{
+	display: table;
+	margin-top: 5px;
+}
+
+div.recoveryRollBonus
+{
+	width: 360px;
+}
+
+/*---- DIALOGS ----*/
+
+
+div.ui-dialog.ui-front
+{
+	border-color: #a99880;
+}
+
+/*---- CHARACTER SELECTION ----*/
+
+
+input.characterSelection
+{
+	width: 242px;
+	margin-bottom: 3px;
+}
+
+select.characterSelection
+{
+	width: 245px;
+	margin-bottom: 3px;
+}
+
+textarea.characterSelection
+{
+	width: 240px;
+	height: 50px;
+	margin-top: 3px;
+}
+
+/*---- ACTIONS POINTS ----*/
+
+
+div.actionPointsRoundDeclaration
+{
+	width: 605px;
+	height: 35px;
+}
+
+div.actionPointsRoundDeclaration span.actionPointsRoundProfileName
+{
+	display: inline-block;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+
+div.actionPointsRoundDeclaration input.roll
+{
+	width: 60px;
+}
+
+div.actionPointsRoundDeclaration input.actionPointsRoundInitiative
+{
+	width: 40px;
+	text-align: center;
+}
+
+div.actionPointsRoundDeclaration input.actionPointsRoundNotes
+{
+	width: 250px;
+	margin-left: 5px;
+}
+
+div.actionPointSpending
+{
+	width: 633px;
+}
+
+div.declaredActionPoints
+{
+	float: right;
+	margin-left: 10px;
+	width: 321px;
+}
+
+ul.declaredActionPoints
+{
+	padding: 0px;
+	height: 130px;
+	overflow-y: auto;
+	margin: 5px;
+	list-style-type: none;
+}
+
+button.declaredActionPointButton.ui-button
+{
+	height: 2em;
+	width: 6.5em;
+	margin-left: 3px;
+	font-size: smaller;
+	font-weight: normal;
+	padding: 0px;
+}
+
+textarea.declaredNotes
+{
+	width: 100%;
+	height: 61px;
+	margin-top: 4px;
+}
+
+/*---- PROFILE ----*/
+
+
+span.statusEffect:not(:last-of-type)
+{
+	margin-right: 9px;
+}
+
+div.roundsRemaining ,
+div.adjustRoundsRemaining
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2px;
+}
+
+span.statusEffectName
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 54px;
+}
+
+/*---- INTERFACE ----*/
+
+
+span.modificationsDetail
+{
+	background-image: url("Images/magnifying-glass.png");
+	margin-left: 5px;
+	width: 32px;
+	height: 32px;
+}
+
+body
+{
+	margin: 0;
+}
+
+div.interface
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+ul.checkbox-selection
+{
+	background: white;
+	overflow-y: scroll;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+li.checkbox-selection
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 2px;
+}
+
+table.resultCalculation
+{
+	width: 20vw;
+}
+
+table.resultCalculation td:last-child
+{
+	text-align: right;
+}
+
+table.resultCalculation tr:last-child
+{
+    font-weight: bold;
+    height: 6vh;
+}
+
+/*---- SPELL CASTING ----*/
+
+
+form.automaticSpellCasting
+{
+	width: 402px;
+}
+
+select.automaticSpellCasting
+{
+	width: 402px;
+	margin-top: 2px;
+}
+
+input.automaticSpellCasting
+{
+	width: 398px;
+	margin-top: 2px;
+}
+
+textarea.automaticSpellCasting
+{
+	width: 396px;
+	margin-top: 2px;
+	height: 66px;
+}
+
+input.spellFilter
+{
+	width: 275px;
+}
+
+span.numberOfCastings
+{
+	float: right;
+}
+
+div.spellCastingSelection > div.spellSelection
+{
+	width: 290px;
+	display: inline-block;
+}
+
+input.spellSelection
+{
+	width: 276px;
+	margin-top: 8px;
+}
+
+select.spellSelection
+{
+	width: 280px;
+	margin-top: 8px;
+	height: 105px;
+}
+
+div.spellCastingSelection > div.selectedSpellDetail
+{
+	width: 442px;
+	height: 140px;
+	float: right;
+	padding: 4px;
+	font-weight: inherit;
+}
+
+span.spellListName
+{
+	display: inline-block;
+	width: 442px;
+	text-align: center;
+	font-size: larger;
+}
+
+span.spellListRanks
+{
+	float: right;
+	font-size: smaller;
+	margin-top: -18px;
+	margin-right: 20px;
+}
+
+span.noSpellSelected
+{
+	display: block;
+	margin: 40px auto;
+	width: 290px;
+}
+
+fieldset.spellCastingCondition ,
+fieldset.spellCastingConsequences
+{
+	padding: 8px 10px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+}
+
+fieldset.spellCastingCondition
+{
+	width: 314px;
+	height: 160px;
+}
+
+span.spellCastingCondition
+{
+	display: inline-block;
+	width: 160px;
+	margin-top: 8px;
+}
+
+select.spellCastingCondition
+{
+	width: 150px;
+}
+
+input.spellCastingCondition
+{
+	margin-left: 98px;
+}
+
+fieldset.spellCastingConsequences
+{
+	width: 378px;
+	height: 200px;
+	float: right;
+}
+
+div.spellEffects
+{
+	width: 157px;
+	display: inline-block;
+	float: right;
+}
+
+span.spellEffect ,
+span.spellDuration
+{
+	display: inline-block;
+	margin-top: 8px;
+}
+
+span.spellEffect
+{
+	width: 101px;
+}
+
+span.spellDuration
+{
+	width: 88px;
+}
+
+ul.spellTargets
+{
+	width: 203px;
+	height: 106px;
+	margin: 0px;
+	margin-top: 8px;
+	display: inline-block;
+}
+
+div.spellCastingResult
+{
+	margin-top: 8px;
+}
+
+div.spellCastingResult input.roll
+{
+	width: 115px;
+}
+
+div.spellCastingResult span.spellCastingResult
+{
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 520px;
+	height: 50px;
+	font-weight: inherit;
+	display: inline-block;
+	padding: 5px;
+	white-space: pre-wrap;
+	overflow-y: auto;
+}
+
+span.spellCastingResolution
+{
+	display: inline-block;
+}
+
+span.spellCastingResolution > button.spellCastingResolution
+{
+	width: 94px;
+	margin-left: 10px;
+}
+
+div.selectedSpellDescription
+{
+	width: 435px;
+	height: 60px;
+	overflow-y: auto;
+	padding: 3px;
+}
+
+span.spell-failed
+{
+	background-image: url("Images/evil-book.png");
+}
+
+/*---- SPELL DETAILS ----*/
+
+
+table.spellDetails
+{
+	width: 444px;
+}
+
+table.spellDetails th
+{
+	font-size: smaller;
+}
+
+table.spellDetails th.spellLevel ,
+table.spellDetails td.spellLevel
+{
+	width: 21px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+table.spellDetails th.spellName ,
+table.spellDetails td.spellName
+{
+	width: 200px;
+	text-align: left;
+}
+
+table.spellDetails span.spellData
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails th.spellParameters ,
+table.spellDetails td.spellParameters
+{
+	width: 199px;
+	text-align: center;
+}
+
+table.spellDetails td.spellParameters
+{
+	font-size: smaller;
+}
+
+/*---- RADIO BUTTONS ----*/
+
+
+div.radio
+{
+	padding: 2px;
+	margin: 0;
+	margin-left: 2px;
+}
+
+div.radio > label
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	display: block;
+}
+
+div.radio > label:hover ,
+div.radio > label:focus
+{
+	background-color: lightyellow;
+	border-color: gray;
+}
+
+/*---- LOGOS ----*/
+
+
+div.logos
+{
+	width: 380px;
+	margin: auto;
+}
+
+div.logos > a.openHome
+{
+    width: 100%;
+    height: 116px;
+    display: block;
+	float: none;
+}
+
+div.logos span
+{
+	float: right;
+	margin-top: -9px;
+}
+
+div.logos img:last-child
+{
+	margin-left: 15px;
+	width: 200px;
+	vertical-align: middle;
+}
+
+/*---- MEETING ----*/
+
+
+a.meeting
+{
+	background-image: url("Images/discussion.png");
+	width: 10px;
+	height: 20px;
+	float: left;
+	background-size: contain;
+	padding: 1px 6px;
+}
+
+/*---- MANEUVERS ----*/
+
+
+div.maneuverResult span.maneuverResult
+{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 31vw;
+    height: 70px;
+    font-weight: inherit;
+    display: inline-block;
+    padding: 5px;
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+
+div.maneuverResult input.roll
+{
+    width: 115px;
+}
+
+div.maneuverResult
+{
+    margin-top: 7px;
+}
+
+form.maneuver
+{
+	width: 585px;
+}
+
+div.maneuverDifficulty
+{
+	float: right;
+	width: 210px;
+}
+
+div.maneuverParameters:not(:first-child)
+{
+	width: 375px;
+}
+
+div.maneuverParameters div select
+{
+	width: 100%;
+}
+
+div.maneuverParameters input.skillNameFilter
+{
+	width: 99%;
+}
+
+p.skillModificationExplanation
+{
+	display: inline-block;
+}
+

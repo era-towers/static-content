@@ -1,0 +1,196 @@
+/*---- INVENTORY - CARRIED ITEMS ----*/
+
+
+ul.itemPossessions
+{
+	width: 650px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+ul.itemPossessions > span
+{
+	width: 190px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*---- INVENTORY - POSSESSION BUTTONS ----*/
+
+
+div.possessionButtons
+{
+	display: inline-block;
+}
+
+div.possessionButtons > span.button-small
+{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+}
+
+span.addItemPossession
+{
+	background-image: url("Images/plus.png");
+}
+
+span.removeInventoryItem
+{
+	background-image: none;
+}
+
+span.editInventoryItem
+{
+	background-image: none;
+}
+
+span.editItemPossession ,
+ul.inventoryItems > li:hover > div.possessionButtons > span.editInventoryItem
+{
+	background-image: url("Images/fountain-pen.png");
+}
+
+span.removeItemPossession ,
+ul.inventoryItems > li:hover > div.possessionButtons > span.removeInventoryItem
+{
+	background-image: url("Images/trash-bin.png");
+}
+
+/*---- INVENTORY - ITEMS ----*/
+
+
+ul.inventoryItems
+{
+	list-style: none;
+	padding-left: 10px;
+}
+
+ul.inventoryItems li
+{
+	width: 660px;
+	padding-left: 10px;
+}
+
+ul.inventoryItems li > span
+{
+	width: 290px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul.inventoryItems
+{
+	max-width: 95%;
+	margin-top: 2.6em;
+	margin-bottom: 2.8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*---- INVENTORY - BUTTONS ----*/
+
+
+div.inventoryManagementButtons
+{
+	height: 2em;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+div.inventoryManagementButtons button
+{
+	margin-left: 10px;
+	height: 33px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-right: 20px;
+}
+
+div.inventoryManagementButtons button:last-of-type
+{
+	float: right;
+}
+
+div.inventoryManagementButtons button.ui-button
+{
+	padding-top: 4px;
+}
+
+/*---- INVENTORY - CONTROLS ---- */
+
+
+div.inventoryControls
+{
+	height: 2em;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+div.inventoryControls > span:last-child
+{
+	vertical-align: middle;
+	float: right;
+}
+
+div.inventoryControls > span:first-child
+{
+	display: inline-block;
+	margin-top: 0.3em;
+	margin-left: 0.3em;
+	margin-right: 1em;
+}
+
+div.inventoryControls button
+{
+	height: 1.9em;
+}
+
+div.inventoryControls button.ui-button
+{
+	padding: 2px 10px;
+}
+
+/*---- INVENTORY - PARAMETERS ----*/
+
+
+form.parameters
+{
+	display: table;
+}
+
+form.parameters p
+{
+	display: table-row;
+	margin-bottom: 3px;
+}
+
+form.parameters p label ,
+input ,
+textarea
+{
+	vertical-align: middle;
+}
+
+form.parameters p input ,
+textarea
+{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+form.parameters textarea
+{
+	height: 80px;
+}
+
+textarea
+{
+	resize: none;
+}

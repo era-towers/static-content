@@ -1,0 +1,202 @@
+/*---- COPYRIGHT ----*/
+
+
+div.copyrightNotice
+{
+	position: absolute;
+	clear: both;
+	bottom: 3px;
+	margin-left: 3px;
+	font-size: 10pt;
+	z-index: -10;
+}
+
+div.copyrightNotice img
+{
+	float: left;
+	margin-right: 3px;
+	margin-top: 3px;
+}
+
+/*---- COPYRIGHT - MOBILE ----*/
+
+
+@media all and (max-width: 400px)
+{
+	div.copyrightNotice
+	{
+		font-size: 8pt;
+	}
+}
+
+/*---- NOTIFICATIONS ----*/
+
+
+div.willow-loading
+{
+	text-align: center;
+	display: block;
+}
+
+div.willow-top-page-notification
+{
+	position: absolute;
+	top: 0px;
+	display: block;
+	z-index: 2;
+	padding: 0.1em 0.5em;
+	font-size: 1.1em;
+}
+
+/*---- BUTTONS ----*/
+
+
+span.button-small
+{
+	background-position: 50%;
+	background-size: contain;
+	display: inline-block;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+	opacity: 0.6;
+	width: 24px;
+	height: 24px;
+}
+
+span.button-small:hover
+{
+	opacity: 1;
+}
+
+/*---- ROLL ----*/
+
+
+input.roll
+{
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0.6))), url("Images/rollDice.png") no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url("Images/rollDice.png") no-repeat;
+	background-size: contain;
+	background-position: left;
+	text-align: right;
+}
+
+div.roll span.button-small
+{
+	padding-left: 5px;
+	border-left: 1px solid black;
+}
+
+span.roll-random
+{
+	background-image: url("Images/butterfly.png");
+}
+
+span.roll-saved
+{
+	background-image: url("Images/database.png");
+}
+
+/*---- GLOBAL RULES ----*/
+
+
+.ruleDoesNotApply
+{
+	visibility: hidden;
+}
+
+.itemReference
+{
+	display: none;
+}
+
+/*---- OPEN HOME ----*/
+
+
+a.openHome
+{
+	background-repeat: no-repeat repeat;
+	background-size: contain;
+	background-image: url("Images/eraLogo.png");
+	width: 117px;
+	height: 35px;
+	float: left;
+}
+
+/*---- SKILL GLOSSARY ----*/
+
+
+div.glossaryEntry.ui-state-default
+{
+    float: left;
+    max-height: 400px;
+    overflow-y: auto;
+    max-width: 442px;
+    padding: 10px;
+    font-weight: inherit;
+}
+
+div.glossaryEntry.ui-state-default:not(:only-child)
+{
+    margin-right: 35px;
+}
+
+div.glossaryEntry.ui-state-default:only-child
+{
+    margin-bottom: 10px;
+}
+
+div.glossaryEntryDescription
+{
+	font-size: smaller;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+div.glossaryEntry > h3
+{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+div.glossaryEntry > h3 > em
+{
+    font-size: smaller;
+    font-weight: normal;
+    margin-left: 7px;
+}
+
+table.glossaryEntryModifiers
+{
+	min-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.glossaryEntryModifierValue
+{
+	text-align: center;
+    min-width: 90px;
+}
+
+table.glossaryEntryDifficultyExamples
+{
+	min-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.glossaryEntryExample
+{
+	text-align: justify;
+    font-size: smaller;
+    background-color: white;
+    border: 1px solid #654b24;
+    border-radius: 5px;
+    padding: 3px;
+    width: 83%;
+}

@@ -1,0 +1,214 @@
+/*---- BUTTON CONTAINER ----*/
+
+
+div.moduleSelection
+{
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+div.moduleSelection img.icon
+{
+	padding: 4px;
+}
+
+div.moduleSelection a.button
+{
+	margin-bottom: 10px;
+}
+
+/*---- LOGOS ----*/
+
+
+div.logos
+{
+	width: 380px;
+	margin: auto;
+}
+
+div.logos > a.openHome
+{
+    width: 100%;
+    height: 116px;
+    display: block;
+	float: none;
+}
+
+div.logos span
+{
+	float: right;
+	margin-top: -9px;
+}
+
+div.logos img:last-child
+{
+	margin-left: 15px;
+	width: 200px;
+	vertical-align: middle;
+}
+
+/*---- ABOUT BOX ----*/
+
+
+div.large.segment.aboutBox
+{
+	padding: 0;
+}
+
+div.large.segment.aboutBox a
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+form.aboutBox > div.aboutBox
+{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: underline;
+}
+
+form.aboutBox input.aboutBox
+{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+form.aboutBox
+{
+	margin-top: -0.4em;
+	margin-bottom: 0.8em;
+}
+
+span.new-version-available
+{
+	font-weight: bold;
+	color: darkred;
+}
+
+/*---- LICENSE AGREEMENT ----*/
+
+
+textarea.licenseAgreement
+{
+	resize: none;
+	height: 350px;
+}
+
+/*---- ABOUT HINT ----*/
+
+
+button.ui.button.aboutHint
+{
+	right: -1.8em;
+	bottom: 8em;
+	position: absolute;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+button.ui.button.aboutHint.new-version-available
+{
+	background-color: orange;
+	color: darkred;
+	animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle
+{
+	0%, 7%
+	{
+		transform: rotateZ(-90deg);
+	}
+
+	15%
+	{
+		transform: rotateZ(-105deg);
+	}
+
+	20%
+	{
+		transform: rotateZ(-80deg);
+	}
+
+	25%
+	{
+		transform: rotateZ(-100deg);
+	}
+
+	30%
+	{
+		transform: rotateZ(-84deg);
+	}
+
+	35%
+	{
+		transform: rotateZ(-94deg);
+	}
+
+	40%, 100%
+	{
+		transform: rotateZ(-90deg);
+	}
+}
+
+/*---- INSTALLED COMPONENTS ----*/
+
+
+div.installedComponents.segment
+{
+	padding: 0;
+}
+
+select.installedComponents
+{
+	width: 100%;
+}
+
+/*---- RULES CUSTOMIZATION ----*/
+
+
+select.ruleCustomization
+{
+	width: 100%;
+}
+
+/*---- MOBILE ----*/
+
+
+@media all and (max-width: 400px)
+{
+	div.moduleSelection ,
+	div.logos
+	{
+		width: 320px;
+	}
+	
+	h4.header
+	{
+		display: none;
+	}
+	
+	.ui.button.aboutHint
+	{
+		font-size: 0.9rem;
+	}
+	
+	div.moduleSelection a.ui.button
+	{
+		font-size: 1.1rem;
+	}
+}

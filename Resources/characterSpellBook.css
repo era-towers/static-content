@@ -1,0 +1,133 @@
+/* ---- INTERFACE ---- */
+
+body
+{
+	background-image: url("Images/paperBackground.jpg");
+}
+
+/* ---- SPELL LIST ---- */
+
+
+div.selectedSpellDetail
+{
+	padding: 0.2em;
+	font-weight: inherit;
+	margin-bottom: 1em;
+}
+
+span.spellListName
+{
+	display: inline-block;
+	width: 97vw;
+	text-align: center;
+	font-size: larger;
+}
+
+table.spellDetails
+{
+	width: 97vw;
+}
+
+table.spellDetails th
+{
+	font-size: smaller;
+}
+
+table.spellDetails th.spellLevel ,
+table.spellDetails td.spellLevel
+{
+	width: 5vw;
+	padding-right: 1em;
+	text-align: right;
+}
+
+table.spellDetails th.spellName ,
+table.spellDetails td.spellName
+{
+	width: 40vw;
+	text-align: left;
+}
+
+table.spellDetails span.spellData
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails th.spellParameters ,
+table.spellDetails td.spellParameters
+{
+	width: 34vw;
+	text-align: center;
+}
+
+table.spellDetails td.spellParameters
+{
+	font-size: smaller;
+}
+
+div.selectedSpellDescription
+{
+	width: 85vw;
+	text-align: justify;
+    margin: auto;
+    padding: 0.2em;
+}
+
+div.selectedSpellDescription > span.selectedSpellDescription
+{
+	margin-bottom: 0.2em;
+	display: block;
+}
+
+
+/* ---- SLIDE SWIPE ---- */
+
+html, body
+{
+    margin: 0;
+    overflow-x:hidden;
+    position:relative;
+}
+
+div.spellBookPage
+{
+    float:left;
+}
+
+a.spellBookIndexEntry, a.spellBookIndexSection
+{
+    display: block;
+    text-align: center;
+	cursor: pointer;
+}
+
+a.spellBookIndexEntry
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a.spellBookIndexSection
+{
+	font-weight: bold;
+	font-size: larger;
+	margin-top: 20px;
+}
+
+a.backToSpellBookIndex
+{
+	float: left;
+	font-size: smaller;
+	cursor: pointer;
+}
+
+span.pageSpellType
+{
+	float: right;
+	font-size: smaller;
+    margin-top: -43px;
+}
