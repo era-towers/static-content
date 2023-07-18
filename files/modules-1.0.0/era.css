@@ -41,8 +41,13 @@ div.copyrightNotice img
 	transform: translate(-50%, -50%);
 	background: white;
 	border-radius: 50%;
-	border: 2px solid black;
-	padding: 20px;
+	padding: 15px;
+	box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
+}
+
+.spinkit-container .sk-circle-fade-dot:before
+{
+    background-color: #654b24;
 }
 
 /*---- BUTTONS ----*/

@@ -63,6 +63,11 @@ a.nextButton {
 	right: 5%;
 }
 
+div.stepButtons.disabledStepButtons > a.ui-button {
+	color: grey;
+	pointer-events: none;
+}
+
 /* ---- SECTION CONTAINER ---- */
 
 div.sectionsContainer {display: inline;}
@@ -1408,6 +1413,13 @@ fieldset.hobbyRankAssignmentSection table.ui-widget
 	margin-bottom: 3px;
 	width: 100%;
 	font-size: 0.85em;
+}
+
+fieldset.cultureRankAssignmentSection.disabledAssignmentButtons span.button-small ,
+fieldset.hobbyRankAssignmentSection.disabledAssignmentButtons span.button-small
+{
+	color: light-grey;
+	pointer-events: none;
 }
 
 fieldset.outfittingSection.ui-widget
