@@ -212,3 +212,19 @@ select.ruleCustomization
 		font-size: 1.1rem;
 	}
 }
+
+/*---- USER PROFILE ----*/
+
+
+div.ui.menu.profileActions
+{
+    position: absolute;
+    right: 0px;
+	top: 2px;
+}
+
+span.profileActions
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
