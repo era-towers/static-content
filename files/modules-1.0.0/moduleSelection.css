@@ -31,9 +31,9 @@ div.logos
 
 div.logos > a.openHome
 {
-    width: 100%;
-    height: 116px;
-    display: block;
+	width: 100%;
+	height: 116px;
+	display: block;
 	float: none;
 }
 
@@ -133,49 +133,36 @@ button.ui.button.aboutHint.new-version-available
 	{
 		transform: rotateZ(-90deg);
 	}
-
+	
 	15%
 	{
 		transform: rotateZ(-105deg);
 	}
-
+	
 	20%
 	{
 		transform: rotateZ(-80deg);
 	}
-
+	
 	25%
 	{
 		transform: rotateZ(-100deg);
 	}
-
+	
 	30%
 	{
 		transform: rotateZ(-84deg);
 	}
-
+	
 	35%
 	{
 		transform: rotateZ(-94deg);
 	}
-
+	
 	40%, 100%
 	{
 		transform: rotateZ(-90deg);
 	}
-}
-
-/*---- INSTALLED COMPONENTS ----*/
-
-
-div.installedComponents.segment
-{
-	padding: 0;
-}
-
-select.installedComponents
-{
-	width: 100%;
 }
 
 /*---- RULES CUSTOMIZATION ----*/
@@ -184,6 +171,22 @@ select.installedComponents
 select.ruleCustomization
 {
 	width: 100%;
+}
+
+/*---- USER PROFILE ----*/
+
+
+div.ui.menu.profileActions
+{
+	position: absolute;
+	right: 0px;
+	top: 2px;
+}
+
+span.profileActions
+{
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /*---- MOBILE ----*/
@@ -211,20 +214,4 @@ select.ruleCustomization
 	{
 		font-size: 1.1rem;
 	}
-}
-
-/*---- USER PROFILE ----*/
-
-
-div.ui.menu.profileActions
-{
-    position: absolute;
-    right: 0px;
-	top: 2px;
-}
-
-span.profileActions
-{
-    margin-left: 5px;
-    margin-right: 5px;
 }
