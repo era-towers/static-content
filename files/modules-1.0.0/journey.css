@@ -68,12 +68,48 @@ form.mapSelection input
 
 /*---- MAP ----*/
 
-
-fieldset.journeyMap
+input.distanceInPixels, input.scaleInPixels
 {
+	display: none;
+}
+
+input.scaleDistance
+{
+	width: 50px;
+	margin-left: 8px;
+	margin-right: 8px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+input.scaleUnit
+{
+	width: 100px;
+	vertical-align: middle;
+}
+
+span.computedDistance
+{
+    margin-left: 16px;
+    font-size: 16pt;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+div > button.ui-widget:first-of-type
+{
+	margin-left: 16px;
 }
 
 fieldset.journeyMap img
 {
 	width: 100%;
+}
+
+/*---- MAP OVERLAY ----*/
+
+
+canvas.mapOverlay
+{
+	position: absolute;
 }
