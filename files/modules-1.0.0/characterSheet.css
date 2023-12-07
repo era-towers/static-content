@@ -487,6 +487,13 @@ form.skillUpdateFields select[multiple] {
 	margin-bottom: 0.8em;
 }
 
+ul.spellLists-autocomplete {
+	width: 600px;
+	max-height: 40vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
 /* ---- SKILL FILTERS ---- */
 
 fieldset.skillFiltersAndLevelUp {

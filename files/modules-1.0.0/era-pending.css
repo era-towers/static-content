@@ -496,3 +496,11 @@ div.forceSpellRealm div.radio > label {
 div.forceSpellRealm div.radio > label:last-of-type { 
 	min-width: 97px;
 }
+
+div.resistanceModification { 
+	margin-bottom: 8px;
+}
+
+div.forceSpellResistance span.modificationsDetail {
+	float: right;
+}
