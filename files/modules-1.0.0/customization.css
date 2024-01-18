@@ -32,3 +32,8 @@ input.installFile
 	position: absolute;
 	z-index: -1;
 }
+
+button.ui.icon:nth-child(3)
+{
+	position: absolute;	
+}

@@ -27,11 +27,13 @@ i.icon.roll-random
 /*---- TREASURE ENTRY ----*/
 
 
-div.list div.list i.icon.treasure-entry
+div.ui.list div.list i.icon.treasure-entry
 {
 	background-image: url("Images/treasure-entry.png");
 	background-size: contain;
 	background-repeat: no-repeat;
+	float: left;
+	margin-top: 3px;
 }
 
 /*---- STARTING TABLE ----*/
@@ -40,4 +42,9 @@ div.list div.list i.icon.treasure-entry
 body > div.ui.segment > div.fields
 {
 	margin-bottom: 0px;
+}
+
+div.fields > div.inline.field > div.ui.selection.dropdown
+{
+    width: 25em;
 }

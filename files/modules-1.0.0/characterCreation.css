@@ -1422,14 +1422,6 @@ fieldset.hobbyRankAssignmentSection.disabledAssignmentButtons span.button-small
 	pointer-events: none;
 }
 
-ul.spellLists-autocomplete
-{
-	width: 600px;
-	max-height: 40vh;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
 fieldset.outfittingSection.ui-widget
 {
 	overflow: auto;

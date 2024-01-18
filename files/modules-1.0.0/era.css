@@ -201,3 +201,14 @@ td.glossaryEntryExample
 	padding: 3px;
 	width: 83%;
 }
+
+/*---- SPELL LIST  FILTER ----*/
+
+
+ul.spellLists-autocomplete
+{
+	width: 600px;
+	max-height: 40vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
