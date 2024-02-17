@@ -48,3 +48,17 @@ div.fields > div.inline.field > div.ui.selection.dropdown
 {
     width: 25em;
 }
+
+/*---- COLUMNS ----*/
+
+
+form.ui.form > div.inline.fields
+{
+	width: 95vw;
+    display: inline-block;
+}
+
+form.ui.form > div.inline.fields > div.field
+{   
+	display: inline-block;
+}
