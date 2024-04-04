@@ -212,26 +212,6 @@ fieldSet.fieldsAndLabelsWithBorder label:nth-of-type(n+2) {
 	margin-left: 12px;
 }
 
-fieldSet.rollToSave select { 
-	width: 100%;
-}
-
-fieldSet.rollToSave input {
-	vertical-align: middle;
-}
-
-fieldSet.rollToSave {
-	padding: 0px;
-	border: none;
-}
-
-fieldSet.rollToSave > form > button {
-	width: 24px;
-	height: 24px;
-	left: 1px;
-	vertical-align: middle;
-}
-
 fieldSet.spellPreparationStatus {
 	vertical-align: middle;
 	padding: 11px 0px 23px 0px;

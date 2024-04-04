@@ -202,6 +202,71 @@ span.nonGroupingElement
 	}
 }
 
+div.checkedPlayerKeptRecord > span
+{
+	font-size: 2em;
+    margin-right: 4px;
+}
+
+div.checkedPlayerKeptRecord > span::after
+{
+	content: "\25C7";
+}
+
+div.checkedPlayerKeptRecord > span.checked::after
+{
+	content: "\25C8";
+}
+
+div.milestonePlayerKeptRecord > span:not(.milestone)
+{
+	font-size: 0.94em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.milestonePlayerKeptRecord > span::after
+{
+	content: "\25A1";
+}
+
+div.milestonePlayerKeptRecord > span.checked::after
+{
+	content: "\25A0";
+}
+
+div.milestonePlayerKeptRecord > span.milestone
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.milestonePlayerKeptRecord > span.milestone::after
+{
+	content: "\2B1C";
+	font-size: 1em;
+}
+
+div.milestonePlayerKeptRecord > span.milestone > div
+{ 
+	position: absolute;
+    text-align: center;
+    width: 2em;
+    padding-top: 0.5em;
+    font-size: 0.7em;
+}
+
+div.milestonePlayerKeptRecord > span.milestone.checked
+{
+	color: white;
+}
+
+div.milestonePlayerKeptRecord > span.milestone.checked::after
+{
+	content: "\2B1B";
+	font-size: 1em;
+}
+
 td.resistanceColumn
 {
 	width: 65px;
@@ -328,71 +393,4 @@ table.wideSection th::after
 	margin-top: -6px;
 	background: white;
 	display: block;
-}
-
-div.checkedPlayerKeptRecord > span
-{
-	font-size: 2em;
-    margin-right: 4px;
-}
-
-div.checkedPlayerKeptRecord > span:after
-{
-	content: "\25C7";
-}
-
-
-div.checkedPlayerKeptRecord > span.checked:after
-{
-	content: "\25C8";
-}
-
-div.milestonePlayerKeptRecord > span:not(.milestone)
-{
-	font-size: 0.94em;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-div.milestonePlayerKeptRecord > span:after
-{
-	content: "\25A1";
-}
-
-div.milestonePlayerKeptRecord > span.checked:after
-{
-	content: "\25A0";
-}
-
-div.milestonePlayerKeptRecord > span.milestone
-{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-div.milestonePlayerKeptRecord > span.milestone:after
-{
-	content: "\2B1C";
-	font-size: 1em;
-}
-
-div.milestonePlayerKeptRecord > span.milestone > div
-{ 
-	position: absolute;
-    text-align: center;
-    width: 2em;
-    padding-top: 0.5em;
-    font-size: 0.7em;
-}
-
-
-div.milestonePlayerKeptRecord > span.milestone.checked
-{
-	color: white;
-}
-
-div.milestonePlayerKeptRecord > span.milestone.checked:after
-{
-	content: "\2B1B";
-	font-size: 1em;
 }

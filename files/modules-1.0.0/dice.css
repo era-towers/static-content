@@ -1,0 +1,255 @@
+@keyframes roll1
+{
+	10%
+	{
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	
+	30%
+	{
+		transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg) translateX(40px) translateY(40px);
+	}
+	
+	50%
+	{
+		transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+	}
+	
+	70%
+	{
+		transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+	}
+	
+	90%
+	{
+		transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
+	}
+}
+
+@keyframes roll2
+{
+	10%
+	{
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	
+	30%
+	{
+		transform: rotateX(240deg) rotateY(120deg) rotateZ(0deg) translateX(40px) translateY(40px);
+	}
+	
+	50%
+	{
+		transform: rotateX(480deg) rotateY(240deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+	}
+	
+	70%
+	{
+		transform: rotateX(720deg) rotateY(360deg) rotateZ(0deg);
+	}
+	
+	90%
+	{
+		transform: rotateX(960deg) rotateY(480deg) rotateZ(0deg);
+	}
+}
+
+div.rolling-dice
+{
+	position: relative;
+	perspective: 800px;
+	top: 30px;
+	left: 200px;
+}
+
+div.die
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transform-style: preserve-3d;
+	transition: transform 0.4s ease-out;
+}
+
+div.die:nth-child(1)
+{
+	transform: rotateX(-30deg) rotateY(-20deg) rotateZ(0deg);
+}
+
+div.die:nth-child(2)
+{
+	top: 24px;
+	left: 80px;
+	transform: rotateX(-15deg) rotateY(10deg) rotateZ(0deg);
+}
+
+div.die:nth-child(1).rolling
+{
+	animation: roll1 1s linear;
+}
+
+div.die:nth-child(2).rolling
+{
+	animation: roll2 1s linear;
+}
+
+div.die[data-face="0"]
+{
+	transform: rotateX(-45deg) rotateY(0deg);
+}
+
+div.die[data-face="1"]
+{
+	transform: rotateX(-225deg) rotateY(-72deg);
+}
+
+div.die[data-face="2"]
+{
+	transform: rotateX(-45deg) rotateY(72deg);
+}
+
+div.die[data-face="3"]
+{
+	transform: rotateX(-225deg) rotateY(-144deg);
+}
+
+div.die[data-face="4"]
+{
+	transform: rotateX(-45deg) rotateY(144deg);
+}
+
+div.die[data-face="5"]
+{
+	transform: rotateX(-225deg) rotateY(-216deg);
+}
+
+div.die[data-face="6"]
+{
+	transform: rotateX(-45deg) rotateY(216deg);
+}
+
+div.die[data-face="7"]
+{
+	transform: rotateX(-225deg) rotateY(-288deg);
+}
+
+div.die[data-face="8"]
+{
+	transform: rotateX(-45deg) rotateY(288deg);
+}
+
+div.die[data-face="9"]
+{
+	transform: rotateX(-225deg) rotateY(-360deg);
+}
+
+figure.face
+{
+	position: absolute;
+	left: 50%;
+	border-left-style: solid;
+	border-left-color: transparent;
+	border-right-style: solid;
+	border-right-color: transparent;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-bottom-style: solid;
+	counter-increment: steps 1;
+}
+
+figure.face:nth-child(1)
+{
+	counter-increment: steps 0;
+}
+
+div.die.brown:nth-child(1) figure.face
+{
+	border-bottom-color: rgba(101,75,36,0.75);
+}
+
+div.die.green:nth-child(1) figure.face
+{
+	border-bottom-color: rgba(40,137,29,0.75);
+}
+
+div.die.brown:nth-child(2) figure.face
+{
+	border-bottom-color: rgba(178,162,102,0.75);
+}
+
+div.die.green:nth-child(2) figure.face
+{
+	border-bottom-color: rgba(65,177,100,0.75);
+}
+
+figure.face::before
+{
+	position: absolute;
+	text-align: center;
+}
+
+div.die:nth-child(1) figure.face::before
+{
+	content: counter(steps) "0";
+	color: rgb(241,226,171);
+	text-shadow: 1px 1px 3px black;
+}
+
+div.die:nth-child(2) figure.face::before
+{
+	content: counter(steps);
+	color: rgb(101,75,36);
+	text-shadow: 1px 1px 3px #736d5a;
+}
+
+figure.face::after
+{
+	content: "";
+	position: absolute;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-left-color: transparent;
+	border-right-style: solid;
+	border-right-color: transparent;
+	width: 0px;
+	height: 0px;
+}
+
+div.die.brown:nth-child(1) figure.face::after
+{
+	border-top-color: rgba(101,75,36,0.75);
+}
+
+div.die.green:nth-child(1) figure.face::after
+{
+	border-top-color: rgba(40,137,29,0.75);
+}
+
+div.die.brown:nth-child(2) figure.face::after
+{
+	border-top-color: rgba(178,162,102,0.75);
+}
+
+div.die.green:nth-child(2) figure.face::after
+{
+	border-top-color: rgba(65,177,100,0.75);
+}
+
+@keyframes fadeout
+{
+	from
+	{
+		opacity: 1;
+	}
+	
+	to
+	{
+		opacity: 0;
+	}
+}
+
+div.fading-dice
+{
+	opacity: 0;
+	animation: fadeout 2s;
+}

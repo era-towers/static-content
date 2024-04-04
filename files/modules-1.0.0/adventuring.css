@@ -1240,7 +1240,7 @@ div.spellCastingResult span.spellCastingResult
 {
 	margin-top: 8px;
 	vertical-align: middle;
-	width: 616px;
+	width: 605px;
 	height: 50px;
 	font-weight: inherit;
 	display: inline-block;
@@ -1256,7 +1256,7 @@ span.spellCastingResolution
 
 span.spellCastingResolution > button.spellCastingResolution
 {
-	width: 94px;
+	width: 112px;
 	margin-left: 10px;
 }
 
@@ -1447,3 +1447,38 @@ p.skillModificationExplanation
 	display: inline-block;
 }
 
+/*---- SAVED ROLLS ----*/
+
+
+form.savedRolls
+{
+	width: 340px;
+}
+
+form.savedRolls > div:nth-child(1)
+{
+	float: right;
+	width: 170px;
+}
+
+form.savedRolls > div:nth-child(1) > button
+{
+	font-size: 0.85em;
+	margin-bottom: 5px;
+}
+
+form.savedRolls > div:nth-child(2)
+{
+	width: 160px;
+}
+
+input.savedRolls
+{
+	margin-top: 2px;
+	margin-bottom: 4px;
+}
+
+select.savedRolls
+{
+	width: 100%;
+}

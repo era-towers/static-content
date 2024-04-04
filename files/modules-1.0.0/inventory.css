@@ -156,6 +156,12 @@ div.inventoryControls button.ui-button
 	padding: 2px 10px;
 }
 
+div.inventoryControls input.ui-autocomplete-input
+{
+	padding: 2px 10px;
+    width: 20em;
+}
+
 /*---- INVENTORY - PARAMETERS ----*/
 
 
