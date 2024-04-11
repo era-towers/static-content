@@ -123,6 +123,7 @@ a.openHome
 {
 	background-size: contain;
 	background-image: url("Images/eraLogo.png");
+	background-repeat: no-repeat;
 	width: 117px;
 	height: 35px;
 	float: left;

@@ -115,10 +115,6 @@ button.ui.button.aboutHint
 	bottom: 8em;
 	position: absolute;
 	transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
 }
 
 button.ui.button.aboutHint.new-version-available
@@ -133,64 +129,36 @@ button.ui.button.aboutHint.new-version-available
 	0%, 7%
 	{
 		transform: rotateZ(-90deg);
-		-moz-transform: rotateZ(-90deg);
-		-webkit-transform: rotateZ(-90deg);
-		-o-transform: rotateZ(-90deg);
-		-ms-transform: rotateZ(-90deg);
 	}
 	
 	15%
 	{
 		transform: rotateZ(-105deg);
-		-moz-transform: rotateZ(-105deg);
-		-webkit-transform: rotateZ(-105deg);
-		-o-transform: rotateZ(-105deg);
-		-ms-transform: rotateZ(-105deg);
 	}
 	
 	20%
 	{
 		transform: rotateZ(-80deg);
-		-moz-transform: rotateZ(-80deg);
-		-webkit-transform: rotateZ(-80deg);
-		-o-transform: rotateZ(-80deg);
-		-ms-transform: rotateZ(-80deg);
 	}
 	
 	25%
 	{
 		transform: rotateZ(-100deg);
-		-moz-transform: rotateZ(-100deg);
-		-webkit-transform: rotateZ(-100deg);
-		-o-transform: rotateZ(-100deg);
-		-ms-transform: rotateZ(-100deg);
 	}
 	
 	30%
 	{
 		transform: rotateZ(-84deg);
-		-moz-transform: rotateZ(-84deg);
-		-webkit-transform: rotateZ(-84deg);
-		-o-transform: rotateZ(-84deg);
-		-ms-transform: rotateZ(-84deg);
 	}
 	
 	35%
 	{
 		transform: rotateZ(-94deg);
-		-moz-transform: rotateZ(-94deg);
-		-webkit-transform: rotateZ(-94deg);
-		-o-transform: rotateZ(-94deg);
-		-ms-transform: rotateZ(-94deg);
 	}
 	
 	40%, 100%
 	{
 		transform: rotateZ(-90deg);
-		-moz-transform: rotateZ(-90deg);
-		-webkit-transform: rotateZ(-90deg);
-		-o-transform: rotateZ(-90deg);
-		-ms-transform: rotateZ(-90deg);
 	}
 }
 
@@ -242,5 +210,10 @@ span.profileActions
 	div.moduleSelection a.ui.button
 	{
 		font-size: 1.1rem;
+	}
+	
+	div.ui.menu.profileActions
+	{
+		position: static;
 	}
 }
