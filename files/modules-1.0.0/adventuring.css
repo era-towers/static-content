@@ -1482,3 +1482,37 @@ select.savedRolls
 {
 	width: 100%;
 }
+
+/*---- MOBILE ----*/
+
+
+@media all and (max-width: 400px)
+{
+	div.adventureControls
+	{
+		margin-left: 0;
+	    margin-right: 0;
+	}
+
+	div.heroChips, div.enemyChips
+	{
+		position: absolute;
+		top: 40vh;
+	}
+
+	div.heroChips
+	{
+	    margin-left: 0;
+	}
+
+	div.enemyChips
+	{
+	    margin-right: 0;
+		right: 0;
+	}
+
+	div.combatInProgress div.adventureControls
+	{
+    margin-right: 0;
+	}
+}
