@@ -668,7 +668,7 @@ div.defensiveCombatSkill
 
 div.combatSkillPercentage
 {
-	width: 94px;
+	width: 98px;
 	float: left;
 	margin-right: 5px;
 	margin-top: 13px;
@@ -707,7 +707,7 @@ div.combatProtections
 	background-repeat: no-repeat;
 	background-size: 36px;
 	background-position: 0% 100%;
-	height: 208px;
+	height: 245px;
 }
 
 div.combatDefenseSummary > span:first-child
@@ -724,7 +724,7 @@ div.combatDefenseSummary > span:last-child
 div.attackInformation div.attackLeft
 {
 	float: left;
-	width: 372px;
+	width: 376px;
 }
 
 div.attackInformation fieldset:last-of-type
@@ -734,8 +734,8 @@ div.attackInformation fieldset:last-of-type
 
 div.attackInformation div.attackRight
 {
-	width: 372px;
-	margin-left: 372px;
+	width: 378px;
+	margin-left: 378px;
 }
 
 ul.combatDefensiveModifications
@@ -747,7 +747,7 @@ ul.combatDefensiveModifications
 
 ul.combatDefensiveModifications:first-child
 {
-	height: 141px;
+	height: 190px;
 }
 
 div.situationalModifications
@@ -756,24 +756,24 @@ div.situationalModifications
 	background-repeat: no-repeat;
 	background-size: 36px;
 	background-position: 0% 100%;
-	height: 208px;
+	height: 244px;
 }
 
 span.situationalModification
 {
 	margin-top: 11px;
-	width: 140px;
+	width: 142px;
 	display: inline-block;
 }
 
 span.situationalModification:nth-child(2n)
 {
-	margin-left: 12px;
+	margin-left: 45px;
 }
 
 span.situationalModification:nth-child(2n+1)
 {
-	margin-left: 45px;
+	margin-left: 12px;
 }
 
 span.situationalModificationLabel
@@ -782,40 +782,40 @@ span.situationalModificationLabel
 	display: inline-block;
 }
 
-div.sizeAdjustment:first-of-type
+div.singleLineModification:first-of-type
 {
 	margin-top: 6px;
 }
 
-div.sizeAdjustment
+div.singleLineModification
 {
 	margin-top: 10px;
 	max-height: 27px;
 }
 
-div.sizeAdjustment > span.sizeAdjustment
+div.singleLineModification > span.singleLineModification
 {
 	width: 196px;
 	display: inline-block;
 }
 
-div.sizeAdjustment > input.sizeAdjustment
+div.singleLineModification > input.singleLineModification
 {
 	width: 70px;
 	margin-left: 63px;
 }
 
-div.sizeAdjustment > select.sizeAdjustment
+div.singleLineModification > select.singleLineModification
 {
-	width: 137px;
+	width: 141px;
 }
 
-div.sizeAdjustment > label.sizeAdjustment
+div.singleLineModification > label.singleLineModification
 {
 	width: 80px;
 }
 
-div.sizeAdjustment > label > span.sizeAdjustment
+div.singleLineModification > label > span.singleLineModification
 {
 	width: 176px;
 	display: inline-block;
@@ -832,6 +832,34 @@ div.attackDown span.modificationsDetail
 {
 	float: right;
     margin-left: -8px;
+}
+
+div.attackDown input.roll
+{
+    width: 100px;
+}
+
+div.attackDown input.roll.attackLocation
+{
+    width: 70px;
+    margin-left: 12px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+select.attackLocation
+{
+    margin-right: 30px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+div.attackDown span.locationCriticalModification
+{
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+	text-align: right;
 }
 
 /*---- INJURY RECOVERY ----*/
@@ -1005,6 +1033,31 @@ span.statusEffectName
 	vertical-align: middle;
 	text-align: center;
 	width: 54px;
+}
+
+div.profileArmor
+{
+    float: left;
+    width: 275px;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 0.85em;
+}
+
+span.profileArmor
+{
+    width: 77px;
+    display: inline-block;
+}
+
+select.profileArmor:nth-of-type(2n-1)
+{
+    margin-right: 3px;
+}
+
+fieldset.profileDefensiveModifications
+{
+    font-size: 0.9em;
 }
 
 /*---- INTERFACE ----*/
@@ -1486,7 +1539,7 @@ select.savedRolls
 /*---- MOBILE ----*/
 
 
-@media all and (max-width: 400px)
+@media all and (max-width: 500px)
 {
 	div.adventureControls
 	{
@@ -1494,7 +1547,8 @@ select.savedRolls
 	    margin-right: 0;
 	}
 
-	div.heroChips, div.enemyChips
+	div.heroChips ,
+	div.enemyChips
 	{
 		position: absolute;
 		top: 40vh;

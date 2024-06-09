@@ -1533,6 +1533,18 @@ fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:first-child
 	width: 75%;
 }
 
+div.trainingPackageRankAssignmentsSection span.spellListSkillRowButton
+{
+    display: inline-block;
+	width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid transparent;
+    vertical-align: text-top;
+    cursor: pointer;
+}
+
 tr.characterSkillCategory span.trainingPackageRanksAssigned ,
 tr.characterSkill span.trainingPackageRanksAssigned
 {
