@@ -96,10 +96,6 @@ div.coinType span.coinDigit
 	margin-left: 17px;
 	width: 18px;
 	transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 }
 
 div.nameHeader
@@ -200,6 +196,18 @@ span.nonGroupingElement
 		margin: 5px 0px 0px 0px;
 		width: initial;
 	}
+}
+
+span.playerKeptRecordName
+{
+	display: inline-block;
+	width: 51px;
+}
+
+div.checkedPlayerKeptRecord ,
+div.milestonePlayerKeptRecord
+{
+	width: 198px;
 }
 
 div.checkedPlayerKeptRecord > span
