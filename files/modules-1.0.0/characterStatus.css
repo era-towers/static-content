@@ -261,6 +261,10 @@ span.StunNoParry {
 	background-image: url("Images/stunNoParry.png");
 }
 
+span.accumulatedExhaustion {
+	background-image: url("Images/run.png");
+}
+
 span.modifications {
 	background-image: url("Images/back-pain.png");
 	background-position: 10% 0%;

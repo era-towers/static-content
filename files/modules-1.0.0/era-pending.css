@@ -308,35 +308,6 @@ div.criticalResult *{
 	height: 100px;
 }
 
-/* ---- RESTING ---- */
-
-div.recoveryPeriod {
-	height: 40px;
-	width: 320px;
-	padding-bottom: 0.75em;
-	padding-right: 0.87em;
-}
-
-div.recoveryPeriodTypes {
-	display: table;
-	width: 280px;
-}
-
-div.recoveryPeriodImage {
-	float: right;
-}
-
-div.recoveryPeriodImage img {
-	width: 40px;
-	height: 40px;
-}
-
-div.recoveryPeriodTypes div.radio > label { 
-	display: table-cell;
-	width:33%;
-	text-align: center;
-}
-
 /* ---- COMMON ELEMENTS ---- */
 
 div.inline {
