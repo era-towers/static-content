@@ -1060,6 +1060,23 @@ fieldset.profileDefensiveModifications
     font-size: 0.9em;
 }
 
+fieldset.profileTargeting
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+}
+
+input[type="number"].shortNumber
+{
+	width: 40px;
+}
+
+fieldset.profileExhaustion input
+{
+	width: 70px;
+}
+
 /*---- INTERFACE ----*/
 
 
@@ -1242,7 +1259,7 @@ input.spellCastingCondition
 fieldset.spellCastingConsequences
 {
 	width: 378px;
-	height: 200px;
+	height: 211px;
 	float: right;
 }
 
@@ -1273,7 +1290,7 @@ span.spellDuration
 ul.spellTargets
 {
 	width: 203px;
-	height: 106px;
+	height: 134px;
 	margin: 0px;
 	margin-top: 8px;
 	display: inline-block;
@@ -1448,14 +1465,18 @@ a.meeting
 
 div.maneuverResult span.maneuverResult
 {
+    width: 355px;
+    height: 10em;
     margin-top: 8px;
-    vertical-align: middle;
-    width: 31vw;
-    height: 70px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    padding-right: 14px;
+    text-align: justify;
     font-weight: inherit;
     display: inline-block;
-    padding: 5px;
     white-space: pre-wrap;
+    vertical-align: middle;
     overflow-y: auto;
 }
 
@@ -1498,6 +1519,78 @@ div.maneuverParameters input.skillNameFilter
 p.skillModificationExplanation
 {
 	display: inline-block;
+}
+
+fieldset.maneuverConsequences
+{
+    padding-top: 4px;
+    padding-left: 6px;
+    margin-top: 10px;
+    width: 173px;
+    float: right;
+}
+
+span.maneuverConsequence
+{
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 101px;
+}
+
+/*---- RESTING ----*/
+
+
+form.recoveryAction > div > label ,
+form.recoveryAction > div > div > label
+{
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+form.recoveryAction > div > input ,
+form.recoveryAction > div > div > input
+{
+    float: right;
+    width: 70px;
+}
+
+form.recoveryAction > div > input
+{
+	width: 100px;
+    text-align: right;
+}
+
+div.recoveryPeriod
+{
+	height: 40px;
+	width: 320px;
+	padding-bottom: 0.75em;
+	padding-right: 0.87em;
+}
+
+div.recoveryPeriodTypes
+{
+	display: table;
+	width: 280px;
+}
+
+div.recoveryPeriodImage
+{
+	float: right;
+}
+
+div.recoveryPeriodImage img
+{
+	width: 40px;
+	height: 40px;
+}
+
+div.recoveryPeriodTypes div.radio > label
+{ 
+	display: table-cell;
+	width: 33%;
+	text-align: center;
 }
 
 /*---- SAVED ROLLS ----*/
