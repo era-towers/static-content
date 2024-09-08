@@ -19,6 +19,8 @@ function startRollingTo(dies, dieIndex, face) {
 
 function rollTo(container, rollString, fieldId) {
     rollingDice = container.find(".rolling-dice");
+    if ((rollingDice.length) == 0)
+        return;
     rollingDice.removeClass('fading-dice');
     dies = container.find('.die');
     timeoutIds = [0, 0];
