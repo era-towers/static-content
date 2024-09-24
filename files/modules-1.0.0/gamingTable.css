@@ -1,3 +1,37 @@
+/* ----  GAME MASTER DICE ---- */
+
+div.game-master-dice {
+	position: absolute;
+	z-index: 999;
+    top: -40px;
+    left: 10px;
+}
+
+div.game-master-dice.keep-hidden {
+	visibility: hidden;
+}
+
+
+div.game-master-dice div.die:nth-child(1) figure.face:nth-child(1n+6)::before
+{
+	content: "?";
+}
+
+div.game-master-dice div.die:nth-child(1) figure.face::before
+{
+	content: "!";
+}
+
+div.game-master-dice div.die:nth-child(2) figure.face:nth-child(1n+3)::before
+{
+	content: "!";
+}
+
+div.game-master-dice div.die:nth-child(2) figure.face::before
+{
+	content: "?";
+}
+
 /* ----  AVATAR OVERLAYS ---- */
 
 img.avatarConstantOverlay, img.avatarHoverOverlay {
@@ -25,7 +59,7 @@ div.buttonBar
     position: absolute;
     height: 20vw;
     left: 15px;
-    top: 60px;
+    top: 120px;
     width: 130px;
 }
 
@@ -37,6 +71,11 @@ a.skillsButton
 a.spellsButton
 {
     background-image: url(Images/castSpell.png);
+}
+
+a.rollHistoryButton
+{
+    background-image: url(Images/scroll-quill.png);
 }
 
 a.buttonInBar
@@ -89,31 +128,36 @@ div.characterSpells
 	width: 640px;
 }
 
-div.characterSkills td:nth-child(1), , div.characterSpells td:nth-child(3), 
+div.characterSkills td:nth-child(1), , div.characterSpells td:nth-child(3)
 {
 	width: 300px;
 }
 
-div.characterSkills td:last-child, div.characterSpells td:nth-child(2), div.characterSpells td:last-child
+div.characterSkills td:nth-child(4), div.characterSpells td:nth-child(2), div.characterSpells td:(5)
 {
 	text-align: right;
 	width: 55px;
 }
 
-tr span.skillGlossaryEntryButton {
+span.informationButton, span.rollSkillButton {
 	display: inline-block;
-	background-repeat: no-repeat, repeat;
-	background-size: contain;
-	text-align: center;
-	width: 14px;
-	height: 14px;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	vertical-align: text-top;
-	margin-right: 5px;
-	cursor: pointer;
-	background-image: url("Images/info.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
+
+span.informationButton {
+    background-image: url(Images/info.png);
+    margin-right: 20px;
+}
+
+span.rollSkillButton {
+    background-image: url(Images/d10.png);
+}
+
 
 /*---- COMPANIONS ----*/
 
@@ -211,13 +255,22 @@ div.playerMat div.rolling-dice {
 
 div.eraInterface div.rolling-dice
 {
-    left: calc(60vw - 100px);
+    left: 0;
 }
 
-div.eraInterface div.fading-dice
+div.eraInterface span.diceContainer div.fading-dice, div.eraInterface div.companionDice div.fading-dice
 {
 	opacity: 1;
 	animation: none;
+}
+
+span.diceContainer
+{
+    left: calc(55vw - 200px);
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    position: relative;
 }
 
 /*---- DICE AFFECTED BY SIZE ----*/
@@ -243,7 +296,7 @@ figure.face
 	margin: 0 -26px;
 	border-left-width: 26px;
 	border-right-width: 26px;
-	border-bottom-width: 50px;
+	border-bottom-width: 51px;
 }
 
 figure.face::before

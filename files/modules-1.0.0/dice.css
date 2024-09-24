@@ -172,6 +172,11 @@ div.die.green:nth-child(1) figure.face
 	border-bottom-color: rgba(40,137,29,0.75);
 }
 
+div.die.red:nth-child(1) figure.face
+{
+	border-bottom-color: rgba(191,1,1,0.75);
+}
+
 div.die.brown:nth-child(2) figure.face
 {
 	border-bottom-color: rgba(178,162,102,0.75);
@@ -180,6 +185,11 @@ div.die.brown:nth-child(2) figure.face
 div.die.green:nth-child(2) figure.face
 {
 	border-bottom-color: rgba(65,177,100,0.75);
+}
+
+div.die.red:nth-child(2) figure.face
+{
+	border-bottom-color: rgba(227,49,49,0.75);
 }
 
 figure.face::before
@@ -225,6 +235,11 @@ div.die.green:nth-child(1) figure.face::after
 	border-top-color: rgba(40,137,29,0.75);
 }
 
+div.die.red:nth-child(1) figure.face::after
+{
+	border-top-color: rgba(191,1,1,0.75);
+}
+
 div.die.brown:nth-child(2) figure.face::after
 {
 	border-top-color: rgba(178,162,102,0.75);
@@ -233,6 +248,11 @@ div.die.brown:nth-child(2) figure.face::after
 div.die.green:nth-child(2) figure.face::after
 {
 	border-top-color: rgba(65,177,100,0.75);
+}
+
+div.die.red:nth-child(2) figure.face::after
+{
+	border-top-color: rgba(227,49,49,0.75);
 }
 
 @keyframes fadeout
