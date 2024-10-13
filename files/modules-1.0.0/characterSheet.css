@@ -720,7 +720,7 @@ div.characterDetailSkills tr span.addDerivedAttackButton {
 	background-image: url("Images/crossed-swords.png");
 }
 
-div.characterDetailSkills tr span.skillGlossaryEntryButton {
+div.characterDetailSkills tr span.glossaryEntryButton {
 	background-image: url("Images/info.png");
 }
 

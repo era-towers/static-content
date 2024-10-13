@@ -206,10 +206,16 @@ td.glossaryEntryExample
 /*---- SPELL LIST  FILTER ----*/
 
 
-ul.spellLists-autocomplete
+ul.spellLists-autocomplete, ul.autocompleteList
 {
 	width: 600px;
 	max-height: 40vh;
 	overflow-y: auto;
 	overflow-x: hidden;
+	background:lightgray;
+}
+
+ul.autocompleteList li.ui-menu-item, ul.spellLists-autocomplete li.ui-menu-item{
+	background: white;
+    margin: 1px;
 }

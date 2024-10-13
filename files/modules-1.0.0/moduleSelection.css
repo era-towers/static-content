@@ -186,6 +186,22 @@ span.profileActions
 	margin-right: 5px;
 }
 
+/*---- BETA FEATURES ----*/
+
+
+span.betaFeature
+{
+	font-size: smaller;
+    rotate: -45deg;
+    display: inline-block;
+    position: relative;
+    right: -47px;
+    top: 21px;
+    width: 0;
+    font-weight: bold;
+}
+
+
 /*---- MOBILE ----*/
 
 

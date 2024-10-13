@@ -129,63 +129,6 @@ input[type=number] {
 	text-align: right;
 }
 
-/* ---- MANEUVERS ---- */
-
-div.individualManeuver button.ui-button {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	vertical-align: middle;
-	margin-left: 5px;
-	padding: 0px;
-}
-
-div.individualManeuver textarea {
-	margin-left: 5px;
-	width: 285px;
-	margin-top: 0px;
-}
-
-div.partyManeuverDifficulty {
-	width: 785px;
-	margin-bottom: 5px;
-}
-
-div.partyManeuverDifficulty div.radio > label{
-	display: inline-block;
-}
-
-div.individualManeuver > div {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-div.individualManeuver div.roll input {
-	width: 55px;
-	margin-left: 5px;
-}
-
-div.individualManeuver img {
-	height: 50px;
-	width: 50px;
-	float: left;
-}
-
-div.individualManeuver select {
-	width: 300px;
-}
-
-div.individualManeuver:first-child select {
-	height: 50px;
-	margin-top: -9px;
-}
-
-div.individualManeuver {
-	width: 810px;
-	height: 51px;
-	margin-bottom: 20px;
-}
-
 /* ---- CHARACTER PROFILE ---- */
 
 div.characterStatus {

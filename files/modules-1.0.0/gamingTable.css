@@ -120,44 +120,208 @@ div.characterSkills, div.characterSpells
 
 div.characterSkills
 {
-	width: 420px;
+    min-width: 500px;
 }
 
 div.characterSpells
 {
-	width: 640px;
+	min-width: 630px;
 }
 
-div.characterSkills td:nth-child(1), , div.characterSpells td:nth-child(3)
+div.characterSkills td:nth-child(2)
 {
-	width: 300px;
+	min-width: 260px;
 }
 
-div.characterSkills td:nth-child(4), div.characterSpells td:nth-child(2), div.characterSpells td:(5)
+div.characterSpells td:nth-child(3), div.characterSpells td:nth-child(4)
+{
+	min-width: 200px;
+}
+
+div.characterSpells td:nth-child(4)
+{
+	font-size: smaller;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+div.characterSkills td:nth-child(3), div.characterSkills td:nth-child(4), div.characterSpells td:nth-child(5)
 {
 	text-align: right;
-	width: 55px;
+	width: 30px;
+	padding-right: 30px;
 }
 
+div.characterSpells td:nth-child(2)
+{
+	text-align: right;
+	width: 10px;
+}
+
+
 span.informationButton, span.rollSkillButton {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+tr:not(:only-child) span.informationButton, tr:not(:only-child) span.rollSkillButton {
+	opacity: 0;
+}
+
+span.informationButton {
+    padding: 0;
+    margin-left: 16px;
+}
+
+span.rollSkillButton{
+    background-image: url(Images/d10.png);
 	display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
 }
 
-span.informationButton {
-    background-image: url(Images/info.png);
+span.informationButton::after {
+	content: "...";
+}
+
+div.characterSkills tr:hover > td:nth-child(2), div.characterSpells tr:hover > td:nth-child(3)
+{
+	font-weight: bold;
+    text-shadow: 8px 5px 6px gray;
+}
+
+tr:hover span.informationButton, tr:hover span.rollSkillButton {
+	opacity: 1;
+}
+
+
+/*---- CUSTOM ROLLS ----*/
+
+div.glossaryEntry.ui-corner-all.ui-state-default:not(:only-child) {
     margin-right: 20px;
 }
 
-span.rollSkillButton {
-    background-image: url(Images/d10.png);
+div.glossaryEntry.ui-corner-all.ui-state-default {
+    max-width: 460px;
 }
 
+select.labeledField, input.labeledField, span.labeledField
+{
+	float: right;
+	vertical-align: middle;
+	text-align: right;
+}
+
+input.labeledField
+{
+	width: 70px;
+}
+
+label.labeledField
+{
+	vertical-align: middle;
+}
+
+button.labeledField
+{
+	float: right;
+}
+
+fieldSet.playerManeuverRoll select.labeledField
+{
+	width: 200px;
+}
+
+fieldSet.playerSpellCastingRoll select.labeledField
+{
+	width: 190px;
+}
+
+fieldSet.playerManeuverRoll div.labeledField
+{
+	height: 36px;
+    width: 280px;
+}
+
+fieldSet.playerSpellCastingRoll div.labeledField
+{
+	height: 36px;
+    width: 300px;
+}
+
+/*---- SPELL DETAILS ----*/
+
+span.spellListName
+{
+	display: inline-block;
+	width: 442px;
+	text-align: center;
+	font-size: larger;
+}
+
+span.spellListRanks
+{
+	float: right;
+	font-size: smaller;
+	margin-top: -18px;
+	margin-right: 20px;
+}
+
+table.spellDetails
+{
+	width: 444px;
+}
+
+table.spellDetails th
+{
+	font-size: smaller;
+}
+
+table.spellDetails th.spellLevel ,
+table.spellDetails td.spellLevel
+{
+	width: 21px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+table.spellDetails th.spellName ,
+table.spellDetails td.spellName
+{
+	width: 200px;
+	text-align: left;
+}
+
+table.spellDetails span.spellData
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails th.spellParameters ,
+table.spellDetails td.spellParameters
+{
+	width: 199px;
+	text-align: center;
+}
+
+table.spellDetails td.spellParameters
+{
+	font-size: smaller;
+}
+
+div.selectedSpellDescription
+{
+    overflow-y: auto;
+    padding: 3px;
+    text-align: justify;
+}
 
 /*---- COMPANIONS ----*/
 

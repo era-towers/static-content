@@ -271,5 +271,5 @@ div.die.red:nth-child(2) figure.face::after
 div.fading-dice
 {
 	opacity: 0;
-	animation: fadeout 2s;
+	animation: fadeout 3s;
 }
