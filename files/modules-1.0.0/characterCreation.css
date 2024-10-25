@@ -74,24 +74,24 @@ div.sectionsContainer {display: inline;}
 
 /* ---- STAT GENERATION ---- */
 
-fieldSet.statPoints p {
+fieldset.statPoints p {
 	font-size: 1.2em;
 	color: orange;
 	text-align: center;
 }
 
-fieldSet.statPoints {
+fieldset.statPoints {
 	right: 50px;
 	width: 150px;
 	position: absolute;
 }
 
-fieldSet.statPoints td:last-child{
+fieldset.statPoints td:last-child{
 	text-align: right;
 	width: 90px;
 }
 
-fieldSet.statPoints > div > span:only-child
+fieldset.statPoints > div > span:only-child
 {
     text-align: center;
     font-size: 1.2em;
@@ -267,7 +267,7 @@ td.startingLanguage {
 	font-size: 1em;
 }
 
-div.languageCreation fieldSet {
+div.languageCreation fieldset {
 	display: inline-block;
 }
 
@@ -330,7 +330,7 @@ div.languages {
 	float: left;
 }
 
-fieldSet.smallPanel {
+fieldset.smallPanel {
 	text-align: center;
 }
 
@@ -339,37 +339,37 @@ fieldSet.smallPanel {
     font-style: inherit;
 }
 
-fieldSet.characterCreationPanel > div {
+fieldset.characterCreationPanel > div {
 	height: 100%;
 	overflow-y: auto;
 }
 
-fieldSet.characterCreationPanel table th {
+fieldset.characterCreationPanel table th {
 	text-align: left;
 }
 
-fieldSet.characterCreationPanel table {
+fieldset.characterCreationPanel table {
 	width: 100%;
 }
 
-fieldSet.bigPanel, fieldSet.bigPanelWithButtons {
+fieldset.bigPanel, fieldset.bigPanelWithButtons {
 	vertical-align: top;
     height: calc(100vh - 12em);
 }
 
-fieldSet.bigPanel {
+fieldset.bigPanel {
 	width: 24%;
 }
 
-fieldSet.bigPanelWithButtons {
+fieldset.bigPanelWithButtons {
 	width: 32%;
 }
 
-div.developmentChoice fieldSet.bigPanel, div.developmentChoice fieldSet.bigPanelWithButtons {
+div.developmentChoice fieldset.bigPanel, div.developmentChoice fieldset.bigPanelWithButtons {
     height: calc(100vh - 23em);
 }
 
-fieldSet.characterCreationPanel {
+fieldset.characterCreationPanel {
 	display: inline-block;
 }
 
@@ -407,7 +407,7 @@ div.fieldAfterField label {
 	margin-left: 25px;
 }
 
-div.combatStyle fieldSet {
+div.combatStyle fieldset {
 	padding-bottom: 10px;
 	width: 45%;
 	display: inline-block;
@@ -447,7 +447,7 @@ div.combatStyle {
 	padding: 0px 10px;
 }
 
-fieldSet.baselineCosts {
+fieldset.baselineCosts {
 	text-align: center;
 	width: 33%;
 	margin-left: auto;
@@ -455,22 +455,22 @@ fieldSet.baselineCosts {
 	margin-bottom: 10px;
 }
 
-fieldSet.baselineCosts legend{
+fieldset.baselineCosts legend{
 	text-align: left;
 }
 
-fieldSet.baselineCosts table{
+fieldset.baselineCosts table{
 	margin-left: auto;
 	margin-right: auto;
 }
 
-fieldSet.baselineCosts th, fieldSet.baselineCosts td{
+fieldset.baselineCosts th, fieldset.baselineCosts td{
 	width: 80px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-fieldSet.baselineCosts div.baselineCost {
+fieldset.baselineCosts div.baselineCost {
 	border: 2px solid black;
 	width: 60px;
 	margin-left: auto;
@@ -678,11 +678,11 @@ div.statGenerationSummary span{
 	font-weight: bold;
 }
 
-div.statGenerationSummary fieldSet {
+div.statGenerationSummary fieldset {
 	height: 83px;
 }
 
-fieldSet.potentials {
+fieldset.potentials {
 	width: 65%;
 	float: left;
     margin-bottom: 50px;
@@ -692,27 +692,27 @@ div.selectedTemporaries {
 	margin-left: 292px;
 }
 
-fieldSet.statSequences {
+fieldset.statSequences {
 	min-height: 64px;
 	padding: 0px;
 	margin: 5px;
 	border: none;
 }
 
-fieldSet.statSequences th.statSequence {
+fieldset.statSequences th.statSequence {
 	min-width: 384px;
 }
 
-fieldSet.statSequences th.statSequenceSum {
+fieldset.statSequences th.statSequenceSum {
 	width:91px;
 }
 
-fieldSet.statSequences td.statSequenceSum {
+fieldset.statSequences td.statSequenceSum {
 	text-align: right;
 	font-weight: bold;
 }
 
-fieldSet.statSequences button {
+fieldset.statSequences button {
     height: 20px;
     width: 20px;
     cursor: pointer;
@@ -804,14 +804,14 @@ table.backgroundOptionsSummary span {
 	list-style: disc inside;
 }
 
-fieldSet.customBackgroundOption div.customBackgroundCost {
+fieldset.customBackgroundOption div.customBackgroundCost {
 	display: inline;
 	text-align: right;
 	padding-left: 4px;
 	padding-left: 2px;
 }
 
-fieldSet.customBackgroundOption button {
+fieldset.customBackgroundOption button {
 	height: 24px;
 	width: 24px;
 	margin-left: 5px;
@@ -902,44 +902,44 @@ td.resistanceBonus {
 	width: 35px;
 }
 
-fieldSet.raceProgressions {
+fieldset.raceProgressions {
     width: 17em;
     display: inline-block;
     vertical-align: top;
     float: left;
 }
 
-fieldSet.raceResistances {
+fieldset.raceResistances {
     width: 9em;
     display: inline-block;
     vertical-align: top;
     float: left;
 }
 
-fieldSet.raceResistances > span:first-of-type{
+fieldset.raceResistances > span:first-of-type{
 	display: block;
     text-align: center;
 }
 
-fieldSet.raceDescription {
+fieldset.raceDescription {
     height: calc(100vh - 31.5em);
 }
 
-fieldSet.professionDescription {
+fieldset.professionDescription {
     height: 5em;
 }
 
-fieldSet.upbringingDescription {
+fieldset.upbringingDescription {
     width: 95%;
     text-align: justify;
 }
 
-fieldSet.upbringingDescription div {
+fieldset.upbringingDescription div {
     overflow: auto;
     height: 100%;
 }
 
-fieldSet.upbringingDescription p {
+fieldset.upbringingDescription p {
 	margin-top: 6px;;
     width: 99%;
 }
@@ -953,13 +953,13 @@ td.statBonus {
     width: 2em;
 }
 
-fieldSet.statBonuses {
+fieldset.statBonuses {
 	width: 9em;
     display: inline-block;
     float: left;
 }
 
-fieldSet.baseSpellLists {
+fieldset.baseSpellLists {
     float: left;
     width: 11em;
     height: calc(100vh - 23em);

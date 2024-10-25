@@ -192,15 +192,14 @@ span.profileActions
 span.betaFeature
 {
 	font-size: smaller;
-    rotate: -45deg;
-    display: inline-block;
-    position: relative;
-    right: -47px;
-    top: 21px;
-    width: 0;
-    font-weight: bold;
+	transform: rotate(-45deg);
+	display: inline-block;
+	position: relative;
+	right: -47px;
+	top: 21px;
+	width: 0;
+	font-weight: bold;
 }
-
 
 /*---- MOBILE ----*/
 

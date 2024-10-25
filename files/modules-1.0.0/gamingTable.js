@@ -1,19 +1,21 @@
+"use strict";
+
 function configureServerSentEvents(eventSource) {
-    eventSource.addEventListener("player-character-hero-status-updated", event=>{
-        jsonData = JSON.parse(event.data);
+    eventSource.addEventListener("player-character-hero-status-updated", event => {
+        const jsonData = JSON.parse(event.data);
         $("#" + jsonData.character + '-status').click();
     }
     );
-    eventSource.addEventListener("dice-rolled", event=>{
-        jsonData = JSON.parse(event.data);
-        companionDice = $("#" + jsonData.character + "-roll");
+    eventSource.addEventListener("dice-rolled", event => {
+        const jsonData = JSON.parse(event.data);
+        const companionDice = $("#" + jsonData.character + "-roll");
         if (companionDice.length !== 0) {
             rollTo(companionDice, jsonData.roll);
         }
     }
     );
-    eventSource.addEventListener("game-master-roll", event=>{
-        gameMasterDice = $(".game-master-dice");
+    eventSource.addEventListener("game-master-roll", event => {
+        const gameMasterDice = $(".game-master-dice");
         gameMasterDice.removeClass("keep-hidden");
         rollTo(gameMasterDice, "00");
     }
@@ -21,8 +23,8 @@ function configureServerSentEvents(eventSource) {
 }
 
 function wereDiceAvailableForRolling() {
-    rollingDice = $(".diceContainer").children(".rolling-dice");
-    disabledBefore = ((rollingDice.attr("disabled")) == "disabled");
+    const rollingDice = $(".diceContainer").children(".rolling-dice");
+    const disabledBefore = ((rollingDice.attr("disabled")) == "disabled");
     rollingDice.attr("disabled", "disabled");
     return !disabledBefore;
 }
@@ -51,8 +53,8 @@ function checkAndStoreAction(event, action) {
 }
 
 function storeAction(event, action) {
-    itemReference = parseInt($(event.target).closest("tr").children("td.itemReference").html());
-    action = [action, itemReference];
-    event.originalEvent.action = action;
+    const itemReference = parseInt($(event.target).closest("tr").children("td.itemReference").html());
+    const actionWithReference = [action, itemReference];
+    event.originalEvent.action = actionWithReference;
     return action;
 }

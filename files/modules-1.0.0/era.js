@@ -1,5 +1,7 @@
+"use strict";
+
 function showRadMenu(menuId, listClass) {
-    var menu = $("#".concat(menuId));
+    const menu = $("#".concat(menuId));
     if (menu.radmenu("items").data("shown")) {
         menu.radmenu("hide")
     } else {
@@ -14,17 +16,17 @@ function markShownItems(items) {
 }
 
 function clickRelatedImage(selection) {
-    var targetId = selection.children("img").attr("id");
-    var targetButton = $("#" + targetId, "ul");
+    const targetId = selection.children("img").attr("id");
+    const targetButton = $("#" + targetId, "ul");
     targetButton.click()
 }
 
 function changeEnterToTab(components) {
     components.keydown(function(e) {
-        var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+        const key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
         if (key == 13) {
             e.preventDefault();
-            var inputs = $(this).closest('form').find(':input:visible');
+            const inputs = $(this).closest('form').find(':input:visible');
             inputs.eq(inputs.index(this) + 1).focus();
             return false;
         }
@@ -33,10 +35,10 @@ function changeEnterToTab(components) {
 
 function interpretEnterAsRemoteClick(components, classToClick) {
     components.keydown(function(e) {
-        var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+        const key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
         if (key == 13) {
             e.preventDefault();
-            var clickTargets = $("." + classToClick);
+            const clickTargets = $("." + classToClick);
             e.target.blur();
             clickTargets.click();
         }
@@ -58,7 +60,7 @@ function isSubmitUndefined(event) {
 }
 
 function isEnterInExpectedTag(event) {
-    var tagName = event.target.tagName.toLowerCase();
+    let tagName = event.target.tagName.toLowerCase();
     tagName = (tagName === 'input' && event.target.type === 'button') ? 'button' : tagName;
     return (event.which === $.ui.keyCode.ENTER && tagName !== 'textarea' && tagName !== 'select' && tagName !== 'button');
 }
@@ -70,18 +72,18 @@ function closeTooltips(contentClass, dialogClass) {
 }
 
 function uploadFileContents(fileFieldClass, fileContentClass) {
-    var reader = new FileReader();
+    let reader = new FileReader();
     reader.onload = () => {
-        var fileContent = $("." + fileContentClass);
+        let fileContent = $("." + fileContentClass);
         fileContent.val(reader.result);
         fileContent.change();
     };
-    var fileUpload = $("." + fileFieldClass)[0];
+    let fileUpload = $("." + fileFieldClass)[0];
     reader.readAsDataURL(fileUpload.files[0]);
 }
 
 Willow.handleAjaxErrorCall = function(theXMLHttpRequest, textStatus, errorThrown) {
-    var supportText = "\n\nIf you require assistance, please post your issue in the support forum:\nhttp://www.ironcrown.com/ICEforums/index.php?board=21.0\nor send a mail with the log file to:\nera-support.voriigkye@recursor.net\n\n";
+    const supportText = "\n\nIf you require assistance, please post your issue in the support forum:\nhttp://www.ironcrown.com/ICEforums/index.php?board=21.0\nor send a mail with the log file to:\nera-support.voriigkye@recursor.net\n\n";
     if (theXMLHttpRequest.getAllResponseHeaders()) {
         alert(
             "That action was not accepted by the server. Please confirm that it is in accordance with the current rule set." + supportText + "-- Technical Details --\nStatus: " + theXMLHttpRequest["status"] + "\nResponse: " + theXMLHttpRequest["responseText"] + "\nText Status: " + textStatus + "\nError Thrown: " + errorThrown)
@@ -89,7 +91,7 @@ Willow.handleAjaxErrorCall = function(theXMLHttpRequest, textStatus, errorThrown
 }
 
 function drawDistinguisher(id, text) {
-    imageElement = document.getElementById(id);
+    let imageElement = document.getElementById(id);
     
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
@@ -120,7 +122,7 @@ function drawDistinguisher(id, text) {
 }
 
 function drawTextOnImage(id, text) {
-    imageElement = document.getElementById(id);
+    const imageElement = document.getElementById(id);
     
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');

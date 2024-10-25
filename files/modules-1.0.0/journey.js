@@ -1,3 +1,4 @@
+"use strict";
 let mapCanvas;
 let lineStartX, lineStartY;
 let scale;
@@ -6,13 +7,13 @@ let settingScale;
 function setup() {
     settingScale = true;
     mapCanvas = element("mapOverlay");
-    mapImage = element("mapImage");
+    let mapImage = element("mapImage");
     createCanvas(mapImage.width, mapImage.height, mapCanvas);
     noLoop();
 }
 
 function windowResized() {
-    mapImage = element("mapImage");
+    let mapImage = element("mapImage");
     resizeCanvas(mapImage.width, mapImage.height);
     setScale();
 }
@@ -59,7 +60,7 @@ function mousePressed() {
 function mouseReleased() {
     noLoop();
     if (mapCanvas.matches(':hover')) {
-        lineLength = dist(lineStartX, lineStartY, mouseX, mouseY);
+        let lineLength = dist(lineStartX, lineStartY, mouseX, mouseY);
         if ((settingScale)) {
             updateInput("scaleInPixels", Math.round(lineLength));
             scale = {
@@ -83,17 +84,17 @@ function clearInput(aClassName) {
 }
 
 function updateInput(aClassName, value) {
-    distanceInput = element(aClassName);
+    let distanceInput = element(aClassName);
     $(distanceInput).val(value).change();
 }
 
 function computeDistance() {
-    scaleDistance = numberFrom("scaleDistance");
-    scaleInPixels = numberFrom("scaleInPixels");
-    distanceInPixels = numberFrom("distanceInPixels");
-    distance = ((distanceInPixels * scaleDistance) / scaleInPixels).toFixed(2);
+    let scaleDistance = numberFrom("scaleDistance");
+    let scaleInPixels = numberFrom("scaleInPixels");
+    let distanceInPixels = numberFrom("distanceInPixels");
+    let distance = ((distanceInPixels * scaleDistance) / scaleInPixels).toFixed(2);
     if (isFinite(distance)) {
-        scaleUnit = valueOf("scaleUnit");
+        let scaleUnit = valueOf("scaleUnit");
         setComputedDistanceTo(distance + " " + scaleUnit);
     } else {
         setComputedDistanceTo("");
@@ -110,7 +111,7 @@ function valueOf(aClassName) {
 }
 
 function setComputedDistanceTo(aText) {
-    computedDistance = element("computedDistance");
+    let computedDistance = element("computedDistance");
     computedDistance.innerHTML = aText;
 }
 

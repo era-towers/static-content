@@ -358,22 +358,22 @@ fieldset.characterStats > table tr td input {
 	text-align: center;
 }
 
-fieldSet.characterStats td:last-child span.pickA {
+fieldset.characterStats td:last-child span.pickA {
 	color: navy;
 	font-weight: bold;
 }
 
-fieldSet.characterStats td:last-child span.pickB {
+fieldset.characterStats td:last-child span.pickB {
 	color: blue;
 	font-weight: bold;
 }
 
-fieldSet.characterStats td:last-child span.pickC {
+fieldset.characterStats td:last-child span.pickC {
 	color: royalBlue;
 	font-weight: bold;
 }
 
-fieldSet.characterStats td:last-child span.pickD {
+fieldset.characterStats td:last-child span.pickD {
 	color: cyan;
 	font-weight: bold;
 }

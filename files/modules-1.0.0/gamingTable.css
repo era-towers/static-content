@@ -1,18 +1,20 @@
-/* ----  GAME MASTER DICE ---- */
+/*---- GAME MASTER DICE ----*/
 
-div.game-master-dice {
+
+div.game-master-dice
+{
 	position: absolute;
 	z-index: 999;
-    top: -40px;
-    left: 10px;
+	top: -40px;
+	left: 10px;
 }
 
-div.game-master-dice.keep-hidden {
+div.game-master-dice.keep-hidden
+{
 	visibility: hidden;
 }
 
-
-div.game-master-dice div.die:nth-child(1) figure.face:nth-child(1n+6)::before
+div.game-master-dice div.die:nth-child(1) figure.face:nth-child(n+6)::before
 {
 	content: "?";
 }
@@ -22,7 +24,7 @@ div.game-master-dice div.die:nth-child(1) figure.face::before
 	content: "!";
 }
 
-div.game-master-dice div.die:nth-child(2) figure.face:nth-child(1n+3)::before
+div.game-master-dice div.die:nth-child(2) figure.face:nth-child(n+3)::before
 {
 	content: "!";
 }
@@ -32,95 +34,101 @@ div.game-master-dice div.die:nth-child(2) figure.face::before
 	content: "?";
 }
 
-/* ----  AVATAR OVERLAYS ---- */
+/*---- AVATAR OVERLAY ----*/
 
-img.avatarConstantOverlay, img.avatarHoverOverlay {
+
+img.avatarConstantOverlay ,
+img.avatarHoverOverlay
+{
 	position: absolute;
-	border: 2px transparent solid; 
+	border: 2px transparent solid;
 }
 
-img.avatarConstantOverlay {
-    height: 77px;
-    width: 77px;
-    border-radius: 40px;
-    margin-left: 25px;
-    margin-top: 25px;
+img.avatarConstantOverlay
+{
+	height: 77px;
+	width: 77px;
+	border-radius: 40px;
+	margin-left: 25px;
+	margin-top: 25px;
 }
 
-div.avatarWithOverlay img.partyMember {
+div.avatarWithOverlay img.partyMember
+{
 	opacity: 0.7;
 }
 
-
 /*---- BUTTON BAR ----*/
+
 
 div.buttonBar
 {
-    position: absolute;
-    height: 20vw;
-    left: 15px;
-    top: 120px;
-    width: 130px;
+	position: absolute;
+	height: 20vw;
+	left: 15px;
+	top: 120px;
+	width: 130px;
 }
 
 a.skillsButton
 {
-    background-image: url(Images/maneuver.png);
+	background-image: url("Images/maneuver.png");
 }
 
 a.spellsButton
 {
-    background-image: url(Images/castSpell.png);
+	background-image: url("Images/castSpell.png");
 }
 
 a.rollHistoryButton
 {
-    background-image: url(Images/scroll-quill.png);
+	background-image: url("Images/scroll-quill.png");
 }
 
 a.buttonInBar
 {
-    height: 38px;
-    width: 70px;
-    border-radius: 15px;
-    border: 1px solid #654b24;
-    background-color: white;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: initial;
-    padding-left: 40px;
-    padding-top: 10px;
-    text-align: center;
-    margin: 9px;
+	height: 38px;
+	width: 70px;
+	border-radius: 15px;
+	border: 1px solid #654b24;
+	background-color: white;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: initial;
+	padding-left: 40px;
+	padding-top: 10px;
+	text-align: center;
+	margin: 9px;
 	cursor: pointer;
 }
 
-
 /*---- SEARCH ----*/
+
 
 div.search
 {
-    width: 30vw;
-    display: inline-block;
-    padding: 10px;
-    position: absolute;
-    left: 30vw;
+	width: 30vw;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	left: 30vw;
 }
-
 
 /*---- SKILLS AND SPELLS ----*/
 
-div.characterSkills, div.characterSpells
+
+div.characterSkills ,
+div.characterSpells
 {
-    max-height: 60vh;
-    overflow-y: auto;
-    padding: 5px;
+	max-height: 60vh;
+	overflow-y: auto;
+	padding: 5px;
 }
 
 div.characterSkills
 {
-    min-width: 500px;
+	min-width: 500px;
 }
 
 div.characterSpells
@@ -133,7 +141,8 @@ div.characterSkills td:nth-child(2)
 	min-width: 260px;
 }
 
-div.characterSpells td:nth-child(3), div.characterSpells td:nth-child(4)
+div.characterSpells td:nth-child(3) ,
+div.characterSpells td:nth-child(4)
 {
 	min-width: 200px;
 }
@@ -141,12 +150,14 @@ div.characterSpells td:nth-child(3), div.characterSpells td:nth-child(4)
 div.characterSpells td:nth-child(4)
 {
 	font-size: smaller;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
 }
 
-div.characterSkills td:nth-child(3), div.characterSkills td:nth-child(4), div.characterSpells td:nth-child(5)
+div.characterSkills td:nth-child(3) ,
+div.characterSkills td:nth-child(4) ,
+div.characterSpells td:nth-child(5)
 {
 	text-align: right;
 	width: 30px;
@@ -159,56 +170,69 @@ div.characterSpells td:nth-child(2)
 	width: 10px;
 }
 
-
-span.informationButton, span.rollSkillButton {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
+span.informationButton ,
+span.rollSkillButton
+{
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
 }
 
-tr:not(:only-child) span.informationButton, tr:not(:only-child) span.rollSkillButton {
+tr:not(:only-child) span.informationButton ,
+tr:not(:only-child) span.rollSkillButton
+{
 	opacity: 0;
 }
 
-span.informationButton {
-    padding: 0;
-    margin-left: 16px;
+span.informationButton
+{
+	padding: 0;
+	margin-left: 16px;
 }
 
-span.rollSkillButton{
-    background-image: url(Images/d10.png);
+span.rollSkillButton
+{
+	background-image: url("Images/d10.png");
 	display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-span.informationButton::after {
+span.informationButton::after
+{
 	content: "...";
 }
 
-div.characterSkills tr:hover > td:nth-child(2), div.characterSpells tr:hover > td:nth-child(3)
+div.characterSkills tr:hover > td:nth-child(2) ,
+div.characterSpells tr:hover > td:nth-child(3)
 {
 	font-weight: bold;
-    text-shadow: 8px 5px 6px gray;
+	text-shadow: 8px 5px 6px gray;
 }
 
-tr:hover span.informationButton, tr:hover span.rollSkillButton {
+tr:hover span.informationButton ,
+tr:hover span.rollSkillButton
+{
 	opacity: 1;
 }
 
+/*---- CUSTOM ROLL ----*/
 
-/*---- CUSTOM ROLLS ----*/
 
-div.glossaryEntry.ui-corner-all.ui-state-default:not(:only-child) {
-    margin-right: 20px;
+div.glossaryEntry.ui-corner-all.ui-state-default:not(:only-child)
+{
+	margin-right: 20px;
 }
 
-div.glossaryEntry.ui-corner-all.ui-state-default {
-    max-width: 460px;
+div.glossaryEntry.ui-corner-all.ui-state-default
+{
+	max-width: 460px;
 }
 
-select.labeledField, input.labeledField, span.labeledField
+select.labeledField ,
+input.labeledField ,
+span.labeledField
 {
 	float: right;
 	vertical-align: middle;
@@ -230,29 +254,30 @@ button.labeledField
 	float: right;
 }
 
-fieldSet.playerManeuverRoll select.labeledField
+fieldset.playerManeuverRoll select.labeledField
 {
 	width: 200px;
 }
 
-fieldSet.playerSpellCastingRoll select.labeledField
+fieldset.playerSpellCastingRoll select.labeledField
 {
 	width: 190px;
 }
 
-fieldSet.playerManeuverRoll div.labeledField
+fieldset.playerManeuverRoll div.labeledField
 {
 	height: 36px;
-    width: 280px;
+	width: 280px;
 }
 
-fieldSet.playerSpellCastingRoll div.labeledField
+fieldset.playerSpellCastingRoll div.labeledField
 {
 	height: 36px;
-    width: 300px;
+	width: 300px;
 }
 
-/*---- SPELL DETAILS ----*/
+/*---- SPELL DETAIL ----*/
+
 
 span.spellListName
 {
@@ -318,111 +343,120 @@ table.spellDetails td.spellParameters
 
 div.selectedSpellDescription
 {
-    overflow-y: auto;
-    padding: 3px;
-    text-align: justify;
+	overflow-y: auto;
+	padding: 3px;
+	text-align: justify;
 }
 
-/*---- COMPANIONS ----*/
+/*---- COMPANION ----*/
+
 
 div.companions
 {
-    position: absolute;
-    height: 33vw;
-    right: 15px;
-    top: 60px;
+	position: absolute;
+	height: 33vw;
+	right: 15px;
+	top: 60px;
 	width: 129px;
-    overflow-y: auto;
-    padding-bottom: 10px;
+	overflow-y: auto;
+	padding-bottom: 10px;
 }
 
 img.partyMember
 {
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    margin-left: 25px;
-    margin-top: 25px;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	margin-left: 25px;
+	margin-top: 25px;
 }
 
-canvas.radialBar {
+canvas.radialBar
+{
 	position: absolute;
 	margin: 23px;
-    display: block;
+	display: block;
 }
 
-img.partyMember, canvas.radialBar
+img.partyMember ,
+canvas.radialBar
 {
 	padding-left: 0px;
 }
 
 div.eraInterface div.companionDice div.rolling-dice
 {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    top: 60px;
-    left: calc(94vw - 246px);
+	position: relative;
+	width: 100px;
+	height: 100px;
+	top: 60px;
+	left: calc(94vw - 246px);
 }
 
 /*---- CHARACTER PICKER ----*/
 
-body {
-    margin: 0;
+
+body
+{
+	margin: 0;
 	overflow: hidden;
 }
 
 div.characterPicker
 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background-image: url(Images/paperBackground.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-image: url("Images/paperBackground.jpg");
 }
 
 span.characterPicker
 {
 	display: inline-block;
 	padding-top: 4vh;
-    padding-left: 4vw;
+	padding-left: 4vw;
 }
 
 a.characterPicker
 {
 	display: inline-block;
 	padding-top: 4vh;
-    padding-left: 4vw;
+	padding-left: 4vw;
 }
 
 /*---- PLAYER MAT ----*/
 
+
 div.playerMat
 {
 	height: 20vh;
-    width: 70vw;
-    bottom: 0px;
-    border-top-left-radius: 130px;
-    border-top-right-radius: 130px;
-    border: 2px solid black;
+	width: 70vw;
+	bottom: 0px;
+	border-top-left-radius: 130px;
+	border-top-right-radius: 130px;
+	border: 2px solid black;
 	border-bottom: 0;
-    position: absolute;
-    left: 15vw;
+	position: absolute;
+	left: 15vw;
 	background-image: url("Images/paperBackground.jpg");
 }
 
-div.playerMat div.rolling-dice {
-    top: -15px;
+div.playerMat div.rolling-dice
+{
+	top: -15px;
 }
 
 /*---- DICE ----*/
 
+
 div.eraInterface div.rolling-dice
 {
-    left: 0;
+	left: 0;
 }
 
-div.eraInterface span.diceContainer div.fading-dice, div.eraInterface div.companionDice div.fading-dice
+div.eraInterface span.diceContainer div.fading-dice ,
+div.eraInterface div.companionDice div.fading-dice
 {
 	opacity: 1;
 	animation: none;
@@ -430,11 +464,11 @@ div.eraInterface span.diceContainer div.fading-dice, div.eraInterface div.compan
 
 span.diceContainer
 {
-    left: calc(55vw - 200px);
-    cursor: pointer;
-    display: inline-block;
-    width: 180px;
-    position: relative;
+	left: calc(55vw - 200px);
+	cursor: pointer;
+	display: inline-block;
+	width: 180px;
+	position: relative;
 }
 
 /*---- DICE AFFECTED BY SIZE ----*/
@@ -540,17 +574,20 @@ figure.face.face-9
 	transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
 }
 
-/* ---- CONDITIONS ---- */
+/*---- CONDITION ----*/
 
-div.characterCondition{
-    position: absolute;
-    left: 13vw;
-    top: 2vw;
-    width: 39vw;
-    margin: auto;
+
+div.characterCondition
+{
+	position: absolute;
+	left: 13vw;
+	top: 2vw;
+	width: 39vw;
+	margin: auto;
 }
 
-span.condition {
+span.condition
+{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 0% 50%;
@@ -562,62 +599,79 @@ span.condition {
 	text-align: center;
 }
 
-span.condition:last-child {
+span.condition:last-child
+{
 	margin-right: 0px;
 }
 
-span.spellPreparation {
+span.spellPreparation
+{
 	background-image: url("Images/prayer.png");
 	background-position: 10% 0%;
 }
 
-span.bleeding {
+span.bleeding
+{
 	background-image: url("Images/drop.png");
 	background-position: 20% 0%;
 }
 
-span.MustParry, span.MustParryStaggered {
+span.MustParry ,
+span.MustParryStaggered
+{
 	background-image: url("Images/mustParry.png");
 }
 
-span.Stun, span.Stun-25, span.Stun-50, span.Stun-75 {
+span.Stun ,
+span.Stun-25 ,
+span.Stun-50 ,
+span.Stun-75
+{
 	background-image: url("Images/stun.png");
 }
 
-span.StunNoParry {
+span.StunNoParry
+{
 	background-image: url("Images/stunNoParry.png");
 }
 
-span.accumulatedExhaustion {
+span.accumulatedExhaustion
+{
 	background-image: url("Images/run.png");
 }
 
-span.modifications {
+span.modifications
+{
 	background-image: url("Images/back-pain.png");
 	background-position: 10% 0%;
 }
 
-span.activeSpells {
+span.activeSpells
+{
 	background-image: url("Images/pointy-hat.png");
 }
 
-span.notifications {
+span.notifications
+{
 	background-image: url("Images/conversation.png");
 }
 
-ul.conditionDescriptions strong{
+ul.conditionDescriptions strong
+{
 	color: #DC143C;
 	font-size: 1.1em;
 }
 
-div.statusBar {
+div.statusBar
+{
 	border-width: 1px;
 	border-color: rgb(119,120,123);
 	height: 18px;
 	margin-top: 2px;
 }
 
-div.statusBar > span {
+div.statusBar > span
+{
 	color: #FFF;
 	float: left;
 	font-weight: bold;
@@ -625,54 +679,70 @@ div.statusBar > span {
 	width: 100%;
 }
 
-div.statusBar > div.ui-progressbar-value {
+div.statusBar > div.ui-progressbar-value
+{
 	border: none;
 	margin: 0px;
 }
 
-div.healthBar {
-	background: url("Images/hp-background.png") 50% 0% repeat-x;
-    background-size: contain;
+div.healthBar
+{
+	background-image: url("Images/hp-background.png");
+	background-position: 50% 0%;
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
-div.healthBar > div.ui-progressbar-value {
-	background: url("Images/hp-foreground.png") 50% 0% repeat-x;
-    background-size: contain;
+div.healthBar > div.ui-progressbar-value
+{
+	background-image: url("Images/hp-foreground.png");
+	background-position: 50% 0%;
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
-div.magicBar {
-	background: url("Images/pp-background.png") 50% 0% repeat-x;
-    background-size: contain;
+div.magicBar
+{
+	background-image: url("Images/pp-background.png");
+	background-position: 50% 0%;
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
-div.magicBar > div.ui-progressbar-value {
-	background: url("Images/pp-foreground.png") 50% 0% repeat-x;
-    background-size: contain;
+div.magicBar > div.ui-progressbar-value
+{
+	background-image: url("Images/pp-foreground.png");
+	background-position: 50% 0%;
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
-div.characterPortraitFrame {
+div.characterPortraitFrame
+{
 	float: left;
-    padding-left: 66px;
-    padding-top: 10px;
+	padding-left: 66px;
+	padding-top: 10px;
 }
 
-div.characterPortraitFrame > img {
+div.characterPortraitFrame > img
+{
 	border-radius: 32px;
 	border: 2px solid transparent;
 	width: 100px;
 	height: 100px;
 }
 
-div.characterPortraitFrame > div.characterPortraitCaption {
+div.characterPortraitFrame > div.characterPortraitCaption
+{
 	background-image: url("Images/characterPortraitCaption.png");
 	background-repeat: no-repeat;
-    background-size: contain;
-    bottom: 22px;
-    color: #FFFFFF;
-    font-size: small;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: center;
-    width: 90%;
+	background-size: contain;
+	bottom: 22px;
+	color: #FFFFFF;
+	font-size: small;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+	width: 90%;
 }

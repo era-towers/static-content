@@ -20,27 +20,27 @@ label.movementDetails {
 
 /* ---- FIELDSETS ---- */
 
-fieldSet.compressedFields:not(.fieldsAndLabels) {
+fieldset.compressedFields:not(.fieldsAndLabels) {
 	margin-bottom: 5px;
 }
 
-fieldSet.compressedFields label input:first-child {
+fieldset.compressedFields label input:first-child {
 	margin-left: 6px;
 }
 
-fieldSet.compressedFields label + * {
+fieldset.compressedFields label + * {
 	margin-left: 8px;
 }
 
-fieldSet.compressedFields > div {
+fieldset.compressedFields > div {
 	display: inline;
 }
 
-fieldSet.compressedFields {
+fieldset.compressedFields {
 	margin: 0;
 }
 
-fieldSet.compressedFields.fieldsAndLabels {
+fieldset.compressedFields.fieldsAndLabels {
 	padding: 5px 0px;
 }
 
@@ -93,12 +93,14 @@ img.avatarHoverOverlay {
 	display: none;
 }
 
-div.avatarWithOverlay {
-	position:relative;
-	display:block;
+div.avatarWithOverlay
+{
+	position: relative;
+	display: inline-block;
 }
 
-div.avatarWithOverlay:hover img.avatarHoverOverlay{
+div.avatarWithOverlay:hover img.avatarHoverOverlay
+{
 	display: inherit;
 	z-index: -8;
 }
@@ -1079,6 +1081,7 @@ fieldset.profileExhaustion input
 
 /*---- INTERFACE ----*/
 
+
 body
 {
 	margin: 0;
@@ -1124,6 +1127,14 @@ table.resultCalculation tr:last-child
 {
     font-weight: bold;
     height: 6vh;
+}
+
+span.modificationsDetail
+{
+	background-image: url("Images/magnifying-glass.png");
+	margin-left: 5px;
+	width: 32px;
+	height: 32px;
 }
 
 /*---- SPELL CASTING ----*/
@@ -1522,13 +1533,13 @@ div.maneuverParameters div.skillNameFilter
 	margin-bottom: 6px;
 }
 
-
 div.maneuverParameters div.labeledField
 {
     height: 32px;
 }
 
-div.maneuverParameters label.labeledField, div.maneuverParameters input.labeledField
+div.maneuverParameters label.labeledField , 
+div.maneuverParameters input.labeledField
 {
 	vertical-align: middle;
 }
@@ -1572,16 +1583,19 @@ span.glossaryEntryButton
     border-radius: 8px;
 }
 
-span.glossaryEntryButton::after {
+span.glossaryEntryButton::after
+{
 	content: "...";
 }
 
-ul.autocompleteList {
+ul.autocompleteList
+{
 	width: 375px;
 	max-width: 375px;
 }
 
-div.individualManeuver button.ui-button {
+div.individualManeuver button.ui-button
+{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
@@ -1590,41 +1604,49 @@ div.individualManeuver button.ui-button {
 	padding: 0px;
 }
 
-div.partyManeuverDifficulty {
+div.partyManeuverDifficulty
+{
 	width: 950px;
 	margin-bottom: 5px;
 }
 
-div.partyManeuverDifficulty div.radio > label{
+div.partyManeuverDifficulty div.radio > label
+{
 	display: inline-block;
 }
 
-div.individualManeuver > div {
+div.individualManeuver > div
+{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-div.individualManeuver div.roll input {
+div.individualManeuver div.roll input
+{
 	width: 55px;
 	margin-left: 5px;
 }
 
-div.individualManeuver img {
+div.individualManeuver img
+{
 	height: 50px;
 	width: 50px;
 	float: left;
 }
 
-div.individualManeuver select {
+div.individualManeuver select
+{
 	width: 300px;
 }
 
-div.individualManeuver:first-child select {
+div.individualManeuver:first-child select
+{
 	height: 50px;
 	margin-top: -9px;
 }
 
-div.individualManeuver {
+div.individualManeuver
+{
 	width: 950px;
 	height: 80px;
 	margin-bottom: 20px;
@@ -1644,6 +1666,17 @@ div.individualManeuver span.maneuverResult
     white-space: pre-wrap;
     vertical-align: middle;
     overflow-y: auto;
+}
+
+span.maneuverResolved
+{
+	color: navy;
+}
+
+div.individualManeuver span.maneuverResult > span.maneuverResolved:nth-of-type(2):not(:last-child)
+{
+	color: navy;
+	font-weight: normal;
 }
 
 div.individualManeuver span.maneuverResult > span:nth-of-type(2)
@@ -1785,24 +1818,29 @@ select.savedRolls
 	}
 }
 
-
 /*---- DICE MANUAL ADJUSTMENT ----*/ 
 
-div.interface figure.face::after {    
+
+div.interface figure.face::after
+{    
 	border-top-width: 7.8px;
     border-right-width: 19.2px;
 }
 
-div.interface div.die:nth-child(2) {
+div.interface div.die:nth-child(2)
+{
     left: 50px;
 }
 
-div.interface div.rolling-dice {
+div.interface div.rolling-dice
+{
 	top: inherit;
 	left: inherit;
+	pointer-events: none;
 }
 
-div.player-character-roll {
+div.player-character-roll
+{
     position: relative;
     top: -8px;
     left: -58px;
@@ -1810,14 +1848,10 @@ div.player-character-roll {
     width: 0;
 }
 
-div.player-character-roll.keep-hidden {
+div.player-character-roll.keep-hidden
+{
 	display: none;
 }
-
-div.interface div.rolling-dice {
-	pointer-events: none;
-}
-
 
 /*---- DICE AFFECTED BY SIZE ----*/
 

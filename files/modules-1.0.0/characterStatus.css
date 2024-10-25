@@ -35,11 +35,11 @@ div.characterStatusDescription p {
 
 /* ---- TACTICS ---- */
 
-fieldSet.availableDefenses {
+fieldset.availableDefenses {
 	margin-top: 10px;
 }
 
-fieldSet.availableDefenses table {
+fieldset.availableDefenses table {
 	margin: auto;
 }
 
@@ -475,7 +475,7 @@ figure.face
 	margin: 0 -26px;
 	border-left-width: 26px;
 	border-right-width: 26px;
-	border-bottom-width: 50px;
+	border-bottom-width: 51px;
 }
 
 figure.face::before

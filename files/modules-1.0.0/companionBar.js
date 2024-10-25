@@ -1,3 +1,5 @@
+"use strict";
+
 /*
  * Companion Bar 1.0
  *
@@ -9,7 +11,7 @@
 
     $.fn.radialBar = function(options) {
 
-        var settings = $.extend({
+        let settings = $.extend({
             'thickness': 1.5,
             'hitPointsColor': "#D64636",
             'radius': 34,
@@ -17,16 +19,16 @@
 
         return this.each(function() {
 
-            var allCanvas = $(this).find(".radialBar");
+            let allCanvas = $(this).find(".radialBar");
             allCanvas.each(function(index, canvas) {
-                var ctx = canvas.getContext("2d");
+                let ctx = canvas.getContext("2d");
                 canvas = $(canvas);
-                var circ = Math.PI * 2;
-                var quart = Math.PI / 2;
+                let circ = Math.PI * 2;
+                let quart = Math.PI / 2;
                 ctx.lineWidth = settings.thickness;
                 ctx.beginPath();
                 ctx.strokeStyle = settings.hitPointsColor;
-                var value = $(canvas.children(".hitPoints")[0]).text();
+                let value = $(canvas.children(".hitPoints")[0]).text();
                 ctx.arc(settings.radius, settings.radius, settings.radius-1, -(quart), ((circ) * value) - quart, false);
                 ctx.stroke();
             });

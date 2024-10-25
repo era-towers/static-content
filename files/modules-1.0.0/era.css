@@ -203,19 +203,22 @@ td.glossaryEntryExample
 	width: 83%;
 }
 
-/*---- SPELL LIST  FILTER ----*/
+/*---- AUTOCOMPLETE ----*/
 
 
-ul.spellLists-autocomplete, ul.autocompleteList
+ul.spellLists-autocomplete ,
+ul.autocompleteList
 {
 	width: 600px;
 	max-height: 40vh;
 	overflow-y: auto;
 	overflow-x: hidden;
-	background:lightgray;
+	background: lightgray;
 }
 
-ul.autocompleteList li.ui-menu-item, ul.spellLists-autocomplete li.ui-menu-item{
+ul.spellLists-autocomplete li.ui-menu-item ,
+ul.autocompleteList li.ui-menu-item
+{
 	background: white;
     margin: 1px;
 }

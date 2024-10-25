@@ -11,20 +11,40 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 PROXIMA VERSION HAY QUE ARREGLAR LA LISTA DE ARMSMASTER QUE TIENE MAL EL NOMBRE EN LA PROFESION
 PROXIMA VERSION HAY QUE INCLUIR EL ICONO DE ROLL HISTORY
+PROXIMA VERSION REGENERAR LAS MANIOBRAS DE PRIVATEERS PARA QUE FUNCIONE PSIONIC CASTING
+PROXIMA VERSION REGENERAR RMU TALENTS
 
->> ????
+>> 2024-10-24
 
 - Initial version of the Gaming Table module.
 
-- Skill filters in Adventuring, Character Status and Gaming Table modules will now consider the skill description.
+- Maneuver dialogs in the Adventuring module will now show also show skills classified as Offensive Bonus and Special Maneuver.
+
+- Skill filters in Adventuring, Character Status and Gaming Table modules can now be configured to consider the skill description.
 
 - Skill filters in Adventuring, Character Status and Gaming Table modules now allows using + to separate different conditions that must all be met.
 
-- Spell list fiter now allows using + to separate different conditions that must all be met.
+- Most skill and spell filters will now wait for 3 characters before performing the search.
+
+- Spell list fiter now allows using + to separate different conditions that must all be met, and | to separate alternative filters.
+
+- Added option to filter beginning of spell name, using the caret ^ as separator.
+
+- The injury recovery dialog now includes a field to indicate additioinal modifications to the recovery roll.
+
+- The injury recovery dialog is now also available from the character recovery dialog.
+
+- Racial description will now be observe the paragraph separation used in the configuration files.
 
 - RMU: Knack bonus of new characters can be any number and not just a multiple of 5. Older characters must manually edit their professionBonus indicating knackBonus.bonusPerRank as the value (for example "5.1" for a knack of +5 and +1 per rank developed).
 
-- Fixed: Ranks gained per purchase field in the Character Sheet module will not allow decimal numbers.
+- RMU: Added partial medicine success to the recovery types, and clarified that no medicine maneuver is the same as a failure.
+
+- Fixed: Movement Maneuver table resolution will no longer apply the difficulty adjustment, since that is already considered in the different columns.
+
+- Fixed: Ranks gained per purchase field in the Character Sheet module will now allow decimal numbers.
+
+- Fixed: Characters can now detail values for Player Kept Records added after they were created.
 
 >> 2024-08-28
 
