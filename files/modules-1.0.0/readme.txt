@@ -9,10 +9,29 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
-PROXIMA VERSION HAY QUE ARREGLAR LA LISTA DE ARMSMASTER QUE TIENE MAL EL NOMBRE EN LA PROFESION
-PROXIMA VERSION HAY QUE INCLUIR EL ICONO DE ROLL HISTORY
-PROXIMA VERSION REGENERAR LAS MANIOBRAS DE PRIVATEERS PARA QUE FUNCIONE PSIONIC CASTING
-PROXIMA VERSION REGENERAR RMU TALENTS
+>> ????
+
+- Greatly improved loading times for Adventuring and Gaming Table modules when characters have large image files for avatars.
+
+- Fixed: Messages to players will no longer be kept when a new adventure is started or loaded.
+
+- Fixed: Discarding changes in the party inventory will no longer remove the items brought from the individual inventories.
+
+>> 2024-10-31
+
+- The Gaming Table module now offers a more compact view of the selected hero companions when the party is large (more than 5 PCs in total).
+
+- The Gaming Table module will no longer show hero NPCs in the companion sidebar.
+
+- Adventure and character loading times improved by preventing multiple reads of the race and profession files.
+
+- Additional logging information for the online server.
+
+- Added loading notification to round start, next/previous action declaration, new adventure, restore/continue adventure
+
+- Fixed: choosing a saved roll will again count as entering the roll manually for event triggering.
+
+- Fixed: loading an RMU adventure with no heroes is now working as expected.
 
 >> 2024-10-24
 
@@ -26,11 +45,11 @@ PROXIMA VERSION REGENERAR RMU TALENTS
 
 - Most skill and spell filters will now wait for 3 characters before performing the search.
 
-- Spell list fiter now allows using + to separate different conditions that must all be met, and | to separate alternative filters.
+- Spell list filter now allows using + to separate different conditions that must all be met, and | to separate alternative filters.
 
 - Added option to filter beginning of spell name, using the caret ^ as separator.
 
-- The injury recovery dialog now includes a field to indicate additioinal modifications to the recovery roll.
+- The injury recovery dialog now includes a field to indicate additional modifications to the recovery roll.
 
 - The injury recovery dialog is now also available from the character recovery dialog.
 
