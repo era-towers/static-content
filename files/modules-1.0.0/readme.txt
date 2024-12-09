@@ -9,7 +9,17 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> ????
+>> 2024-12-08
+
+- Character profiles in the Adventuring module can be replaced, to help transition during level ups or using updated versions of the character files.
+
+- Treasure tables can now roll dice other than d100, by reading the highest value in the last row.
+
+- Fixed: avatars for files with non-alphanumeric chars, or located outside the /Characters directory, and creature templates, are once again visible.
+
+- Fixed: attack tables with decimal values can now be shown in the Treasure module.
+
+>> 2024-12-01
 
 - Greatly improved loading times for Adventuring and Gaming Table modules when characters have large image files for avatars.
 
