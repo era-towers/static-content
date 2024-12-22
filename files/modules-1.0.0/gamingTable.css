@@ -85,6 +85,11 @@ a.rollHistoryButton
 	background-image: url("Images/scroll-quill.png");
 }
 
+a.combatButton
+{
+	background-image: url("Images/crossed-swords.png");
+}
+
 a.buttonInBar
 {
 	height: 38px;

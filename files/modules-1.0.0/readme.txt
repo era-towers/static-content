@@ -9,6 +9,18 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
+>> 2024-12-22
+
+- Added option to roll for initative and combat skills in the Gaming Table module. These options have also been added to the filter on the top search bar.
+
+- The new Summon button on the Adventuring module allows importing characters from another adventure into the current one, along with their status.
+
+- New character profiles added to an adventure can indicate the group size, to add several identical profiles at once.
+
+- RMU: Initiative can now be rolled at once for all combatants.
+
+- Fixed: Map distance calculation in the Travel module is now working again in Chromium/Opera.
+
 >> 2024-12-08
 
 - Character profiles in the Adventuring module can be replaced, to help transition during level ups or using updated versions of the character files.
