@@ -1490,6 +1490,21 @@ tr.characterSkill span.cultureRanksAssigned
 	display: inline-block;
 }
 
+tr.characterSkill.skillSpecialization:not(.specializations-visible)
+{
+	display: none;
+}
+
+span.ui-icon-caret-1-e.button-small
+{
+	background-image: url("Images/caret-right.png");
+}
+
+span.ui-icon-caret-1-e.button-small.specializations-visible
+{
+	background-image: url("Images/caret-down.png");
+}
+
 span.roomForButton
 {
 	display: inline-block;

@@ -1,23 +1,39 @@
 ERA: Electronic Roleplaying Assistant
-Copyright © 2005-2024 Maximiliano Tabacman. All rights reserved.
+Copyright © 2005-2025 Maximiliano Tabacman. All rights reserved.
 
-Iron Crown Enterprises, I.C.E., ICE, Rolemaster, High Adventure Role Playing, HARP, Spacemaster, Cyberspace, and Bladelands - and all products related thereto - are all trademark and copyright 2002-2024 © properties of Iron Crown Enterprises Ltd, 37 Fulbourn Road, Cambridge, United Kingdom. All rights reserved.
+Iron Crown Enterprises, I.C.E., ICE, Rolemaster, High Adventure Role Playing, HARP, Spacemaster, Cyberspace, and Bladelands - and all products related thereto - are all trademark and copyright 2002-2025 © properties of Iron Crown Enterprises Ltd, 37 Fulbourn Road, Cambridge, United Kingdom. All rights reserved.
 
-Navigator RPG, Nav RPG, and Open Ended Role-Playing is copyright 2019-2024 Parts Per Million Limited.
+Navigator RPG, Nav RPG, and Open Ended Role-Playing is copyright 2019-2025 Parts Per Million Limited.
 
-Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of Open Ended Games, Inc. Copyright © 2016–2024, Open Ended Games, Inc and their respective authors.
+Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of Open Ended Games, Inc. Copyright © 2016–2025, Open Ended Games, Inc and their respective authors.
 
 ====== Version History =====
 
->> 2024-12-22
+>> 2025-01-17
 
-- Added option to roll for initative and combat skills in the Gaming Table module. These options have also been added to the filter on the top search bar.
+- Added option to filter only table name (usually its category) of skills, or spell lists of spells, using the at sign @.
+
+- Results in the top search bar of the Gaming Table module are now group by category for skills, and by spell list for spells. Clicking on the group will use it for a new search.
+
+- Skill and spell tables in the Gaming Table module are now grouped by category for skills, and by spell list for spells.
+
+- The culture step in the Character Creation module will now group skills with specializations, and compact them by default
+
+- Added suggested description for newly created characters.
+
+- Added generative description of adventure combatants.
+
+- Added interpreted verbal command for gaming table actions.
+
+- Added option to roll for initiative and combat skills in the Gaming Table module. These options have also been added to the filter on the top search bar.
 
 - The new Summon button on the Adventuring module allows importing characters from another adventure into the current one, along with their status.
 
 - New character profiles added to an adventure can indicate the group size, to add several identical profiles at once.
 
 - RMU: Initiative can now be rolled at once for all combatants.
+
+- Fixed: critical severities below maximum will now suggest the minimum severity instead of the maximum.
 
 - Fixed: Map distance calculation in the Travel module is now working again in Chromium/Opera.
 

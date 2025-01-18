@@ -120,8 +120,46 @@ div.search
 	left: 30vw;
 }
 
+span.verbalCommand
+{
+	background-image: url("Images/old-microphone.png");
+}
+
+li.ui-autocomplete-category
+{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 2px;
+	padding-left: 30px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-variant: small-caps;
+	cursor: pointer;
+}
+
+li.ui-autocomplete-category.skill
+{
+	background-image: url("Images/maneuver.png");
+}
+
+li.ui-autocomplete-category.spell
+{
+	background-image: url("Images/castSpell.png");
+}
+
+li.ui-autocomplete-category.combat
+{
+	background-image: url("Images/crossed-swords.png");
+}
+
 /*---- SKILLS AND SPELLS ----*/
 
+
+div.characterSkills table ,
+div.characterSpells table
+{
+	border-collapse: collapse;
+}
 
 div.characterSkills ,
 div.characterSpells
@@ -129,6 +167,31 @@ div.characterSpells
 	max-height: 60vh;
 	overflow-y: auto;
 	padding: 5px;
+}
+
+tr.rowGrouping
+{
+	font-variant: small-caps;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	vertical-align: bottom;
+}
+
+tr.rowGrouping:not(:first-child)
+{
+	height: 40px;
+}
+
+div.characterSkills tr.rowGrouping:hover td:nth-child(2) ,
+div.characterSpells tr.rowGrouping:hover td:nth-child(3)
+{
+	text-shadow: initial;
+}
+
+div.characterSkills tr:not(.rowGrouping) td:nth-child(2) ,
+div.characterSpells tr:not(.rowGrouping) td:nth-child(2)
+{
+	padding-left: 10px;
 }
 
 div.characterSkills

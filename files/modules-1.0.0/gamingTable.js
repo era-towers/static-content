@@ -58,3 +58,81 @@ function storeAction(event, action) {
     event.originalEvent.action = actionWithReference;
     return action;
 }
+
+// AUTOCOMPLETE
+
+$.widget("custom.categorizedautocomplete", $.ui.autocomplete, {
+    _create: function() {
+        this._super();
+        this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+    },
+    _renderMenu: function(ul, items) {
+        var that = this
+          , currentCategory = "";
+        $.each(items, function(index, item) {
+            var li;
+            if (item.category != currentCategory) {
+                ul.append("<li class='ui-autocomplete-category " + item.categoryClassification + "'>" + item.category + "</li>");
+                currentCategory = item.category;
+                ul.children().last().on('click', function() {
+					that.search("@"+item.category);
+                });
+            }
+            li = that._renderItemData(ul, item);
+            if (item.category) {
+                li.attr("aria-label", item.category + " : " + item.label);
+            }
+        });
+    }
+});
+
+// RECORDING
+
+let mediaRecorder;
+let verbalCommand;
+
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    const constraints = {
+        audio: true
+    };
+    let chunks = [];
+
+    let onSuccess = function(stream) {
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.onstop = function(e) {
+            const blob = new Blob(chunks,{
+                type: mediaRecorder.mimeType
+            });
+            chunks = [];
+
+            const reader = new FileReader();
+            reader.readAsDataURL(blob);
+            reader.onloadend = function() {
+                verbalCommand = document.querySelector("audio.verbalCommand");
+                verbalCommand.src = reader.result;
+                verbalCommand.click();
+            }
+        }
+
+        mediaRecorder.ondataavailable = function(e) {
+            chunks.push(e.data);
+        }
+    };
+
+    let onError = function(err) {
+        console.log("The following error occured: " + err);
+    };
+
+    navigator.mediaDevices.getUserMedia(constraints).then(onSuccess, onError);
+} else {
+    console.log("Could not get permission for user media")
+}
+
+function startRecording() {
+    mediaRecorder.start();
+}
+
+function stopRecording() {
+    mediaRecorder.stop();
+}
