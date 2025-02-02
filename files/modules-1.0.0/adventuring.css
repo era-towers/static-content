@@ -1818,6 +1818,101 @@ select.savedRolls
 	}
 }
 
+/*---- PLAYER ROLLS ----*/ 
+
+
+div.pendingPlayerRolls
+{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	height: 50px;
+	overflow: hidden;
+}
+
+div.pendingPlayerRoll
+{
+    display: inline-block;
+    width: 55px;
+}
+
+img.pendingPlayerRoll
+{
+	height: 48px;
+	width: 48px;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: white;
+	opacity: 0.5;
+	margin-right: 5px;
+}
+
+div.pendingPlayerRoll > span:first-child
+{
+	position: absolute;
+    border-radius: 10px;
+    z-index: 1;
+    background-position: 50%;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+    background-color: white;
+}
+
+span.playerRollIcon
+{
+	pointer-events: none;
+}
+
+span.playerRollIcon.maneuverActionIcon
+{
+    background-image: url("Images/maneuver.png");
+}
+
+span.playerRollIcon.castSpellActionIcon
+{
+    background-image: url("Images/smoking-finger.png");
+}
+
+span.playerRollIcon.meleeAttackActionIcon
+{
+	background-image: url("Images/spinning-sword.png");
+}
+
+span.playerRollIcon + img.pendingPlayerRoll
+{
+	cursor: pointer;
+}
+
+span.pendingPlayerRoll
+{
+    display: inline-block;
+    width: 0px;
+    position: relative;
+    left: -43px;
+    top: -1px;
+    z-index: 99;
+    font-size: 20pt;
+    font-weight: bold;
+    text-shadow: 3px -1px 0px white;
+    pointer-events: none;
+}
+
+div.pendingPlayerRoll > span.ui-icon-close
+{
+    display: none;
+    float: right;
+    margin-top: -21px;
+}
+
+div.pendingPlayerRoll:hover > span.ui-icon-close
+{
+    cursor: pointer;
+    display: inline-block;
+}
+
 /*---- DICE MANUAL ADJUSTMENT ----*/ 
 
 

@@ -9,11 +9,15 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2025-01-17
+>> 2025-02-02
+
+- Player rolls for iniative, maneuvers, spell casting and attacks can now be applied in the Adventuring module.
+
+- Added checkboxes next to the search in the Gaming Table module, to indicate all skills/developed only, and include/exclude skill descriptions when searching.
 
 - Added option to filter only table name (usually its category) of skills, or spell lists of spells, using the at sign @.
 
-- Results in the top search bar of the Gaming Table module are now group by category for skills, and by spell list for spells. Clicking on the group will use it for a new search.
+- Results in the top search bar of the Gaming Table module are now grouped by category for skills, and by spell list for spells. Clicking on the group will use it for a new search.
 
 - Skill and spell tables in the Gaming Table module are now grouped by category for skills, and by spell list for spells.
 

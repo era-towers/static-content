@@ -58,6 +58,15 @@ div.avatarWithOverlay img.partyMember
 	opacity: 0.7;
 }
 
+div.largeParty img.avatarConstantOverlay
+{
+	height: 57px;
+	width: 57px;
+	border-radius: 30px;
+	margin-left: 39px;
+	margin-top: 2px;
+}
+
 /*---- BUTTON BAR ----*/
 
 
@@ -113,11 +122,16 @@ a.buttonInBar
 
 div.search
 {
-	width: 30vw;
+	width: 33vw;
 	display: inline-block;
 	padding: 10px;
 	position: absolute;
 	left: 30vw;
+}
+
+div.search > input[type="checkbox"]
+{
+	margin-left: 1vw;
 }
 
 span.verbalCommand

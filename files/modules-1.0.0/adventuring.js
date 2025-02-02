@@ -7,6 +7,7 @@ function configureServerSentEvents(eventSource) {
         if (playerCharacterDice.length !== 0) {
 			playerCharacterDice.removeClass("keep-hidden");
             rollTo(playerCharacterDice, jsonData.roll);
+			$("#refresh-pending-rolls").click();
         }
     });
 }
