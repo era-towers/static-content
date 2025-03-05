@@ -298,7 +298,7 @@ div.combatActions {
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	text-align: center;    width: calc(96vw - 748px);
 }
 
 img.combatAction.actionPointsSpent:not(:hover) {
@@ -319,10 +319,6 @@ div.combatInProgress div.adventureControls{
 	margin-right: 304px;
 }
 
-div.combatInProgress div.partyActionsBorder, div.combatInProgress div.partyActions {
-	display: none;
-}
-
 div.combatInProgress div.enemyChips{
 	display: inline-block;
 }
@@ -341,20 +337,20 @@ div.partyActionsBorder {
 	position: relative;
 	top: -68px;
 	left: 215px;
-	width: 97px;
+	width: 110px;
 	height: 110px;
 	border: 1px solid black;
 	border-width: 0 1px 1px 0;
-	border-bottom-right-radius: 100px;
+	border-bottom-right-radius: 110px;
 	z-index: -1;
 }
 
 div.partyActions {
-	position: relative;
-	width: 100px;
-	height: 125px;
-	top: -179px;
-	left: 265px;
+    position: relative;
+    width: 35px;
+    height: 170px;
+    top: -198px;
+    left: 279px;
 }
 
 div.partyActions img {
@@ -362,13 +358,18 @@ div.partyActions img {
 }
 
 div.partyActions img:nth-child(1) {
-	margin-left: 43px;
-	margin-top: 38px;
+    margin-left: 47px;
+    margin-top: 23px;
 }
 
 div.partyActions img:nth-child(2) {
-	margin-left: -12px;
-	margin-top: 21px;
+    margin-left: 20px;
+    margin-top: 21px;
+}
+
+div.partyActions img:nth-child(3) {
+margin-left: -41px;
+    margin-top: 0px;
 }
 
 div.partyActions img.hoverMenuButton:hover {
@@ -515,6 +516,8 @@ ul.largeParty img.partyMember {
 	height: 60px;
 	width: 60px;
 	border-radius: 30px;
+    position: relative;
+    top: -6px;
 }
 
 img.partyMember:hover {
@@ -1828,11 +1831,13 @@ div.pendingPlayerRolls
     margin-right: auto;
     text-align: center;
 	height: 50px;
+    width: calc(96vw - 748px);
 	overflow: hidden;
 }
 
 div.pendingPlayerRoll
 {
+    position: relative;
     display: inline-block;
     width: 55px;
 }
@@ -1879,6 +1884,11 @@ span.playerRollIcon.castSpellActionIcon
 span.playerRollIcon.meleeAttackActionIcon
 {
 	background-image: url("Images/spinning-sword.png");
+}
+
+span.playerRollIcon.resistanceActionIcon
+{
+	background-image: url("Images/resistance.png");
 }
 
 span.playerRollIcon + img.pendingPlayerRoll
@@ -1945,7 +1955,7 @@ div.player-character-roll
 
 div.player-character-roll.keep-hidden
 {
-	display: none;
+	opacity: 0
 }
 
 /*---- DICE AFFECTED BY SIZE ----*/

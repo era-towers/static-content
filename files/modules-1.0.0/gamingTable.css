@@ -14,26 +14,6 @@ div.game-master-dice.keep-hidden
 	visibility: hidden;
 }
 
-div.game-master-dice div.die:nth-child(1) figure.face:nth-child(n+6)::before
-{
-	content: "?";
-}
-
-div.game-master-dice div.die:nth-child(1) figure.face::before
-{
-	content: "!";
-}
-
-div.game-master-dice div.die:nth-child(2) figure.face:nth-child(n+3)::before
-{
-	content: "!";
-}
-
-div.game-master-dice div.die:nth-child(2) figure.face::before
-{
-	content: "?";
-}
-
 /*---- AVATAR OVERLAY ----*/
 
 
@@ -73,7 +53,7 @@ div.largeParty img.avatarConstantOverlay
 div.buttonBar
 {
 	position: absolute;
-	height: 20vw;
+	height: 25vw;
 	left: 15px;
 	top: 120px;
 	width: 130px;
@@ -87,6 +67,11 @@ a.skillsButton
 a.spellsButton
 {
 	background-image: url("Images/castSpell.png");
+}
+
+a.resistancesButton
+{
+	background-image: url("Images/resistance.png");
 }
 
 a.rollHistoryButton
@@ -170,13 +155,15 @@ li.ui-autocomplete-category.combat
 
 
 div.characterSkills table ,
-div.characterSpells table
+div.characterSpells table, 
+div.characterResistances table
 {
 	border-collapse: collapse;
 }
 
 div.characterSkills ,
-div.characterSpells
+div.characterSpells, 
+div.characterResistances
 {
 	max-height: 60vh;
 	overflow-y: auto;
@@ -218,7 +205,13 @@ div.characterSpells
 	min-width: 630px;
 }
 
-div.characterSkills td:nth-child(2)
+div.characterResistances
+{
+	min-width: 360px;
+}
+
+div.characterSkills td:nth-child(2) ,
+div.characterResistances td:nth-child(2)
 {
 	min-width: 260px;
 }
@@ -239,7 +232,8 @@ div.characterSpells td:nth-child(4)
 
 div.characterSkills td:nth-child(3) ,
 div.characterSkills td:nth-child(4) ,
-div.characterSpells td:nth-child(5)
+div.characterSpells td:nth-child(5) ,
+div.characterResistances td:nth-child(3)
 {
 	text-align: right;
 	width: 30px;
@@ -287,7 +281,8 @@ span.informationButton::after
 }
 
 div.characterSkills tr:hover > td:nth-child(2) ,
-div.characterSpells tr:hover > td:nth-child(3)
+div.characterSpells tr:hover > td:nth-child(3) ,
+div.characterResistances tr:hover > td:nth-child(2)
 {
 	font-weight: bold;
 	text-shadow: 8px 5px 6px gray;
@@ -329,6 +324,11 @@ input.labeledField
 label.labeledField
 {
 	vertical-align: middle;
+    display: inline-block;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 button.labeledField
@@ -684,6 +684,35 @@ figure.face.face-9
 	transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
 }
 
+/*---- HIDDEN ROLLS ----*/
+
+
+span.diceContainer + div.hideDiceRolls 
+{
+    left: calc(55vw - 160px);
+    position: relative;
+}
+
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(1) figure.face:nth-child(n+6)::before,
+{
+	content: "?";
+}
+
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(1) figure.face::before
+{
+	content: "!";
+}
+
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(2) figure.face:nth-child(n+3)::before,
+{
+	content: "!";
+}
+
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(2) figure.face::before
+{
+	content: "?";
+}
+
 /*---- CONDITION ----*/
 
 
@@ -855,4 +884,21 @@ div.characterPortraitFrame > div.characterPortraitCaption
 	position: relative;
 	text-align: center;
 	width: 90%;
+}
+
+/*---- PLAYER ROLL HISTORY ----*/
+
+
+div.playerRollHistory
+{
+	max-height: 60vh;
+}
+
+span.playerRollHistory
+{
+	display: block;
+	height: 30px;
+	font-family: sans-serif;
+	font-size: 10pt;
+    text-align: center;
 }

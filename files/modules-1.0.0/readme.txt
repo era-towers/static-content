@@ -9,9 +9,25 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2025-02-02
+>> 2025-03-04
 
-- Player rolls for iniative, maneuvers, spell casting and attacks can now be applied in the Adventuring module.
+- Added option to roll for resistances in the Gaming Table module.
+
+- Added the option to hide rolls in the Gaming Table module.
+
+- Added option to customize number of ranks in starting languages.
+
+- The Adventuring module now allows GM rolls to be visible or hidden to players using the Gaming Table module.
+
+- Party actions (party recover, party maneuver, GM roll visibility) will now be shown even during combat mode.
+
+- Changed the player roll history in the Gaming Table module to update automatically after every roll.
+
+- RMU: Added customization option to choose if the boosts during character creation replace (strict) or not (generous) the highest temporaries when they are above 90/85. The default option is strict.
+
+>> 2025-02-14
+
+- Player rolls for initiative, maneuvers, spell casting and attacks can now be applied in the Adventuring module.
 
 - Added checkboxes next to the search in the Gaming Table module, to indicate all skills/developed only, and include/exclude skill descriptions when searching.
 
@@ -21,7 +37,7 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 - Skill and spell tables in the Gaming Table module are now grouped by category for skills, and by spell list for spells.
 
-- The culture step in the Character Creation module will now group skills with specializations, and compact them by default
+- The culture step in the Character Creation module will now group skills with specializations, and compact them by default.
 
 - Added suggested description for newly created characters.
 

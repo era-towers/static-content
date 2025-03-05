@@ -10,16 +10,35 @@ function configureServerSentEvents(eventSource) {
         const jsonData = JSON.parse(event.data);
         const companionDice = $("#" + jsonData.character + "-roll");
         if (companionDice.length !== 0) {
-            rollTo(companionDice, jsonData.roll);
+            if (jsonData.hidden) {
+                companionDice.addClass("hideDiceRolls");
+                rollTo(companionDice, "00");
+            } else {
+                companionDice.removeClass("hideDiceRolls");
+                rollTo(companionDice, jsonData.roll);
+				$("#refresh-player-rolls").click();
+            }
         }
     }
     );
     eventSource.addEventListener("game-master-roll", event => {
         const gameMasterDice = $(".game-master-dice");
+        const jsonData = JSON.parse(event.data);
         gameMasterDice.removeClass("keep-hidden");
-        rollTo(gameMasterDice, "00");
+        if (jsonData.hidden) {
+            gameMasterDice.addClass("hideDiceRolls");
+            rollTo(gameMasterDice, "00");
+        } else {
+            gameMasterDice.removeClass("hideDiceRolls");
+            rollTo(gameMasterDice, jsonData.roll);
+        }
     }
     );
+}
+
+function resetPlayerDice() {
+    const playerDice = $(".diceContainer");
+    resetRollTo(playerDice, "00");
 }
 
 function wereDiceAvailableForRolling() {
@@ -75,7 +94,7 @@ $.widget("custom.categorizedautocomplete", $.ui.autocomplete, {
                 ul.append("<li class='ui-autocomplete-category " + item.categoryClassification + "'>" + item.category + "</li>");
                 currentCategory = item.category;
                 ul.children().last().on('click', function() {
-					that.search("@"+item.category);
+                    that.search("@" + item.category);
                 });
             }
             li = that._renderItemData(ul, item);

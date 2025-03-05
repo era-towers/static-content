@@ -31,3 +31,12 @@ function rollTo(container, rollString) {
     }
     , animationDuration * 1.5);
 }
+
+function resetRollTo(container, rollString) {
+    const rollingDice = container.find(".rolling-dice");
+    const dies = container.find('.die');
+    const strings = (rollString + "").split(",");
+    const lastNumberString = strings[strings.length - 1].padStart(2, "0").slice(-2);
+    settleRollOn(dies, 0, Number(lastNumberString[0]));
+    settleRollOn(dies, 1, Number(lastNumberString[1]));
+}
