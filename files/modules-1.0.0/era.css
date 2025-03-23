@@ -214,6 +214,7 @@ ul.autocompleteList
 	overflow-y: auto;
 	overflow-x: hidden;
 	background: lightgray;
+	z-index: 101 !important ;
 }
 
 ul.spellLists-autocomplete li.ui-menu-item ,

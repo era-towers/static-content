@@ -870,17 +870,22 @@ div.attackDown span.locationCriticalModification
 /*---- INJURY RECOVERY ----*/
 
 
-span.injuryRecovery
-{
-	background-image: url("Images/eternal-love.png");
-    margin-top: -7px;
-}
-
 textarea.injuryRecoveryResult
 {
-	margin-top: 10px;
-	width: 100%;
+	margin-top: 10px; */
+    width: 12em;
 	height: 24px;
+	vertical-align: middle;
+    text-align: center;
+}
+
+select.injuryRecoveryResult
+{
+    margin-top: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+    font-size: large;
+    font-weight: bold;
 }
 
 div.injuryType
@@ -1019,6 +1024,26 @@ textarea.declaredNotes
 /*---- PROFILE ----*/
 
 
+fieldset.profileTargeting > input[type=number]
+{
+	width: 60px;
+}
+
+fieldset.profileTargeting > input[type=number]:nth-child(2)
+{
+	margin-left: 14px;
+}
+
+fieldset.profileTargeting > label:not(:first-child)
+{
+	margin-left: 10px;
+}
+
+div.characterStatus
+{
+	width: 700px;
+}
+
 span.statusEffect:not(:last-of-type)
 {
 	margin-right: 9px;
@@ -1037,7 +1062,8 @@ span.statusEffectName
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	width: 54px;
+	width: 80px;
+    font-size: 0.9em;
 }
 
 div.profileArmor
@@ -1060,9 +1086,23 @@ select.profileArmor:nth-of-type(2n-1)
     margin-right: 3px;
 }
 
-fieldset.profileDefensiveModifications
+fieldset.listContainer.profileDefensiveModifications select
 {
+	width: 400px;
+    height: 110px;
+}
+
+div.totalDefensiveBonus
+{
+    width: 160px;
+	margin-left: 8px;
     font-size: 0.9em;
+}
+
+div.totalDefensiveBonus > input[type=number]
+{
+    margin-left: 20px;
+    width: 100px;
 }
 
 fieldset.profileTargeting
@@ -1077,9 +1117,44 @@ input[type="number"].shortNumber
 	width: 40px;
 }
 
-fieldset.profileExhaustion input
+textarea.profileInjury
 {
-	width: 70px;
+	font-size: 0.9em;
+	width: 270px;
+	height: 100px;
+}
+
+form fieldset.willow input.profileInjury[type="number"]
+{
+	width: 80px;
+}
+
+fieldset.rulesetDependentSection:not(:only-of-type)
+{
+    width: 285px;
+}
+
+fieldset.rulesetDependentSection:not(:only-of-type):nth-child(1)
+{
+	float: right;
+}
+
+fieldset.rulesetDependentSection > div
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+
+fieldset.rulesetDependentSection > div > label
+{
+    display: inline-block;
+    width: 150px;
+}
+
+fieldset.rulesetDependentSection > div > input[type=number]
+{
+    width: 70px;
 }
 
 /*---- INTERFACE ----*/
@@ -1545,6 +1620,15 @@ div.maneuverParameters label.labeledField ,
 div.maneuverParameters input.labeledField
 {
 	vertical-align: middle;
+}
+
+div.maneuverParameters label.labeledField
+{
+    max-width: 215px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 
 div.maneuverParameters input.labeledField

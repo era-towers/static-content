@@ -131,14 +131,6 @@ input[type=number] {
 
 /* ---- CHARACTER PROFILE ---- */
 
-div.characterStatus {
-	width: 540px;
-}
-
-fieldset.sharedRowContainer div select{
-	width: 172px;
-}
-
 div.inline label {
 	padding-left: 6px;
 }
@@ -175,8 +167,8 @@ div.characterProfileButtons button {
 }
 
 img.profileAvatar {
-	height: 100px;
-	width: 100px;
+	height: 110px;
+	width: 110px;
 	float: right;
 }
 
@@ -294,24 +286,32 @@ fieldset.fieldsAndLabels {
 	border: none;
 }
 
-fieldset.dialogBottom textArea{
+fieldset.dialogBottom textArea {
 	display: inline;
 	width: 99%;
-	height: 80px;
+    height: 120px;
+    font-size: 0.85em;
 }
 
-div.floatRight{
+div.floatRight {
 	float: right;
 }
 
-fieldset.listContainer {
-	display: inherit;
+div.characterStatus fieldset {
+    padding: 8px;
 }
 
 fieldset.listContainer select {
 	display: table-column;
-	width: 400px;
-	height: 75px;
+    width: 260px;
+    height: 84px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+div:not(.floatRight) + div > fieldset.listContainer select {
+    width: 569px;
+    height: 120px;
 }
 
 fieldset.listContainer div {

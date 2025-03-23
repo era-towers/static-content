@@ -246,7 +246,6 @@ span.spellPreparation {
 
 span.bleeding {
 	background-image: url("Images/drop.png");
-	background-position: 20% 0%;
 }
 
 span.MustParry, span.MustParryStaggered {
@@ -266,8 +265,11 @@ span.accumulatedExhaustion {
 }
 
 span.modifications {
+	background-image: url("Images/internal-injury.png");
+}
+
+span.injuries {
 	background-image: url("Images/back-pain.png");
-	background-position: 10% 0%;
 }
 
 span.activeSpells {

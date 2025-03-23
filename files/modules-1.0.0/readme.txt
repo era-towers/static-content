@@ -9,11 +9,17 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2025-03-04
+>> 2025-03-23
+
+- Added injuries to character profiles. They can be edited in the Adventuring module, and are shown to players in the Gaming Table and Character Status modules.
+
+- Injury recovery is now accessible only in the character profile injuries. Accepting the injury recovery dialog will adjust the time remaining for the injury to heal.
 
 - Added option to roll for resistances in the Gaming Table module.
 
 - Added the option to hide rolls in the Gaming Table module.
+
+- Added undeveloped skill filter for character profiles in the Adventuring module.
 
 - Added option to customize number of ranks in starting languages.
 
@@ -22,6 +28,12 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 - Party actions (party recover, party maneuver, GM roll visibility) will now be shown even during combat mode.
 
 - Changed the player roll history in the Gaming Table module to update automatically after every roll.
+
+- Fixed: Z and Y critical results will now be correctly resolved as A criticals, with the corresponding movement up in the table keeping the location.
+
+- Fixed: choosing an attack skill with an unknown table will now inform the situation in the attack result field.
+
+- Fixed: restarting the server when using the online server will now correctly connect to the new content.
 
 - RMU: Added customization option to choose if the boosts during character creation replace (strict) or not (generous) the highest temporaries when they are above 90/85. The default option is strict.
 
