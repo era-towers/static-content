@@ -9,11 +9,9 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2025-03-23
+>> 2025-04-05
 
-- Added injuries to character profiles. They can be edited in the Adventuring module, and are shown to players in the Gaming Table and Character Status modules.
-
-- Injury recovery is now accessible only in the character profile injuries. Accepting the injury recovery dialog will adjust the time remaining for the injury to heal.
+- Added injuries to character profiles. They can be edited in the Adventuring module, and are shown to players in the Gaming Table and Character Status modules. Injury recovery is now accessible only in the character profile injuries. Accepting the injury recovery dialog will adjust the time remaining for the injury to heal. Using the individual or party recover dialog will reduce injury penalties depending on the time elapsed.
 
 - Added option to roll for resistances in the Gaming Table module.
 
@@ -25,9 +23,15 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 - The Adventuring module now allows GM rolls to be visible or hidden to players using the Gaming Table module.
 
+- Changed add/edit and remove icons in the character profile dialog to better represent their intended actions.
+
+- Changed timeout for Adventuring, Character Sheet, Spellbook, Status and Gaming Table modules to 6 hours, and Character Creation module to 9 hours.
+
 - Party actions (party recover, party maneuver, GM roll visibility) will now be shown even during combat mode.
 
 - Changed the player roll history in the Gaming Table module to update automatically after every roll.
+
+- Races can now indicate a natural armor type, and an exhaustion modification. The natural armor type can also be changed later in the character.
 
 - Fixed: Z and Y critical results will now be correctly resolved as A criticals, with the corresponding movement up in the table keeping the location.
 

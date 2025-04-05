@@ -222,6 +222,7 @@ fieldset.abilities input[type="checkbox"] {
 fieldset.abilities select {
 	margin-top: -3px;
 	width: 49px;
+    text-align: center;
 }
 
 fieldset.abilities input[type="number"] {

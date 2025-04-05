@@ -160,14 +160,14 @@ li.ui-autocomplete-category.resistance
 
 
 div.characterSkills table ,
-div.characterSpells table, 
+div.characterSpells table , 
 div.characterResistances table
 {
 	border-collapse: collapse;
 }
 
 div.characterSkills ,
-div.characterSpells, 
+div.characterSpells ,
 div.characterResistances
 {
 	max-height: 60vh;
@@ -698,7 +698,7 @@ span.diceContainer + div.hideDiceRolls
     position: relative;
 }
 
-.hideDiceRolls > div.rolling-dice > div.die:nth-child(1) figure.face:nth-child(n+6)::before,
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(1) figure.face:nth-child(n+6)::before
 {
 	content: "?";
 }
@@ -708,7 +708,7 @@ span.diceContainer + div.hideDiceRolls
 	content: "!";
 }
 
-.hideDiceRolls > div.rolling-dice > div.die:nth-child(2) figure.face:nth-child(n+3)::before,
+.hideDiceRolls > div.rolling-dice > div.die:nth-child(2) figure.face:nth-child(n+3)::before
 {
 	content: "!";
 }
@@ -783,11 +783,13 @@ span.accumulatedExhaustion
 	background-image: url("Images/run.png");
 }
 
-span.modifications {
+span.modifications
+{
 	background-image: url("Images/internal-injury.png");
 }
 
-span.injuries {
+span.injuries
+{
 	background-image: url("Images/back-pain.png");
 }
 

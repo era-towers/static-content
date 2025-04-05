@@ -121,8 +121,8 @@ span.roll-saved
 
 a.openHome
 {
-	background-size: contain;
 	background-image: url("Images/eraLogo.png");
+	background-size: contain;
 	background-repeat: no-repeat;
 	width: 117px;
 	height: 35px;
@@ -214,7 +214,7 @@ ul.autocompleteList
 	overflow-y: auto;
 	overflow-x: hidden;
 	background: lightgray;
-	z-index: 101 !important ;
+	z-index: 101 !important;
 }
 
 ul.spellLists-autocomplete li.ui-menu-item ,

@@ -423,10 +423,8 @@ button.adventureOptions {
 	height: 24px;
 }
 
-button.adventureOptions:hover {
-}
-
 /* ---- PARTY ---- */
+
 
 div.enemyChips {
 	float: right;
@@ -872,7 +870,7 @@ div.attackDown span.locationCriticalModification
 
 textarea.injuryRecoveryResult
 {
-	margin-top: 10px; */
+	margin-top: 10px;
     width: 12em;
 	height: 24px;
 	vertical-align: middle;
@@ -1024,12 +1022,12 @@ textarea.declaredNotes
 /*---- PROFILE ----*/
 
 
-fieldset.profileTargeting > input[type=number]
+fieldset.profileTargeting > input[type="number"]
 {
 	width: 60px;
 }
 
-fieldset.profileTargeting > input[type=number]:nth-child(2)
+fieldset.profileTargeting > input[type="number"]:nth-child(2)
 {
 	margin-left: 14px;
 }
@@ -1099,7 +1097,7 @@ div.totalDefensiveBonus
     font-size: 0.9em;
 }
 
-div.totalDefensiveBonus > input[type=number]
+div.totalDefensiveBonus > input[type="number"]
 {
     margin-left: 20px;
     width: 100px;
@@ -1152,7 +1150,7 @@ fieldset.rulesetDependentSection > div > label
     width: 150px;
 }
 
-fieldset.rulesetDependentSection > div > input[type=number]
+fieldset.rulesetDependentSection > div > input[type="number"]
 {
     width: 70px;
 }
@@ -1374,6 +1372,7 @@ ul.spellTargets
 	margin: 0px;
 	margin-top: 8px;
 	display: inline-block;
+    font-size: smaller;
 }
 
 div.spellCastingResult
@@ -2039,7 +2038,7 @@ div.player-character-roll
 
 div.player-character-roll.keep-hidden
 {
-	opacity: 0
+	opacity: 0;
 }
 
 /*---- DICE AFFECTED BY SIZE ----*/
