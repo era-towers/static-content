@@ -3,6 +3,8 @@ let mapCanvas;
 let lineStartX, lineStartY;
 let scale;
 let settingScale;
+let distances;
+let segments;
 
 function setup() {
     settingScale = true;
@@ -10,6 +12,7 @@ function setup() {
     let mapImage = element("mapImage");
     createCanvas(mapImage.width, mapImage.height, mapCanvas);
     noLoop();
+    clearSegments();
 }
 
 function windowResized() {
@@ -20,19 +23,31 @@ function windowResized() {
 
 function draw() {
     clear();
+    drawLineInProgress();
+}
+
+function drawLineInProgress() {
     if (settingScale) {
         strokeWeight(4);
         stroke("red");
+        line(lineStartX, lineStartY, mouseX, mouseY);
     } else {
         strokeWeight(2);
         stroke("blue");
+        segments.forEach(drawSegment);
+        line(lineStartX, lineStartY, mouseX, mouseY);
+        drawScale();
     }
-    line(lineStartX, lineStartY, mouseX, mouseY);
-    if (scale) {
-        strokeWeight(4);
-        stroke("red");
-        line(scale.startX, scale.startY, scale.endX, scale.endY);
-    }
+}
+
+function drawSegment(segment, index, array) {
+    line(segment.startX, segment.startY, segment.endX, segment.endY);
+}
+
+function drawScale() {
+    strokeWeight(4);
+    stroke("red");
+    line(scale.startX, scale.startY, scale.endX, scale.endY);
 }
 
 function setScale() {
@@ -44,9 +59,24 @@ function setScale() {
     };
     clearInput("distanceInPixels");
     clearInput("scaleInPixels");
-    setComputedDistanceTo("");
-    clear();
+    clearSegments();
     settingScale = true;
+}
+
+function resetTrip() {
+    clearInput("distanceInPixels");
+    clearSegments();
+    updateInput("totalDistanceAmount", 0);
+    if (scale) {
+        drawScale();
+    }
+}
+
+function clearSegments() {
+    setDistanceDetailTo("");
+    distances = [];
+    segments = [];
+    clear();
 }
 
 function mousePressed() {
@@ -74,6 +104,12 @@ function mouseReleased() {
             settingScale = false;
         } else {
             updateInput("distanceInPixels", Math.round(lineLength));
+            segments.push({
+                startX: lineStartX,
+                startY: lineStartY,
+                endX: mouseX,
+                endY: mouseY
+            });
             computeDistance();
         }
     }
@@ -85,6 +121,7 @@ function clearInput(aClassName) {
 
 function updateInput(aClassName, value) {
     let distanceInput = element(aClassName);
+    distanceInput.innerHTML = value;
     $(distanceInput).val(value).change();
 }
 
@@ -92,14 +129,25 @@ function computeDistance() {
     let scaleDistance = numberFrom("scaleDistance");
     let scaleInPixels = numberFrom("scaleInPixels");
     let distanceInPixels = numberFrom("distanceInPixels");
-    let distance = ((distanceInPixels * scaleDistance) / scaleInPixels).toFixed(2);
+    let distance = ((distanceInPixels * scaleDistance) / scaleInPixels);
     if (isFinite(distance)) {
-        let scaleUnit = valueOf("scaleUnit");
-        setComputedDistanceTo(distance + " " + scaleUnit);
-    } else {
-        setComputedDistanceTo("");
+        addToDistances(distance);
     }
+}
 
+function addToDistances(distance) {
+    distances.push(distance);
+    let sum = 0;
+    let text = "";
+    distances.forEach( (segmentDistance) => {
+        sum = sum + segmentDistance;
+        text = text + "+" + segmentDistance.toFixed(0);
+    }
+    );
+	sum = Math.round(sum);
+    let scaleUnit = selectionOf("scaleUnit");
+    setDistanceDetailTo(text.slice(1) + "=" +sum .toFixed(0) + " " + scaleUnit);
+    updateInput("totalDistanceAmount", sum);
 }
 
 function numberFrom(aClassName) {
@@ -110,9 +158,14 @@ function valueOf(aClassName) {
     return (element(aClassName)).value;
 }
 
-function setComputedDistanceTo(aText) {
-    let computedDistance = element("computedDistance");
-    computedDistance.innerHTML = aText;
+function selectionOf(aClassName) {
+    let dropdown = element(aClassName);
+    return (dropdown.children[dropdown.value - 1]).innerHTML;
+}
+
+function setDistanceDetailTo(aText) {
+    let distanceDetail = element("distanceDetail");
+    distanceDetail.innerHTML = aText;
 }
 
 function element(aClassName) {

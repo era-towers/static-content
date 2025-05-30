@@ -4,7 +4,7 @@
 fieldset.strategicMovement
 {
 	float: right;
-	width: 310px;
+	width: 380px;
 	margin-right: 5px;
 	margin-left: 5px;
 }
@@ -18,22 +18,21 @@ fieldset.strategicMovement label
 	font-size: 0.9em;
 }
 
-fieldset.strategicMovement input ,
 fieldset.strategicMovement select
 {
-	float: right;
-}
-
-fieldset.strategicMovement select
-{
-	width: 149px;
+	width: 180px;
 }
 
 fieldset.strategicMovement input
 {
 	width: 70px;
 	text-align: right;
-	padding: 0px 10px;
+	padding: 0;
+}
+
+fieldset.strategicMovement span > select
+{
+	width: 106px;
 }
 
 /*---- MAP SELECTION ----*/
@@ -70,7 +69,8 @@ form.mapSelection input
 
 
 input.distanceInPixels ,
-input.scaleInPixels
+input.scaleInPixels ,
+input.totalDistanceAmount
 {
 	display: none;
 }
@@ -84,13 +84,13 @@ input.scaleDistance
 	vertical-align: middle;
 }
 
-input.scaleUnit
+select.scaleUnit
 {
 	width: 100px;
 	vertical-align: middle;
 }
 
-span.computedDistance
+span.distanceDetail
 {
 	margin-left: 16px;
 	font-size: 16pt;
@@ -109,6 +109,13 @@ fieldset.journeyMap img
 	position: absolute;
 	z-index: -99;
 	padding-top: 11px;
+}
+
+button.resetTrip.ui-widget
+{
+    margin-left: 10px;
+    font-weight: normal;
+    padding: 4px 10px;
 }
 
 /*---- MAP OVERLAY ----*/

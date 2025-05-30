@@ -9,6 +9,26 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
+>> 2025-05-30
+
+- The Travel module is now available in all rulesets.
+
+- The Travel module now allows marking several segments of a trip, with the total distance computed automatically.
+
+- The Travel module now allows setting a custom speed (distance and time).
+
+- Changed the resistance dialog in the Adventuring module to offer the list of all available resistance concepts, instead of expecting a text input.
+
+- Added character ability to carry an extra percentage of their body weight before penalties.
+
+- Added facilities to indicate time unit in spell effects, resting periods, injuries and active spells.
+
+- Spell casting dialogs will now auto-complete the duration of the spell whenever possible.
+
+- Added REST API allowing query of player characters, go to http://localhost:8888/player-character to get a list of names, then http://localhost:8888/player-character/NAME to get the details in JSON format). Default listening port can be changed by editing the restAPIListeningPort variable in ERA-Settings.ini
+
+- Fixed: Racial Exhaustion Modification will now also be considered in the printable character sheet.
+
 >> 2025-04-05
 
 - Added injuries to character profiles. They can be edited in the Adventuring module, and are shown to players in the Gaming Table and Character Status modules. Injury recovery is now accessible only in the character profile injuries. Accepting the injury recovery dialog will adjust the time remaining for the injury to heal. Using the individual or party recover dialog will reduce injury penalties depending on the time elapsed.

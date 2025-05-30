@@ -188,12 +188,6 @@ tr.rowGrouping:not(:first-child)
 	height: 40px;
 }
 
-div.characterSkills tr.rowGrouping:hover td:nth-child(2) ,
-div.characterSpells tr.rowGrouping:hover td:nth-child(3)
-{
-	text-shadow: initial;
-}
-
 div.characterSkills tr:not(.rowGrouping) td:nth-child(2) ,
 div.characterSpells tr:not(.rowGrouping) td:nth-child(2)
 {
@@ -290,7 +284,6 @@ div.characterSpells tr:hover > td:nth-child(3) ,
 div.characterResistances tr:hover > td:nth-child(2)
 {
 	font-weight: bold;
-	text-shadow: 8px 5px 6px gray;
 }
 
 tr:hover span.informationButton ,

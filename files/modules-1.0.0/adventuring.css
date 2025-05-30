@@ -1118,13 +1118,8 @@ input[type="number"].shortNumber
 textarea.profileInjury
 {
 	font-size: 0.9em;
-	width: 270px;
+	width: 300px;
 	height: 100px;
-}
-
-form fieldset.willow input.profileInjury[type="number"]
-{
-	width: 80px;
 }
 
 fieldset.rulesetDependentSection:not(:only-of-type)
@@ -1362,7 +1357,7 @@ span.spellEffect
 
 span.spellDuration
 {
-	width: 88px;
+	width: 73px;
 }
 
 ul.spellTargets
@@ -1494,6 +1489,38 @@ div.radio > label:focus
 {
 	background-color: lightyellow;
 	border-color: gray;
+}
+
+/*---- FIELDS ----*/
+
+
+div.labeledQuantity
+{
+	margin-bottom: 6px;
+}
+
+div.labeledQuantity > label
+{
+	display: inline-block;
+    width: 128px;
+}
+
+div.labeledQuantity > input
+{
+    width: 78px;
+	margin-right: 2px;
+}
+
+div.labeledQuantity > select
+{
+    width: 90px;
+}
+
+div.labeledQuantity > div
+{
+    width: 100%;
+	text-align: right;
+    height: 20px;
 }
 
 /*---- LOGOS ----*/
@@ -1786,19 +1813,18 @@ form.recoveryAction > div > div > label
 {
     margin-bottom: 16px;
     display: inline-block;
-}
-
-form.recoveryAction > div > input ,
-form.recoveryAction > div > div > input
-{
-    float: right;
-    width: 70px;
+    width: 58%;
 }
 
 form.recoveryAction > div > input
 {
-	width: 100px;
+    width: 45px;
     text-align: right;
+}
+
+form.recoveryAction > div > div > input
+{
+    width: 130px;
 }
 
 div.recoveryPeriod
