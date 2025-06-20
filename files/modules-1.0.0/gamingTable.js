@@ -16,7 +16,7 @@ function configureServerSentEvents(eventSource) {
             } else {
                 companionDice.removeClass("hideDiceRolls");
                 rollTo(companionDice, jsonData.roll);
-				$("#refresh-player-rolls").click();
+                $("#refresh-player-rolls").click();
             }
         }
     }
@@ -107,51 +107,56 @@ $.widget("custom.categorizedautocomplete", $.ui.autocomplete, {
 
 // RECORDING
 
+let verbalCommandBase64 = '';
+let mediaStream;
 let mediaRecorder;
-let verbalCommand;
 
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    const constraints = {
-        audio: true
-    };
-    let chunks = [];
-
-    let onSuccess = function(stream) {
-        mediaRecorder = new MediaRecorder(stream);
-
-        mediaRecorder.onstop = function(e) {
+async function startRecording() {
+    if (mediaRecorder && mediaRecorder.state === "recording") {
+        console.log("Recording is already in progress.");
+        return;
+    }
+    try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({
+            audio: true
+        });
+        const chunks = [];
+        mediaRecorder = new MediaRecorder(mediaStream,{
+            mimeType: 'audio/webm'
+        });
+        mediaRecorder.ondataavailable = (e) => {
+            if (e.data.size > 0) {
+                chunks.push(e.data);
+            }
+        }
+        ;
+        mediaRecorder.onstop = () => {
             const blob = new Blob(chunks,{
                 type: mediaRecorder.mimeType
             });
-            chunks = [];
-
             const reader = new FileReader();
             reader.readAsDataURL(blob);
-            reader.onloadend = function() {
-                verbalCommand = document.querySelector("audio.verbalCommand");
-                verbalCommand.src = reader.result;
-                verbalCommand.click();
+            reader.onloadend = () => {
+                verbalCommandBase64 = document.querySelector("audio.verbalCommand")
+                verbalCommandBase64.src = reader.result;
+                verbalCommandBase64.click();
             }
+            ;
         }
-
-        mediaRecorder.ondataavailable = function(e) {
-            chunks.push(e.data);
-        }
-    };
-
-    let onError = function(err) {
-        console.log("The following error occured: " + err);
-    };
-
-    navigator.mediaDevices.getUserMedia(constraints).then(onSuccess, onError);
-} else {
-    console.log("Could not get permission for user media")
-}
-
-function startRecording() {
-    mediaRecorder.start();
+        ;
+        mediaRecorder.start();
+    } catch (err) {
+        console.error("Error requesting microphone access:", err);
+    }
 }
 
 function stopRecording() {
-    mediaRecorder.stop();
+    if (mediaRecorder && mediaRecorder.state === "recording") {
+        mediaRecorder.stop();
+        if (mediaStream) {
+            mediaStream.getTracks().forEach(track => track.stop());
+        }
+    } else {
+        console.log("No active recording to stop.");
+    }
 }

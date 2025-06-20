@@ -17,6 +17,17 @@ body
 	margin: 0px;
 }
 
+span.nonGroupingElement > span.castingBonus
+{
+	margin-left: 24px;
+	font-style: italic;
+}
+
+td.skillColumn > span.castingBonus
+{
+	font-weight: bold;
+}
+
 img.characterAvatar
 {
 	float: left;

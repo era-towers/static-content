@@ -896,6 +896,13 @@ div.recoveryMultipliers
 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	max-width: 350px;
+}
+
+div.recoveryMultipliers > label
+{
+	display: inline-block;
+	width: 150px;
 }
 
 div.characterMultiplier ,
@@ -1148,6 +1155,20 @@ fieldset.rulesetDependentSection > div > label
 fieldset.rulesetDependentSection > div > input[type="number"]
 {
     width: 70px;
+}
+
+img.generativeDescription
+{
+    max-height: 600px;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+}
+
+div.generativeDescription
+{
+    height: 80vh;
+    width: 60vw;
 }
 
 /*---- INTERFACE ----*/
@@ -1930,10 +1951,10 @@ select.savedRolls
 	}
 }
 
-/*---- PLAYER ROLLS ----*/ 
+/*---- PLAYER DECLARATIONS ----*/ 
 
 
-div.pendingPlayerRolls
+div.pendingPlayerDeclarations
 {
     margin-top: 20px;
     margin-left: auto;
@@ -1944,14 +1965,14 @@ div.pendingPlayerRolls
 	overflow: hidden;
 }
 
-div.pendingPlayerRoll
+div.pendingPlayerDeclaration
 {
     position: relative;
     display: inline-block;
     width: 55px;
 }
 
-img.pendingPlayerRoll
+img.pendingPlayerDeclaration
 {
 	height: 48px;
 	width: 48px;
@@ -1962,7 +1983,7 @@ img.pendingPlayerRoll
 	margin-right: 5px;
 }
 
-div.pendingPlayerRoll > span:first-child
+div.pendingPlayerDeclaration > span:first-child
 {
 	position: absolute;
     border-radius: 10px;
@@ -1975,37 +1996,42 @@ div.pendingPlayerRoll > span:first-child
     background-color: white;
 }
 
-span.playerRollIcon
+span.playerDeclarationIcon
 {
 	pointer-events: none;
 }
 
-span.playerRollIcon.maneuverActionIcon
+span.playerDeclarationIcon.maneuverActionIcon
 {
     background-image: url("Images/maneuver.png");
 }
 
-span.playerRollIcon.castSpellActionIcon
+span.playerDeclarationIcon.castSpellActionIcon
 {
     background-image: url("Images/smoking-finger.png");
 }
 
-span.playerRollIcon.meleeAttackActionIcon
+span.playerDeclarationIcon.meleeAttackActionIcon
 {
 	background-image: url("Images/spinning-sword.png");
 }
 
-span.playerRollIcon.resistanceActionIcon
+span.playerDeclarationIcon.resistanceActionIcon
 {
 	background-image: url("Images/resistance.png");
 }
 
-span.playerRollIcon + img.pendingPlayerRoll
+span.playerDeclarationIcon.moveActionIcon
+{
+	background-image: url("Images/run.png");
+}
+
+span.playerDeclarationIcon + img.pendingPlayerDeclaration
 {
 	cursor: pointer;
 }
 
-span.pendingPlayerRoll
+span.pendingPlayerDeclaration
 {
     display: inline-block;
     width: 0px;
@@ -2019,153 +2045,22 @@ span.pendingPlayerRoll
     pointer-events: none;
 }
 
-div.pendingPlayerRoll > span.ui-icon-close
+span.playerDeclarationIcon.moveActionIcon ~ span.pendingPlayerDeclaration
+{
+    left: -47px;
+    top: -2px;
+    font-size: 15pt;
+}
+
+div.pendingPlayerDeclaration > span.ui-icon-close
 {
     display: none;
     float: right;
     margin-top: -21px;
 }
 
-div.pendingPlayerRoll:hover > span.ui-icon-close
+div.pendingPlayerDeclaration:hover > span.ui-icon-close
 {
     cursor: pointer;
     display: inline-block;
-}
-
-/*---- DICE MANUAL ADJUSTMENT ----*/ 
-
-
-div.interface figure.face::after
-{    
-	border-top-width: 7.8px;
-    border-right-width: 19.2px;
-}
-
-div.interface div.die:nth-child(2)
-{
-    left: 50px;
-}
-
-div.interface div.rolling-dice
-{
-	top: inherit;
-	left: inherit;
-	pointer-events: none;
-}
-
-div.player-character-roll
-{
-    position: relative;
-    top: -8px;
-    left: -58px;
-    display: inline-block;
-    width: 0;
-}
-
-div.player-character-roll.keep-hidden
-{
-	opacity: 0;
-}
-
-/*---- DICE AFFECTED BY SIZE ----*/
-
-
-div.rolling-dice
-{
-	width: 70px;
-	height: 70px;
-}
-
-figure.face.face-1 ,
-figure.face.face-3 ,
-figure.face.face-5 ,
-figure.face.face-7 ,
-figure.face.face-9
-{
-	top: 35px;
-}
-
-figure.face
-{
-	margin: 0 -18.2px;
-	border-left-width: 18.2px;
-	border-right-width: 18.2px;
-	border-bottom-width: 36px;
-}
-
-figure.face::before
-{
-	top: 8.75px;
-	left: -18.2px;
-	line-height: 35px;
-	width: 36.4px;
-}
-
-div.die:nth-child(1) figure.face::before
-{
-	font-size: 17.5px;
-}
-
-div.die:nth-child(2) figure.face::before
-{
-	font-size: 21px;
-}
-
-figure.face::after
-{
-	bottom: -43.4px;
-	left: -18.2px;
-	border-top-width: 8.4px;
-	border-left-width: 18.2px;
-	border-right-width: 18.2px;
-}
-
-figure.face.face-0
-{
-	transform: rotateY(0deg) translateZ(11.9px) translateY(2.44px) rotateX(45deg);
-}
-
-figure.face.face-1
-{
-	transform: rotateY(72deg) translateZ(-11.9px) translateY(-2.44px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
-}
-
-figure.face.face-2
-{
-	transform: rotateY(-72deg) translateZ(11.9px) translateY(2.44px) rotateX(45deg);
-}
-
-figure.face.face-3
-{
-	transform: rotateY(144deg) translateZ(-11.9px) translateY(-2.44px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
-}
-
-figure.face.face-4
-{
-	transform: rotateY(-144deg) translateZ(11.9px) translateY(2.44px) rotateX(45deg);
-}
-
-figure.face.face-5
-{
-	transform: rotateY(216deg) translateZ(-11.9px) translateY(-2.44px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
-}
-
-figure.face.face-6
-{
-	transform: rotateY(-216deg) translateZ(11.9px) translateY(2.44px) rotateX(45deg);
-}
-
-figure.face.face-7
-{
-	transform: rotateY(288deg) translateZ(-11.9px) translateY(-2.44px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
-}
-
-figure.face.face-8
-{
-	transform: rotateY(-288deg) translateZ(11.9px) translateY(2.44px) rotateX(45deg);
-}
-
-figure.face.face-9
-{
-	transform: rotateY(360deg) translateZ(-11.9px) translateY(-2.44px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
 }

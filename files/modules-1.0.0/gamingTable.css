@@ -69,11 +69,6 @@ a.spellsButton
 	background-image: url("Images/castSpell.png");
 }
 
-a.resistancesButton
-{
-	background-image: url("Images/resistance.png");
-}
-
 a.rollHistoryButton
 {
 	background-image: url("Images/scroll-quill.png");
@@ -82,6 +77,11 @@ a.rollHistoryButton
 a.combatButton
 {
 	background-image: url("Images/crossed-swords.png");
+}
+
+a.inventoryButton
+{
+	background-image: url("Images/knapsack.png");
 }
 
 a.buttonInBar
@@ -124,6 +124,11 @@ span.verbalCommand
 	background-image: url("Images/old-microphone.png");
 }
 
+span.verbalCommand:active
+{
+	filter: invert(0.5) sepia(1) saturate(999);
+}
+
 li.ui-autocomplete-category
 {
 	background-size: contain;
@@ -156,19 +161,31 @@ li.ui-autocomplete-category.resistance
 	background-image: url("Images/resistance.png");
 }
 
-/*---- SKILLS AND SPELLS ----*/
+li.ui-autocomplete-category.stat
+{
+	background-image: url("Images/dna2.png");
+}
+
+li.ui-autocomplete-category.inventory
+{
+	background-image: url("Images/knapsack.png");
+}
+
+/*---- SKILLS AND SPELLS AND RESISTANCES AND STATS AND ITEMS ----*/
 
 
 div.characterSkills table ,
 div.characterSpells table , 
-div.characterResistances table
+div.characterResistances table ,
+div.characterItems table
 {
 	border-collapse: collapse;
 }
 
 div.characterSkills ,
 div.characterSpells ,
-div.characterResistances
+div.characterResistances ,
+div.characterItems
 {
 	max-height: 60vh;
 	overflow-y: auto;
@@ -194,6 +211,11 @@ div.characterSpells tr:not(.rowGrouping) td:nth-child(2)
 	padding-left: 10px;
 }
 
+div.characterItems tr.rowGrouping td:nth-child(3) 
+{
+	opacity: 0;
+}
+
 div.characterSkills
 {
 	min-width: 500px;
@@ -205,6 +227,11 @@ div.characterSpells
 }
 
 div.characterResistances
+{
+	min-width: 360px;
+}
+
+div.characterItems
 {
 	min-width: 360px;
 }
@@ -232,10 +259,11 @@ div.characterSpells td:nth-child(4)
 div.characterSkills td:nth-child(3) ,
 div.characterSkills td:nth-child(4) ,
 div.characterSpells td:nth-child(5) ,
-div.characterResistances td:nth-child(3)
+div.characterResistances td:nth-child(3) ,
+div.characterItems td:nth-child(3)
 {
 	text-align: right;
-	width: 30px;
+	width: 47px;
 	padding-right: 30px;
 }
 
@@ -243,6 +271,12 @@ div.characterSpells td:nth-child(2)
 {
 	text-align: right;
 	width: 10px;
+}
+
+div.characterItems td:nth-child(4)
+{
+	text-align: right;
+	width: 80px;
 }
 
 span.informationButton ,
@@ -290,6 +324,11 @@ tr:hover span.informationButton ,
 tr:hover span.rollSkillButton
 {
 	opacity: 1;
+}
+
+div.characterItem p
+{
+	max-width: 350px;
 }
 
 /*---- CUSTOM ROLL ----*/
@@ -449,6 +488,8 @@ img.partyMember
 	border-radius: 40px;
 	margin-left: 25px;
 	margin-top: 25px;
+	position: relative;
+	z-index: 99;
 }
 
 canvas.radialBar
@@ -734,6 +775,7 @@ span.condition
 	padding-left: 28px;
 	height: 22px;
 	text-align: center;
+	cursor: pointer;
 }
 
 span.condition:last-child
@@ -902,4 +944,29 @@ span.playerRollHistory
 	font-family: sans-serif;
 	font-size: 10pt;
     text-align: center;
+}
+
+/*---- MOVEMENT ----*/
+
+
+form.movementDetails
+{
+	width: 360px;
+}
+
+div.movementDetails
+{
+	width: 180px;
+	display: inline-block;
+}
+
+form.movementDetails input.movementDetails
+{
+	width: 80px;
+	text-align: right;
+}
+
+label.movementDetails
+{
+	margin-left: 4px;
 }

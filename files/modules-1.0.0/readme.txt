@@ -9,6 +9,26 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
+>> 2025-06-17
+
+- Players can now declare movement from the Gaming Table module, which can then be applied in the Adventuring module.
+
+- Added Inventory listing to the Gaming Table module. Items can also be searched from the top search bar, grouped by location.
+
+- Added stats to the results of the top search bar in the Gaming Table module.
+
+- When indicating a Gemini API key in the house rules dialog, new characters will have a pre-generated avatar based on their name, race, profession and culture, and a description in the notes based on their higher stats.
+
+- When indicating a Gemini API key in the house rules dialog, character profiles in the Adventuring module can show a suggested image and description.
+
+- RMU: Added SCR in the Printable Character Sheet for spell casting skills.
+
+- Fixed: the Adventuring module will no longer crash when a character reaches 0 hits.
+
+- Fixed: Remaining/Total values for Hit Points and Power Points will now be correctly displayed in the Character Status and Gaming Table modules when the corresponding option is selected.
+
+- Fixed: RMFRP Exhaustion will now consider the total Constitution stat bonus instead of just the temporary bonus.
+
 >> 2025-05-30
 
 - The Travel module is now available in all rulesets.
