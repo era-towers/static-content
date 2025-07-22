@@ -238,11 +238,6 @@ div.criticalResult{
 	width: 100%;
 }
 
-div.criticalResult *{
-	width: 100%;
-	height: 100px;
-}
-
 /* ---- COMMON ELEMENTS ---- */
 
 div.inline {

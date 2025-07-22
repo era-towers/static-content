@@ -522,6 +522,23 @@ img.partyMember:hover {
 	opacity: .8;
 }
 
+img.partyActionButton:hover {
+	background: white;
+}
+
+img.partyActionButton {
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	border: 1px solid #654b24;
+	background-color: white;
+    position: relative;
+    right: -10px;
+    top: -28px;
+	cursor: pointer;
+}
+
+
 /* ---- HOVER MENU ---- */
 
 img.hoverMenuButton:hover {
@@ -935,20 +952,20 @@ div.ui-dialog.ui-front
 
 input.characterSelection
 {
-	width: 242px;
+	width: 318px;
 	margin-bottom: 3px;
 }
 
 select.characterSelection
 {
-	width: 245px;
+	width: 326px;
 	margin-bottom: 3px;
 }
 
 textarea.characterSelection
 {
-	width: 240px;
-	height: 50px;
+	width: 320px;
+	height: 120px;
 	margin-top: 3px;
 }
 
@@ -2063,4 +2080,48 @@ div.pendingPlayerDeclaration:hover > span.ui-icon-close
 {
     cursor: pointer;
     display: inline-block;
+}
+
+
+/*---- CRITICALS ----*/ 
+
+
+ul.criticalResult
+{
+	width: 460px;
+	height: 92px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    overflow: auto;
+    background: white;
+    list-style: none;
+    padding: 0;
+}
+
+ul.criticalResult > li
+{
+    text-align: center;
+	cursor: pointer;
+}
+
+ul.criticalResult > li:not(:last-child)
+{
+    border-bottom: 1px solid black
+}
+
+label.ambush
+{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+div.criticalInformation > input.roll
+{
+    width: 114px;
+}
+
+div.selectedCritical
+{
+    background-color: light-dark(rgb(206, 206, 206), rgb(84, 84, 84));
+    color: light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
 }

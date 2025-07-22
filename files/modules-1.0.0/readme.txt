@@ -9,13 +9,21 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2025-06-17
+>> 2025-07-21
 
 - Players can now declare movement from the Gaming Table module, which can then be applied in the Adventuring module.
 
 - Added Inventory listing to the Gaming Table module. Items can also be searched from the top search bar, grouped by location.
 
 - Added stats to the results of the top search bar in the Gaming Table module.
+
+- Added button in the Adventuring module to remove all enemies at once.
+
+- Ambush ranks are now considered when showing critical results.
+
+- Variant attack tables can be included in the AttackTables directory to be offered for combat resolution.
+
+- Armor types can now indicate an equivalent type, to be used when the attack table does not include it, and a corresponding defensive bonus adjustment to apply in those cases.
 
 - When indicating a Gemini API key in the house rules dialog, new characters will have a pre-generated avatar based on their name, race, profession and culture, and a description in the notes based on their higher stats.
 
