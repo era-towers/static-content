@@ -898,6 +898,12 @@ div.developmentChoice div.backgroundOption fieldset {
     overflow: auto;
 }
 
+span.backgroundOption
+{
+	font-weight: bold;
+	color: brown;
+}
+
 /* ---- RACE ---- */
 
 td.resistanceBonus {

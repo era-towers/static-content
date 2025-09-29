@@ -331,6 +331,12 @@ div.characterItem p
 	max-width: 350px;
 }
 
+fieldset.playerManeuverRoll select.labeledField.attackTarget
+{
+	width: 160px;
+	text-align: left;
+}
+
 /*---- CUSTOM ROLL ----*/
 
 

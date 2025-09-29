@@ -9,6 +9,22 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
+>> 2025-09-28
+
+- Variant creatures can be included in the Creatures directory to be offered when adding characters to an adventure.
+
+- Character profiles in the Adventuring module can now indicate a name to be shown to players.
+
+- Attacks in the Gaming Table module can now indicate target, percentage used, and custom bonus modification. Resolving these declarations in the Adventuring module will skip target selection and open the attack dialog directly.
+
+- RMU: Added support for Training Packages.
+
+- RMU: Talents can now be purchased during level up.
+
+- Fixed: New rounds will now correctly affect remaining injury time.
+
+- Fixed: New RMU characters will now distinguish skills with the same name in different categories when assigning profesional bonuses.
+
 >> 2025-07-21
 
 - Players can now declare movement from the Gaming Table module, which can then be applied in the Adventuring module.

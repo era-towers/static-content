@@ -1343,7 +1343,7 @@ div.developmentChoices > fieldset.filteredOptions > input.filteredOptions
 div.developmentChoices + div.developmentChoice
 {
 	margin-left: 220px;
-	width: 65vw;
+	width: 70vw;
 }
 
 div.developmentChoice
@@ -1375,6 +1375,7 @@ fieldset.trainingPackageSection.trainingPackageSpecialsSection
 {
 	height: calc(100vh - 27.7em);
 	font-size: 0.9em;
+	width: 23%;
 }
 
 fieldset.trainingPackageSpecialsSection > table.ui-widget-content
@@ -1440,7 +1441,7 @@ div.specialGained
 
 fieldset.trainingPackageSection.trainingPackageDescription
 {
-	width: 65.7%;
+	width: 67%;
 	text-align: justify;
 	height: 5.5em;
 	padding-left: 10px;
@@ -1485,21 +1486,21 @@ fieldset.trainingPackageSection.trainingPackageStatGainsAndCostSection input
 
 fieldset.trainingPackageSection.trainingPackageRankAssignmentsSection
 {
-	width: 65.3%;
+	width: 68%;
 	height: calc(100vh - 25em);
 }
 
 fieldset.trainingPackageSection.trainingPackageRankAssignmentsSection div:first-child
 {
 	float: left;
-	width: 40%;
+	width: 35%;
 }
 
 fieldset.trainingPackageRankAssignmentsSection div.trainingPackageRankAssignmentsSection
 {
 	overflow: auto;
 	height: 100%;
-	width: 57%;
+	width: 62%;
 	padding-left: 3%;
 }
 
@@ -1518,6 +1519,18 @@ fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory td:not(
 fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:not(:first-child)
 {
 	text-align: center;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory td:nth-child(2) ,
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:nth-child(2) 
+{
+	width: 20%;
+}
+
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory td:nth-child(3) ,
+fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:nth-child(3) 
+{
+	width: 15%;
 }
 
 fieldset.trainingPackageRankAssignmentsSection tr.characterSkillCategory
@@ -1542,7 +1555,7 @@ fieldset.trainingPackageRankAssignmentsSection tr.characterSkill
 fieldset.trainingPackageRankAssignmentsSection tr.characterSkill td:first-child
 {
 	padding-left: 12px;
-	width: 75%;
+	width: 64%;
 }
 
 div.trainingPackageRankAssignmentsSection span.spellListSkillRowButton
@@ -1562,6 +1575,7 @@ tr.characterSkill span.trainingPackageRanksAssigned
 {
 	width: 24px;
 	display: inline-block;
+	font-weight: normal;
 }
 
 span.roomForButton
@@ -1601,6 +1615,54 @@ span.ui-icon-minusthick.button-small
 {
 	color: orange;
 	font-style: inherit;
+}
+
+/*---- BACKGROUND OPTIONS ----*/
+
+
+form.backgroundOptionChoice > div.developmentChoices
+{
+    height: calc(75vh - 14em);
+}
+
+form.backgroundOptionChoice > div.developmentChoices > div.filteredOptions:nth-child(2)
+{
+    height: calc(75vh - 17.5em);
+}
+
+form.backgroundOptionChoice > div.developmentChoices + div.developmentChoice
+{
+    width: 50vw;
+}
+
+div.developmentChoice.backgroundOptionChoice
+{
+    height: calc(75vh - 12em);
+    overflow: hidden;
+}
+
+div.developmentChoice div.backgroundOption fieldset
+{
+	text-align: justify;
+    height: 12em;
+    overflow: auto;
+}
+
+div.backgroundOption
+{
+	margin-bottom: 12px;
+}
+
+span.backgroundOption
+{
+	font-weight: bold;
+	color: brown;
+}
+
+input.backgroundOptionCost
+{
+	width: 50px;
+	text-align: right;
 }
 
 /*---- PLAYER KEPT RECORDS ----*/

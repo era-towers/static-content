@@ -121,21 +121,25 @@ div.ui-dialog-content form > fieldset:only-child select{
 
 /* ---- ADVENTURE OPTIONS DIALOG ---- */
 
-div.adventureOptionsButtons, div.adventureLog {
+div.adventureOptionsButtons, div.adventureLog
+{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 410px;
+	width: 530px;
 }
 
-div.adventureLog {
+div.adventureLog
+{
 	margin-bottom: 15px;
 }
 
-div.adventureLog select.ui-widget {
-	width: 410px;
+div.adventureLog select.ui-widget
+{
+	width: 100%;
 	height: 210px;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 /* ---- COMBAT ACTIONS ---- */
@@ -1127,11 +1131,11 @@ div.totalDefensiveBonus > input[type="number"]
     width: 100px;
 }
 
-fieldset.profileTargeting
+fieldset.fieldsAndLabels.profileTargeting
 {
 	padding-left: 0px;
 	padding-right: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 2px;
 }
 
 input[type="number"].shortNumber
@@ -1186,6 +1190,31 @@ div.generativeDescription
 {
     height: 80vh;
     width: 60vw;
+}
+
+input.nameToPlayers
+{
+    width: 271px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+
+span.nameToPlayers
+{
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+fieldset.fieldsAndLabels input.nameToPlayers
+{
+    margin-bottom: 0px;
+}
+
+fieldset.fieldsAndLabels span.nameToPlayers
+{
+    margin-bottom: 0px;
 }
 
 /*---- INTERFACE ----*/
@@ -2082,7 +2111,6 @@ div.pendingPlayerDeclaration:hover > span.ui-icon-close
     display: inline-block;
 }
 
-
 /*---- CRITICALS ----*/ 
 
 
@@ -2106,7 +2134,7 @@ ul.criticalResult > li
 
 ul.criticalResult > li:not(:last-child)
 {
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
 
 label.ambush
