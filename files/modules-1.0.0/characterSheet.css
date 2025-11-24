@@ -1152,7 +1152,7 @@ div.professionSpellList
 
 div.selectedSpellDescription
 {
-	width: 435px;
+	width: 495px;
 	text-align: justify;
 	padding: 3px;
 }
@@ -1211,16 +1211,25 @@ table.spellDetails span.spellData
 	width: inherit;
 }
 
+table.spellDetails td.spellParameters span.spellData
+{
+	display: inline;
+}
+
 table.spellDetails th.spellParameters ,
 table.spellDetails td.spellParameters
 {
-	width: 199px;
 	text-align: center;
 }
 
 table.spellDetails td.spellParameters
 {
 	font-size: smaller;
+}
+
+span.selectedSpellDescription div.spellParameters {
+    display: inline-block;
+    width: 205px;
 }
 
 /*---- SPELL KNOWLEDGE ----*/

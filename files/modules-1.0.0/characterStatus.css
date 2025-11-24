@@ -115,8 +115,14 @@ div.spellPreparartionInformation span {
 	margin-left: 15px;
 }
 
-p.spellParameters {
+table.spellParameters {
 	margin: 5px;
+}
+
+table.spellParameters td:nth-child(1)
+{
+	font-size: medium;
+	width: 130px;
 }
 
 p.spellListLevelAndRanks {
@@ -143,6 +149,21 @@ div.ui-dialog > div.ui-dialog-content {
 	div.spellsWithFilter td.spellParameters {
 		display: none;
 	}
+}
+
+td.spellParameters
+{
+	text-align: center;
+}
+
+td.spellParameters span.spellData
+{
+	display: inline;
+}
+
+td.spellParameters span.spellData:not(:first-child)
+{
+	margin-left: 12px;
 }
 
 div.spellsWithFilter table {

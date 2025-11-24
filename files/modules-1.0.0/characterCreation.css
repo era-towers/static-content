@@ -1178,6 +1178,23 @@ table.spellDetails td.spellParameters
 	font-size: smaller;
 }
 
+table.spellDetails td.spellParameters span.spellData
+{
+	display: inline;
+}
+
+span.selectedSpellDescription div.spellParameters
+{
+	display: inline-block;
+	width: 205px;
+}
+
+span.selectedSpellDescription div.spellParameters:nth-child(2n)
+{
+	margin-right: 8px;
+}
+
+
 /*---- CUSTOM PROFESSION ----*/
 
 

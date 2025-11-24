@@ -44,29 +44,35 @@ table.spellDetails td.spellLevel
 table.spellDetails th.spellName ,
 table.spellDetails td.spellName
 {
-	width: 40vw;
+	max-width: 35vw;
 	text-align: left;
 }
 
 table.spellDetails span.spellData
 {
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails  td.spellName > span.spellData
+{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	display: block;
-	width: inherit;
 }
 
 table.spellDetails th.spellParameters ,
 table.spellDetails td.spellParameters
 {
-	width: 34vw;
-	text-align: center;
+    text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 table.spellDetails td.spellParameters
 {
-	font-size: smaller;
+	font-size: small;
 }
 
 div.selectedSpellDescription
@@ -81,6 +87,18 @@ div.selectedSpellDescription > span.selectedSpellDescription
 {
 	margin-bottom: 0.2em;
 	display: block;
+}
+
+span.selectedSpellDescription div.spellParameters
+{
+	display: inline-block;
+	width: 40vw;
+	font-size: smaller;
+}
+
+span.selectedSpellDescription div.spellParameters:nth-child(2n)
+{
+	margin-right: 8px;
 }
 
 

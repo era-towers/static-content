@@ -1500,24 +1500,30 @@ table.spellDetails td.spellLevel
 table.spellDetails th.spellName ,
 table.spellDetails td.spellName
 {
-	width: 200px;
+	width: 165px;
 	text-align: left;
 }
 
 table.spellDetails span.spellData
 {
+	display: block;
+	width: inherit;
+}
+
+table.spellDetails  td.spellName > span.spellData
+{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	display: block;
-	width: inherit;
 }
 
 table.spellDetails th.spellParameters ,
 table.spellDetails td.spellParameters
 {
-	width: 199px;
-	text-align: center;
+    text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 table.spellDetails td.spellParameters
