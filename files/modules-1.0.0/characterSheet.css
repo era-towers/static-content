@@ -1357,7 +1357,7 @@ div.developmentChoices + div.developmentChoice
 
 div.developmentChoice
 {
-	height: calc(100vh - 12em);
+	height: calc(100vh - 11em);
 	overflow: hidden;
 }
 
@@ -1646,15 +1646,17 @@ form.backgroundOptionChoice > div.developmentChoices + div.developmentChoice
 
 div.developmentChoice.backgroundOptionChoice
 {
-    height: calc(75vh - 12em);
+    height: calc(75vh - 11em);
     overflow: hidden;
 }
 
 div.developmentChoice div.backgroundOption fieldset
 {
 	text-align: justify;
-    height: 12em;
+    max-height: 10em;
     overflow: auto;
+	border: none;
+	padding: 0;
 }
 
 div.backgroundOption
@@ -1668,10 +1670,27 @@ span.backgroundOption
 	color: brown;
 }
 
-input.backgroundOptionCost
+div.backgroundOptionTier > h2, div.backgroundOption > h3
 {
-	width: 50px;
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+
+div.backgroundOptionTier
+{
+    height: calc(75vh - 14em);
+}
+
+div.backgroundOptionTiers
+{
+    margin-bottom: 6px;
+}
+
+form.backgroundOptionPurchase input
+{
 	text-align: right;
+	font-weight: bold;
+	width: 50px;
 }
 
 /*---- PLAYER KEPT RECORDS ----*/

@@ -1,13 +1,27 @@
 ERA: Electronic Roleplaying Assistant
-Copyright © 2005-2025 Maximiliano Tabacman. All rights reserved.
+Copyright © 2005-2026 Maximiliano Tabacman. All rights reserved.
 
-Iron Crown Enterprises, I.C.E., ICE, Rolemaster, High Adventure Role Playing, HARP, Spacemaster, Cyberspace, and Bladelands - and all products related thereto - are all trademark and copyright 2002-2025 © properties of Iron Crown Enterprises Ltd, 37 Fulbourn Road, Cambridge, United Kingdom. All rights reserved.
+Iron Crown Enterprises, I.C.E., ICE, Rolemaster, High Adventure Role Playing, HARP, Spacemaster, Cyberspace, and Bladelands - and all products related thereto - are all trademark and copyright 2002-2026 © properties of Iron Crown Enterprises Ltd, 37 Fulbourn Road, Cambridge, United Kingdom. All rights reserved.
 
-Navigator RPG, Nav RPG, and Open Ended Role-Playing is copyright 2019-2025 Parts Per Million Limited.
+Navigator RPG, Nav RPG, and Open Ended Role-Playing is copyright 2019-2026 Parts Per Million Limited.
 
-Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of Open Ended Games, Inc. Copyright © 2016–2025, Open Ended Games, Inc and their respective authors.
+Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of Open Ended Games, Inc. Copyright © 2016–2026, Open Ended Games, Inc and their respective authors.
 
 ====== Version History =====
+
+>> 2026-02-05
+
+- Background options can now indicate some effects (ranks, item bonus and special bonus for skills, special bonus for resistances) and have them applied automatically to the character.
+
+- Added customization to indicate maximum cost allowed for background options/talents/flaws. Those exceeding this value will not be offered during character creation nor level up.
+
+- Improved display of spell parameters in all the modules.
+
+- Improved display when selecting creatures in the Adventuring module.
+
+- RMFRP: Moved background option selection step during character creation after culture, combat skills and languages have been defined to allow for more complete options when making choices in them.
+
+- Fixed: More file configuration errors were handled to ensure the offending file is reported, but the system can continue to load with the valid ones.
 
 >> 2025-09-28
 

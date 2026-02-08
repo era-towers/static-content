@@ -956,22 +956,66 @@ div.ui-dialog.ui-front
 
 input.characterSelection
 {
-	width: 318px;
+	width: 327px;
 	margin-bottom: 3px;
 }
 
+input.characterSelection.uploadedFileField
+{
+	width: 333px;
+}
+ 
 select.characterSelection
 {
-	width: 326px;
+	width: 335px;
 	margin-bottom: 3px;
 }
 
 textarea.characterSelection
 {
-	width: 320px;
+	width: 345px;
 	height: 120px;
 	margin-top: 3px;
 }
+
+div.creatureProfileSummary
+{
+    height: 66px;
+    width: 325px;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+div.creatureProfileSummary > div:not(:first-child)
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 298px;
+}
+
+div.creatureProfileSummary > div:first-child
+{
+    color: gray;
+}
+
+div.creatureProfileSummary > span.modificationsDetail
+{
+    float: right;
+	position: relative;
+	top: -50px;
+} 
+
+div.creatureDetail
+{
+    width: 30vw;
+	max-height: 30vw;
+    text-align: justify;
+} 
 
 /*---- ACTIONS POINTS ----*/
 

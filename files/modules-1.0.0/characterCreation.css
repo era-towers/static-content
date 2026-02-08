@@ -882,19 +882,12 @@ form.backgroundOptionPurchase label {
 form.backgroundOptionPurchase input {
 	text-align: right;
 	font-weight: bold;
-}
-
-form.backgroundOptionPurchase button {
-	height: 25px;
-	width: 25px;
-	margin-left: 2px;
-	cursor: pointer;
-    vertical-align: top;
+	width: 50px;
 }
 
 div.developmentChoice div.backgroundOption fieldset {
 	text-align: justify;
-    height: 12em;
+    height: 20em;
     overflow: auto;
 }
 
@@ -903,6 +896,51 @@ span.backgroundOption
 	font-weight: bold;
 	color: brown;
 }
+
+span.backgroundOption
+{
+	font-weight: bold;
+	color: brown;
+}
+
+div.backgroundOptionTiers button:not(last-child)
+{
+	margin-right: 6px;
+}
+
+div.backgroundOptionTiers
+{
+    margin-left: 12px;
+	margin-bottom: 6px;
+}
+
+div.backgroundOptionTier >  div.backgroundOption
+{
+    margin-left: 12px;
+}
+
+div.backgroundOptionTier
+{
+    height: calc(100vh - 16em);
+}
+
+div.purchaseBackgroundOption
+{
+	position: absolute;
+    left: calc(15% + 197px);
+    top: calc(100vh - 7.2em);
+}
+
+div.purchaseBackgroundOption > button
+{
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	cursor: pointer;
+    vertical-align: top;
+}
+
+
 
 /* ---- RACE ---- */
 
@@ -1002,8 +1040,7 @@ div.developmentChoice {
 }
 
 div.developmentChoice.backgroundOption {
-    height: 17em;
-    overflow: hidden;
+    overflow: auto;
 }
 
 div.developmentChoice h2, h3 {
