@@ -223,3 +223,21 @@ ul.autocompleteList li.ui-menu-item
 	background: white;
     margin: 1px;
 }
+
+/*---- SEARCH TIPS ----*/
+
+
+span.searchTips {
+    display: inline-block;
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: text-top;
+    margin-left: 3px;
+    cursor: help;
+	background-image: url("Images/info.png");
+}

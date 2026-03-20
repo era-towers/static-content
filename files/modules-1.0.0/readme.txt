@@ -9,11 +9,35 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2026-02-05
+>> 2026-03-19
 
-- Background options can now indicate some effects (ranks, item bonus and special bonus for skills, special bonus for resistances) and have them applied automatically to the character.
+- Added searching hints for skills and spells in the Adventuring and Character Status module, and for all available content in the top search bar.
 
-- Added customization to indicate maximum cost allowed for background options/talents/flaws. Those exceeding this value will not be offered during character creation nor level up.
+- Fixed: The Player Character API and the Attack Result API are once again working as expected.
+
+>> 2026-03-15
+
+- Background options can now indicate stat special bonus, and the option for the player to choose between stat or skill effects.
+
+>> 2026-03-08
+
+- Background options can now indicate defensive modifications and abilities (injury recovery multiplier, defensive size adjustment, moving maneuver bonus, size, spell casting bonus, initiative bonus, offensive bonus, extra weight allowance percentage, natural armor type, stride modification, critical resolution).
+
+- Fixed: choosing a character with an inexistent culture will now give a warning, in the same way as profession and race do.
+
+- Fixed: attacks that do 0 hit points will no longer prevent the attack from completing.
+
+- Fixed: Training packages purchased during level up will no longer prevent the level up from completing.
+
+- Fixed: RMU Prodigy talent and Inept flaw will now apply to all specializations of the chosen skill.
+
+>> 2026-02-17
+
+- Ranks gained and background options purchased during initial character creation will be listed in the character history as level 0.
+
+- Background options can now indicate some effects (ranks, item bonus and special bonus for skills and categories, special bonus for resistances) and have them applied automatically to the character. Effects applied will be indicated in the character notes after the background option description.
+
+- Added customization to indicate maximum cost allowed for background options. Those exceeding this value will not be offered during character creation nor level up.
 
 - Improved display of spell parameters in all the modules.
 

@@ -1348,7 +1348,7 @@ textarea.automaticSpellCasting
 
 input.spellFilter
 {
-	width: 275px;
+	width: 270px;
 }
 
 span.numberOfCastings
@@ -1364,7 +1364,7 @@ div.spellCastingSelection > div.spellSelection
 
 input.spellSelection
 {
-	width: 276px;
+	width: 250px;
 	margin-top: 8px;
 }
 
@@ -1745,7 +1745,7 @@ div.maneuverParameters div select
 
 div.maneuverParameters input.skillNameFilter
 {
-	width: 99%;
+	width: 90%;
 }
 
 div.maneuverParameters div.skillNameFilter
