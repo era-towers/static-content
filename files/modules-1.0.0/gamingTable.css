@@ -980,3 +980,35 @@ label.movementDetails
 {
 	margin-left: 4px;
 }
+
+/*---- RE-ROLL ----*/
+
+
+div.reRoll
+{
+	float: right;
+	position: relative;
+    visibility: hidden;
+    right: calc(15vw - 168px);
+    top: -3vh;
+}
+
+div.reRoll.reRollPending
+{
+	visibility: visible;
+	z-index: 999;
+}
+
+button.reRoll
+{
+    width: 180px;
+    height: 40px;
+}
+
+div.reRoll > span.ui-icon-close
+{
+	float: right;
+	top: -4px;
+    right: 8px;
+	cursor: pointer;
+}
