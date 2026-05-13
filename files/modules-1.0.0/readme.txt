@@ -9,7 +9,31 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2026-03-19
+>> 2026-05-12
+
+- Slight redesign to help choose Background Options with multiple Tiers.
+
+- Improved support for slow connections to the Online Server.
+
+>> 2026-04-19
+
+- The Gaming Table module will now offer a re-roll when the value obtained is below or above the character open ended thresholds. Only when applicable: attacks are only open ended high, and initiative is not open ended.
+
+- All rolls made using the dice rolling feature of the Gaming Table module will be shown in a temporary "toast" in the lower right of the Adventuring module.
+
+- Character abilities now include the open ended low and high threshold.
+
+- Background options can now indicate changes in the default open ended low and high thresholds.
+
+- Strategic movement transport and terrain types can now be customized via XML files.
+
+- The Travel module will now indicate trips of less than 1 hour in minutes.
+
+- The ongoing adventure is now automatically saved also when adding/removing/editing character profiles.
+
+- The ongoing adventure will be automatically loaded when the server is restarted.
+
+- Redesign of the adventure names available for loading. They will also be presented in descending name order.
 
 - Added searching hints for skills and spells in the Adventuring and Character Status module, and for all available content in the top search bar.
 

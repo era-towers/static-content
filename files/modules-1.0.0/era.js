@@ -83,6 +83,11 @@ function uploadFileContents(fileFieldClass, fileContentClass) {
 }
 
 Willow.handleAjaxErrorCall = function(theXMLHttpRequest, textStatus, errorThrown) {
+	// 1. SILENCE ABORTED REQUESTS
+    // Status 0 means the browser killed the request because the user is navigating away.
+    if (theXMLHttpRequest.status === 0 || textStatus === 'abort') {
+        return; 
+    }
     const supportText = "\n\nIf you require assistance, please post your issue in the support forum:\nhttp://www.ironcrown.com/ICEforums/index.php?board=21.0\nor send a mail with the log file to:\nera-support.voriigkye@recursor.net\n\n";
     if (theXMLHttpRequest.getAllResponseHeaders()) {
         alert(
