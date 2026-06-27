@@ -64,6 +64,11 @@ div.large.segment.aboutBox a
 	cursor: pointer;
 }
 
+div.large.segment.aboutBox i.search
+{
+	cursor: pointer;
+}
+
 form.aboutBox > div.aboutBox
 {
 	margin: 0;

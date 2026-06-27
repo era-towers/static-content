@@ -78,6 +78,29 @@ function storeAction(event, action) {
     return action;
 }
 
+function repeatRoll(event, rollButton) {
+    if (event.originalEvent.action !== undefined) {
+        return event.originalEvent.action;
+    } else {
+        if (event.target.classList.contains(rollButton)) {
+            return checkAndStoreRepeatRoll(event);
+        }
+    }
+}
+
+function checkAndStoreRepeatRoll(event) {
+    if (wereDiceAvailableForRolling()) {
+        return storeRepeatRoll(event)
+    }
+    return [];
+}
+
+function storeRepeatRoll(event) {
+    const itemReference = $(event.target).closest("div.historicalRoll").find("span.itemReference").html();
+    event.originalEvent.action = itemReference;
+    return itemReference;
+}
+
 // AUTOCOMPLETE
 
 $.widget("custom.categorizedautocomplete", $.ui.autocomplete, {

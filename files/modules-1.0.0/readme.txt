@@ -9,11 +9,25 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2026-05-12
+>> 2026-06-27
+
+- Critical files can now indicate effects, which will automatically complete the damage section of the critical dialog.
+
+- The historical rolls in the Gaming Table module now allow re-rolling, using the same parameters (only when valid for the current character).
+
+- Invalid files dialog will now indicate the exact error encountered when loading them. It also adds the option to restart the server.
+
+- Resistance Rolls are now available in the combat actions dialog of the Gaming Table module.
 
 - Slight redesign to help choose Background Options with multiple Tiers.
 
 - Improved support for slow connections to the Online Server.
+
+- Fixed: Combat skills created from a category in the Character Sheet module will now list the fumble in the printable character sheet as N/A when not configured.
+
+- Fixed: Resistance rolls for hybrid realms will now be calculated correctly for all rulesets.
+
+- Fixed: Specializations affected by Background Options will now correctly inherit the values of the base skill.
 
 >> 2026-04-19
 

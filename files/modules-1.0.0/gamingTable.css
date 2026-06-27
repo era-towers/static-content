@@ -239,7 +239,7 @@ div.characterItems
 div.characterSkills td:nth-child(2) ,
 div.characterResistances td:nth-child(2)
 {
-	min-width: 260px;
+	min-width: 270px;
 }
 
 div.characterSpells td:nth-child(3)
@@ -947,13 +947,30 @@ div.playerRollHistory
 	max-height: 60vh;
 }
 
-span.playerRollHistory
+div.historicalRoll
 {
 	display: block;
-	height: 30px;
 	font-family: sans-serif;
-	font-size: 10pt;
+	font-size: 11pt;
     text-align: center;
+}
+
+div.historicalRoll:first-child
+{
+	margin-top: 6px;
+}
+
+div.historicalRoll > span.rollSkillButton
+{
+    margin-left: 10px;
+    margin-top: -11px;
+}
+
+div.historicalRoll > span:nth-child(2)
+{
+    vertical-align: middle;
+    display: inline-block;
+    height: 40px;
 }
 
 /*---- MOVEMENT ----*/
