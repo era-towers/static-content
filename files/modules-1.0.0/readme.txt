@@ -9,9 +9,27 @@ Against the Darkmaster - The Classic Game of Fantasy Adventure is a trademark of
 
 ====== Version History =====
 
->> 2026-06-27
+>> 2026-08-20
+
+- Added RMC power point formula based on stat bonus.
+
+- Added reminder of maximum background option cost in the corresponding step of the Character Creation module.
+
+- RMC: Redesigned stat generation and assignment steps of the Character Creation module.
+
+- RMFRP: Redesigned iniative dialog, which now shows all combatants at once and allows rolling initative for all at once.
+
+- RMU: The button to roll initative for all combatants will now only affect those that have not yet rolled.
+
+- Fixed: Changing the attack percentage or bonus modifier in the attack dialog no longer resets the selected attack distance.
+
+- Fixed: Deriving an attack from a skill that is already bound will now be prevented correctly.
+
+>> 2026-06-28
 
 - Critical files can now indicate effects, which will automatically complete the damage section of the critical dialog.
+
+- The critical dialog can now indicate an extra critical is to be resolved after it, which is marked by default when the original severity is above the normal maximum.
 
 - The historical rolls in the Gaming Table module now allow re-rolling, using the same parameters (only when valid for the current character).
 

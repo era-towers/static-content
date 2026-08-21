@@ -126,6 +126,11 @@ table.simpleStatGeneration button.ui-widget {
     padding: 7px 9px;
 }
 
+table.simpleStatGeneration td.primeStat
+{
+	font-size: large;
+}
+
 /* ---- INTERFACE ---- */
 
 div.eraInterface {
@@ -1102,11 +1107,27 @@ table.singleColumnStatAssignments td:nth-child(2)
 	max-width: 170px;
 }
 
+    table.singleColumnStatAssignments th:nth-child(2), table.singleColumnStatAssignments td:nth-child(2)
+{
+    padding-right: 16px;
+}
+
 table.singleColumnStatAssignments div.assignmentValue
 {
 	cursor: move;
-	width: 170px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 24px;
+    padding: 4px 0px;
+	white-space: nowrap;
+	min-width: 150px;
 }
+
+table.singleColumnStatAssignments div.assignmentValue.rollAssignment
+{
+	min-width: inherit;
+}
+
 
 /*---- BACKGROUND OPTION TABLES ----*/
 
