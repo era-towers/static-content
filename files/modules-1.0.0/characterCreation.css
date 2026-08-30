@@ -1614,3 +1614,28 @@ span.ui-icon-minusthick.button-small
 {
 	background-image: url("Images/minus.png");
 }
+
+/*---- CULTURE ----*/
+
+
+div.characterPowerLevel
+{
+    width: 20em;
+    height: 11%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    margin-bottom: 15%;
+}
+
+div.powerLevelOption
+{
+    height: 60px;
+    font-size: larger;
+    width: 400px;
+}
+
+select.powerLevelOption, input.powerLevelOption
+{
+    float: right;
+}
